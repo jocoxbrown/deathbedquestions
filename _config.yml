@@ -1,0 +1,11 @@
+title: Death Bed Questions
+description: Conversation cards for life, love, memory and what matters most.
+url: https://deathbedquestions.com
+baseurl: ""
+permalink: /writings/:year/:month/:day/:title/
+timezone: Europe/London
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - README.md
