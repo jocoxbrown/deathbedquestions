@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://deathbedquestions.com/sitemap.xml
+Disallow: /
