@@ -5,34 +5,31 @@ description: "Ways to use Death Bed Questions alone, with loved ones, or in supp
 permalink: /how-to-use/
 ---
 {% assign img = site.baseurl | append: "/assets/images" %}
-<section class="ht-hero hp-wrap">
-<div class="ht-hero-copy hp-intro">
-<p class="hp-eyebrow hp-eyebrow-line">A gentle guide</p>
-<h1>How to use the cards</h1>
-<h2 class="dk-sub">A session with Death Bed Questions is not about rushing or finding perfect answers.</h2>
-<p class="ht-lead">It is about presence, honesty and listening.</p>
-<nav class="ht-jump" aria-label="On this page"><a href="#getting-started">Getting started</a><a href="#during">During the conversation</a><a href="#ritual-opening">Opening script</a><a href="#ritual-closing">Closing script</a><a href="#toast-blessing">Toast &amp; blessing</a></nav>
-</div>
-<div class="ht-hero-media hp-intro-late">
+<section class="ht-hero hp-wrap hp-intro">
 <img class="hp-flora ht-hero-stem" src="{{ img }}/home/dried-delphinium-stem.webp" alt="" aria-hidden="true">
-<div class="hp-glow ht-hero-glow" aria-hidden="true"></div>
-<img class="ht-hero-photo" src="{{ img }}/banner-image.png" alt="Death Bed Questions cards laid out beside a lit candle">
 <img class="hp-flora ht-hero-branch" src="{{ img }}/home/dried-cream-branch.webp" alt="" aria-hidden="true">
-</div>
+<p class="hp-eyebrow">A gentle guide</p>
+<h1>How to use the cards</h1>
+<p class="ht-hero-sub">A session with Death Bed Questions is not about rushing or finding perfect answers. It is about presence, honesty and listening.</p>
+<p class="ht-hero-hint">Turn each card over to read it.</p>
+<nav class="ht-jump" aria-label="On this page"><a href="#steps">Five gentle steps</a><a href="#during">During the conversation</a><a href="#rituals">Rituals</a></nav>
 </section>
 
-<section id="getting-started" class="ht-steps">
-<div class="hp-wrap">
-<p class="hp-eyebrow">Getting started</p>
-<h2 class="dk-list-title">Five gentle steps.</h2>
-<ol class="ht-step-list">
-<li class="hp-reveal"><span class="ht-step-num" aria-hidden="true">01</span><div><h3>Allow time &amp; set the space</h3><p>Light a candle, dim the lights, put on some soulful music if it feels right. Create a space that feels calm and safe, then take a moment to breathe together.</p><p class="ht-say">You may say: “Today, we open ourselves to truth, to memory, and to whatever needs to be spoken or heard.”</p></div></li>
-<li class="hp-reveal"><span class="ht-step-num" aria-hidden="true">02</span><div><h3>Agree the ground rules</h3><ul class="ht-chips"><li>There is no judgement</li><li>There is no rush</li><li>Silence is welcome</li><li>Passing is allowed</li></ul></div></li>
-<li class="hp-reveal"><span class="ht-step-num" aria-hidden="true">03</span><div><h3>Choose your approach</h3><ul class="ht-chips"><li>Choose one card intuitively</li><li>Select a deck that matches the feeling of the moment</li><li>Take turns choosing cards for each other</li><li>Move sequentially through a deck</li><li>Allow the person answering to choose</li><li>Shuffle cards and see what pops out</li></ul><p>There is no correct way. Follow what feels right in the moment.</p></div></li>
-<li class="hp-reveal"><span class="ht-step-num" aria-hidden="true">04</span><div><h3>Ask and listen</h3><p>Read the question gently, out loud. Give the person time to sit with it, without interrupting.</p></div></li>
-<li class="hp-reveal"><span class="ht-step-num" aria-hidden="true">05</span><div><h3>Close gently</h3><p>End the session with something soft and grounding:</p><ul class="ht-chips"><li>A hug</li><li>A shared breath</li><li>A final thank you</li><li>A moment of silence</li></ul></div></li>
+<section id="steps" class="ht-deck-section">
+<div class="hp-wrap ht-section-head"><div><p class="hp-eyebrow">Getting started</p><h2 class="dk-list-title">Five gentle steps.</h2></div>
+<div class="ht-rail-nav" hidden><button type="button" class="ht-rail-prev" aria-label="Previous card"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="ht-rail-next" aria-label="Next card">{% include arrow.html size="20" %}</button></div></div>
+<ol class="ht-rail">
+{% capture back %}<h3 class="ht-back-title">Allow time &amp; set the space</h3><p>Light a candle, dim the lights, put on some soulful music if it feels right. Create a space that feels calm and safe, then take a moment to breathe together.</p><p class="ht-say">You may say: “Today, we open ourselves to truth, to memory, and to whatever needs to be spoken or heard.”</p>{% endcapture %}
+{% include question-card.html shift="0deg" tint="#9A5F3C" label="Step 01" title="Allow time &amp; set the space" back=back %}
+{% capture back %}<h3 class="ht-back-title">Agree the ground rules</h3><ul class="ht-back-list"><li>There is no judgement</li><li>There is no rush</li><li>Silence is welcome</li><li>Passing is allowed</li></ul>{% endcapture %}
+{% include question-card.html shift="-30deg" tint="#A85F65" label="Step 02" title="Agree the ground rules" back=back %}
+{% capture back %}<h3 class="ht-back-title">Choose your approach</h3><ul class="ht-back-list ht-back-list-sm"><li>Choose one card intuitively</li><li>Select a deck that matches the feeling of the moment</li><li>Take turns choosing cards for each other</li><li>Move sequentially through a deck</li><li>Allow the person answering to choose</li><li>Shuffle cards and see what pops out</li></ul><p class="ht-small">There is no correct way. Follow what feels right in the moment.</p>{% endcapture %}
+{% include question-card.html shift="180deg" tint="#4F6475" label="Step 03" title="Choose your approach" back=back %}
+{% capture back %}<h3 class="ht-back-title">Ask and listen</h3><p>Read the question gently, out loud. Give the person time to sit with it, without interrupting.</p>{% endcapture %}
+{% include question-card.html shift="110deg" tint="#8FA897" label="Step 04" title="Ask and listen" back=back %}
+{% capture back %}<h3 class="ht-back-title">Close gently</h3><p>End the session with something soft and grounding:</p><ul class="ht-back-list"><li>A hug</li><li>A shared breath</li><li>A final thank you</li><li>A moment of silence</li></ul>{% endcapture %}
+{% include question-card.html shift="230deg" tint="#7D788C" label="Step 05" title="Close gently" back=back %}
 </ol>
-</div>
 </section>
 
 <section class="hp-statement ht-pauses">
@@ -45,30 +42,28 @@ permalink: /how-to-use/
 </section>
 
 <section id="during" class="ht-during hp-wrap hp-reveal">
-<div>
 <p class="hp-eyebrow">During the conversation</p>
-<h2 class="dk-list-title">Respond with kindness.</h2>
-<p class="ht-body">After an answer has been shared, you may respond with kindness:</p>
-<ul class="ht-kind"><li>“Thank you for sharing that.”</li><li>“I’ve never heard that before.”</li><li>“That helps me understand you more.”</li></ul>
+<h2 class="dk-list-title">After an answer has been shared, you may respond with kindness.</h2>
+<ul class="ht-kind-cards">
+<li style="--shift: 110deg"><img class="ht-splash ht-splash-top" src="{{ img }}/home/splash-top.webp" alt="" aria-hidden="true"><img class="ht-splash ht-splash-bottom" src="{{ img }}/home/splash-bottom.webp" alt="" aria-hidden="true"><p>“Thank you for sharing that.”</p></li>
+<li style="--shift: 0deg; --sat: 1"><img class="ht-splash ht-splash-top" src="{{ img }}/home/splash-top.webp" alt="" aria-hidden="true"><img class="ht-splash ht-splash-bottom" src="{{ img }}/home/splash-bottom.webp" alt="" aria-hidden="true"><p>“I’ve never heard that before.”</p></li>
+<li style="--shift: 180deg"><img class="ht-splash ht-splash-top" src="{{ img }}/home/splash-top.webp" alt="" aria-hidden="true"><img class="ht-splash ht-splash-bottom" src="{{ img }}/home/splash-bottom.webp" alt="" aria-hidden="true"><p>“That helps me understand you more.”</p></li>
+</ul>
 <p class="ht-body">If it feels right, you may ask one gentle follow-up question, but only if the space feels safe.</p>
-</div>
-<figure class="ht-witness">
-<img class="hp-flora ht-witness-flower" src="{{ img }}/home/dried-hydrangea.webp" alt="" aria-hidden="true" loading="lazy">
-<span class="hp-quote-mark" aria-hidden="true">“</span>
-<blockquote>You are not here to fix or correct. You are here to witness.</blockquote>
-</figure>
+<p class="ht-witness-line">You are not here to fix or correct. <em>You are here to witness.</em></p>
 </section>
 
-<section class="ht-rituals">
-<div class="hp-wrap">
-<p class="hp-eyebrow">Rituals</p>
-<h2 class="dk-list-title">Words to open and close.</h2>
-<div class="ht-ritual-grid">
-<article id="ritual-opening" class="ht-ritual hp-reveal">{% include icon.html name="candle" %}<h3>Opening script</h3><p class="ht-note">Before you begin, create a moment of stillness. You may wish to light a candle, hold hands, or sit in silence for a few breaths. Then softly say:</p><blockquote>“We come into this space with open hearts and gentle minds. We honour what has been lived, what has been loved, and what has shaped us. In this moment, there is no past and no future, only truth, only presence, only now. May our words be kind, our listening be deep, and love guide what is shared.”</blockquote><p class="ht-note">Pause. Breathe together. Begin when it feels right.</p></article>
-<article id="ritual-closing" class="ht-ritual hp-reveal">{% include icon.html name="leaf" %}<h3>Closing script</h3><p class="ht-note">When the session feels complete, you may say:</p><blockquote>“We honour what has been spoken and what has been felt. We thank each other for courage, for honesty and for listening. May what has been shared settle gently in our hearts, and may love continue to move through us.”</blockquote><p class="ht-note">You may finish with a hug, a hand over the heart, silence, or your own words of thanks.</p></article>
-<article id="toast-blessing" class="ht-ritual hp-reveal">{% include icon.html name="glass" %}<h3>Toast &amp; blessing</h3><p class="ht-note">Lift a cup, a glass of water, tea, wine or simply your hands and say:</p><blockquote>“To the stories that shaped us.<br>To the love that held us.<br>To the memories that live on.<br>To truth, to healing and to every moment we have left together.<br>May we speak with honesty and love without regret.”</blockquote><p class="ht-note">Then drink, breathe, and remain together in quiet presence.</p></article>
-</div>
-</div>
+<section id="rituals" class="ht-deck-section ht-rituals">
+<div class="hp-wrap ht-section-head"><div><p class="hp-eyebrow">Rituals</p><h2 class="dk-list-title">Words to open and close.</h2></div>
+<div class="ht-rail-nav" hidden><button type="button" class="ht-rail-prev" aria-label="Previous card"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="ht-rail-next" aria-label="Next card">{% include arrow.html size="20" %}</button></div></div>
+<ol class="ht-rail ht-rail-centre">
+{% capture back %}<p class="ht-small">Before you begin, create a moment of stillness. You may wish to light a candle, hold hands, or sit in silence for a few breaths. Then softly say:</p><blockquote>“We come into this space with open hearts and gentle minds. We honour what has been lived, what has been loved, and what has shaped us. In this moment, there is no past and no future, only truth, only presence, only now. May our words be kind, our listening be deep, and love guide what is shared.”</blockquote><p class="ht-small">Pause. Breathe together. Begin when it feels right.</p>{% endcapture %}
+{% include question-card.html id="ritual-opening" shift="-15deg" tint="#C79A8F" label="Ritual" title="Opening script" back=back %}
+{% capture back %}<p class="ht-small">When the session feels complete, you may say:</p><blockquote>“We honour what has been spoken and what has been felt. We thank each other for courage, for honesty and for listening. May what has been shared settle gently in our hearts, and may love continue to move through us.”</blockquote><p class="ht-small">You may finish with a hug, a hand over the heart, silence, or your own words of thanks.</p>{% endcapture %}
+{% include question-card.html id="ritual-closing" shift="110deg" tint="#8FA897" label="Ritual" title="Closing script" back=back %}
+{% capture back %}<p class="ht-small">Lift a cup, a glass of water, tea, wine or simply your hands and say:</p><blockquote>“To the stories that shaped us.<br>To the love that held us.<br>To the memories that live on.<br>To truth, to healing and to every moment we have left together.<br>May we speak with honesty and love without regret.”</blockquote><p class="ht-small">Then drink, breathe, and remain together in quiet presence.</p>{% endcapture %}
+{% include question-card.html id="toast-blessing" shift="180deg" tint="#4F6475" label="Ritual" title="Toast &amp; blessing" back=back %}
+</ol>
 </section>
 
 <section class="ht-alone hp-wrap hp-reveal">
