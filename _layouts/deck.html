@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% assign d = site.data.decks | where: "slug", page.deck | first %}
+{% assign others = site.data.decks | where_exp: "o", "o.slug != page.deck" %}
+{% assign themed = site.data.decks | where_exp: "o", "o.essential != true" %}
+<article class="pd" style="--deck: {{ d.color }}">
+<div class="hp-wrap">
+<a class="pd-back" href="{{ site.baseurl }}/the-decks/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All decks</a>
+
+<section class="pd-hero">
+<div class="pd-media hp-intro-late">
+<span class="pd-circle" aria-hidden="true"></span>
+{% if d.essential %}
+<div class="pd-fan" aria-hidden="true">{% assign pick = "3,1,0,4" | split: "," %}{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
+{% else %}
+<img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">
+{% endif %}
+</div>
+<div class="pd-copy hp-intro">
+<p class="hp-eyebrow hp-eyebrow-line">{% if d.essential %}Can’t choose just one?{% else %}Death Bed Questions{% endif %}</p>
+<h1>{{ d.name }}</h1>
+<p class="pd-desc">{{ d.description }}</p>
+<p class="pd-intro">{{ d.intro }}</p>
+<p class="pd-explores"><strong>The questions explore</strong> {{ d.explores }}.</p>
+<p class="dk-meta"><span aria-hidden="true"></span>52 question cards, plus one user guide card</p>
+<div class="dk-actions"><a class="hp-btn hp-btn-primary" href="{{ d.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/how-to-use/">How to use the cards {% include arrow.html %}</a></div>
+<p class="pd-promise">Ask deeply. Listen wholly. Love courageously.<span>Draw one card or many, choose a theme, and move at your own pace.</span></p>
+</div>
+</section>
+
+<section class="pd-lists hp-reveal">
+<div class="pd-list"><h2>This deck may be for you if</h2><ul>{% for i in d.for_you %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div class="pd-list"><h2>This deck can support</h2><ul>{% for i in d.supports %}<li>{{ i }}</li>{% endfor %}</ul></div>
+</section>
+
+<section class="pd-others hp-reveal">
+<div class="hp-decks-head"><div><p class="hp-eyebrow">Explore the other decks</p><h2>Every theme holds its own conversations.</h2></div><a class="hp-text-link" href="{{ site.baseurl }}/the-decks/">See all the decks {% include arrow.html %}</a></div>
+<div class="pd-others-grid">{% for o in others %}{% unless o.essential %}<a class="hp-deck" href="{{ site.baseurl }}/product/{{ o.slug }}/"><img src="{{ site.baseurl }}{{ o.image }}" alt="{{ o.name }} deck artwork" loading="lazy"><span class="hp-deck-name">{{ o.name }}</span></a>{% endunless %}{% endfor %}{% unless d.essential %}<a class="pd-other-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><span class="hp-eyebrow">Can’t choose just one?</span><span class="hp-deck-name">The Essential Collection</span>{% include arrow.html %}</a>{% endunless %}</div>
+</section>
+</div>
+</article>
