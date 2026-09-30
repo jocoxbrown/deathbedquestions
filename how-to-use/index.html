@@ -32,7 +32,7 @@ hide_order_banner: true
 </div>
 </article>
 <article class="ht-step hp-reveal ht-step-flip">
-<div class="ht-step-media"><img src="{{ img }}/home/about-hands-card.webp" alt="Hands holding a Death Bed Questions card beside candles and flowers" loading="lazy"></div>
+<div class="ht-step-media"><img class="hp-flora ht-step-flower ht-step-flower-tr" src="{{ img }}/home/dried-cream-branch.webp" alt="" aria-hidden="true" loading="lazy"><img src="{{ img }}/home/about-hands-card.webp" alt="Hands holding a Death Bed Questions card beside candles and flowers" loading="lazy"></div>
 <div class="ht-step-copy">
 <p class="ht-step-num"><span class="visually-hidden">Step </span>II</p>
 <h3>Choose a card</h3>
@@ -42,7 +42,7 @@ hide_order_banner: true
 </div>
 </article>
 <article class="ht-step hp-reveal">
-<div class="ht-step-media"><img src="{{ img }}/home/step-make-it-your-own.webp" alt="An older woman reading a card to a younger woman by a window" loading="lazy" style="object-position:50% 62%"></div>
+<div class="ht-step-media"><img class="hp-flora ht-step-flower ht-step-flower-bl" src="{{ img }}/home/dried-delphinium-flower.webp" alt="" aria-hidden="true" loading="lazy"><img src="{{ img }}/home/step-make-it-your-own.webp" alt="An older woman reading a card to a younger woman by a window" loading="lazy" style="object-position:50% 62%"></div>
 <div class="ht-step-copy">
 <p class="ht-step-num" style="color: #9a5f3c"><span class="visually-hidden">Step </span>III</p>
 <h3>Make it your own</h3>
@@ -51,7 +51,7 @@ hide_order_banner: true
 </div>
 </article>
 <article class="ht-step hp-reveal ht-step-flip">
-<div class="ht-step-media"><img src="{{ img }}/home/step-kindness.webp" alt="Two people holding hands" loading="lazy" style="object-position:50% 45%"></div>
+<div class="ht-step-media"><img class="hp-flora ht-step-flower ht-step-flower-bl ht-step-flower-sm" src="{{ img }}/home/dried-hydrangea.webp" alt="" aria-hidden="true" loading="lazy"><img src="{{ img }}/home/step-kindness.webp" alt="Two people holding hands" loading="lazy" style="object-position:50% 45%"></div>
 <div class="ht-step-copy">
 <p class="ht-step-num" style="color: #5a4a30"><span class="visually-hidden">Step </span>IV</p>
 <h3>Respond with kindness</h3>
@@ -92,20 +92,23 @@ hide_order_banner: true
 </div>
 </section>
 
-<section id="rituals" class="ht-deck-section ht-rituals">
-<div class="hp-wrap ht-section-head"><div><p class="hp-eyebrow">Rituals</p><h2 class="dk-list-title">Words to open and close.</h2><p class="ht-rail-hint">Turn each card over to read it.</p></div>
-<div class="ht-rail-nav" hidden><button type="button" class="ht-rail-prev" aria-label="Previous card"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="ht-rail-next" aria-label="Next card">{% include arrow.html size="20" %}</button></div></div>
-<ol class="ht-rail ht-rail-centre">
-{% capture back %}<p class="ht-small">Before you begin, create a moment of stillness. You may wish to light a candle, hold hands, or sit in silence for a few breaths. Then softly say:</p><blockquote>“We come into this space with open hearts and gentle minds. We honour what has been lived, what has been loved, and what has shaped us. In this moment, there is no past and no future, only truth, only presence, only now. May our words be kind, our listening be deep, and love guide what is shared.”</blockquote><p class="ht-small">Pause. Breathe together. Begin when it feels right.</p>{% endcapture %}
-{% include question-card.html id="ritual-opening" shift="-15deg" tint="#C79A8F" label="Ritual" title="Opening script" back=back %}
-{% capture back %}<p class="ht-small">When the session feels complete, you may say:</p><blockquote>“We honour what has been spoken and what has been felt. We thank each other for courage, for honesty and for listening. May what has been shared settle gently in our hearts, and may love continue to move through us.”</blockquote><p class="ht-small">You may finish with a hug, a hand over the heart, silence, or your own words of thanks.</p>{% endcapture %}
-{% include question-card.html id="ritual-closing" shift="110deg" tint="#8FA897" label="Ritual" title="Closing script" back=back %}
-{% capture back %}<p class="ht-small">Lift a cup, a glass of water, tea, wine or simply your hands and say:</p><blockquote>“To the stories that shaped us.<br>To the love that held us.<br>To the memories that live on.<br>To truth, to healing and to every moment we have left together.<br>May we speak with honesty and love without regret.”</blockquote><p class="ht-small">Then drink, breathe, and remain together in quiet presence.</p>{% endcapture %}
-{% include question-card.html id="toast-blessing" shift="180deg" tint="#4F6475" label="Ritual" title="Toast &amp; blessing" back=back %}
+<section id="rituals" class="ht-rituals hp-reveal">
+<div class="hp-wrap">
+<p class="hp-eyebrow">Rituals</p>
+<h2 class="dk-list-title">Words to open and close.</h2>
+<ol class="ht-scripts">
+<li><h3>Opening script</h3><p class="ht-script-note">Before you begin, create a moment of stillness. You may wish to light a candle, hold hands, or sit in silence for a few breaths. Then softly say:</p><blockquote>“We come into this space with open hearts and gentle minds. We honour what has been lived, what has been loved, and what has shaped us. In this moment, there is no past and no future, only truth, only presence, only now. May our words be kind, our listening be deep, and love guide what is shared.”</blockquote><p class="ht-script-note">Pause. Breathe together. Begin when it feels right.</p></li>
+<li><h3>Closing script</h3><p class="ht-script-note">When the session feels complete, you may say:</p><blockquote>“We honour what has been spoken and what has been felt. We thank each other for courage, for honesty and for listening. May what has been shared settle gently in our hearts, and may love continue to move through us.”</blockquote><p class="ht-script-note">You may finish with a hug, a hand over the heart, silence, or your own words of thanks.</p></li>
+<li><h3>Toast &amp; blessing</h3><p class="ht-script-note">Lift a cup, a glass of water, tea, wine or simply your hands and say:</p><blockquote>“To the stories that shaped us.<br>To the love that held us.<br>To the memories that live on.<br>To truth, to healing and to every moment we have left together.<br>May we speak with honesty and love without regret.”</blockquote><p class="ht-script-note">Then drink, breathe, and remain together in quiet presence.</p></li>
 </ol>
+</div>
 </section>
 
-<section class="ht-alone hp-wrap hp-reveal">
-<p class="ht-final">These conversations are sacred. Let them settle in your heart.</p>
-<a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/the-decks/">Explore the decks {% include arrow.html %}</a>
+<section class="ht-closing">
+<div class="hp-wrap ht-closing-inner hp-reveal">
+<img class="hp-flora ht-closing-stem" src="{{ img }}/home/dried-delphinium-stem.webp" alt="" aria-hidden="true" loading="lazy">
+<img class="hp-flora ht-closing-branch" src="{{ img }}/home/dried-cream-branch.webp" alt="" aria-hidden="true" loading="lazy">
+<p class="hp-eyebrow">A final thought</p>
+<p class="ht-final">What was shared here is precious. <em>Carry it gently with you.</em></p>
+</div>
 </section>

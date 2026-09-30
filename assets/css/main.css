@@ -538,18 +538,19 @@ html{scroll-behavior:smooth}
 .ht-contents-arrow{position:absolute;left:22px;bottom:18px;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f1ebe0;color:var(--hp-ink);transition:translate .3s ease}
 .ht-contents a:hover .ht-contents-arrow{translate:0 3px}
 
-.ht-deck-section{padding:40px 0 110px}
-.ht-rail-hint{margin:10px 0 0;font-size:16px;color:var(--hp-body)}
-.ht-steps-section{padding:100px 0 60px;background:#fff}
+.ht-steps-section{padding:100px 0 100px;background:#f1efe6}
 .ht-step{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:88px;align-items:center;margin-top:72px}
 .ht-step+.ht-step{margin-top:110px}
 .ht-step-flip .ht-step-media{order:2}
 .ht-step-media{position:relative}
-.ht-step-media>img:not(.hp-flora){display:block;width:100%;height:600px;object-fit:cover;border-radius:24px;box-shadow:0 26px 54px rgba(60,45,25,.2)}
+.ht-step-media>img:not(.hp-flora){display:block;width:100%;height:600px;object-fit:cover;border-radius:24px;box-shadow:0 34px 70px -10px rgba(60,45,25,.38),0 10px 22px rgba(60,45,25,.14)}
 .ht-kind-list{list-style:none;margin:20px 0 0;padding:0}
 .ht-kind-list li{padding:10px 0;border-bottom:1px solid #eee4d4;font:italic 500 21px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
 .ht-step-flower{left:-60px;top:-70px;width:170px;transform:rotate(-16deg);z-index:1}
 .ht-step-flower-r{left:auto;right:-50px;top:auto;bottom:-56px;width:160px;transform:rotate(12deg)}
+.ht-step-flower-tr{left:auto;right:-54px;top:-64px;width:180px;transform:rotate(24deg)}
+.ht-step-flower-bl{left:-56px;top:auto;bottom:-50px;width:150px;transform:rotate(-10deg)}
+.ht-step-flower-sm{width:130px}
 .ht-step-num{margin:0;font:italic 500 88px/1 "Playfair Display",Georgia,serif;color:var(--hp-sand)}
 .ht-step h3{margin:6px 0 0;font:700 44px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ht-step-lead{margin:18px 0 0;font:italic 500 23px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
@@ -559,43 +560,22 @@ html{scroll-behavior:smooth}
 .ht-list{list-style:none;margin:10px 0 0;padding:0}
 .ht-list li{position:relative;padding:9px 0 9px 24px;border-bottom:1px solid #eee4d3;font-size:17px;line-height:1.45;color:var(--hp-ink)}
 .ht-list li::before{content:"";position:absolute;left:3px;top:17px;width:8px;height:8px;border-radius:50%;background:var(--hp-brown)}
-.ht-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
-.ht-rail-nav{display:flex;gap:10px}
-.ht-rail-nav[hidden]{display:none}
-.ht-rail-nav button{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;border:1.5px solid var(--hp-ink);background:transparent;color:var(--hp-ink);cursor:pointer;transition:background-color .3s ease,color .3s ease}
-.ht-rail-nav button:hover{background:var(--hp-ink);color:#fff}
-.ht-rail{list-style:none;margin:40px 0 0;padding:20px max(20px,calc((100% - 1280px)/2)) 40px;display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(20px,calc((100% - 1280px)/2));scrollbar-width:thin}
-.ht-rail-centre{justify-content:center}
 
-/* The card */
-.ht-card{flex:0 0 320px;aspect-ratio:7/12;scroll-snap-align:start;perspective:1400px;cursor:pointer}
-.ht-card-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-.ht-card.is-flipped .ht-card-inner{transform:rotateY(180deg)}
-.ht-card:hover .ht-card-inner{translate:0 -6px}
-.ht-face{position:absolute;inset:0;display:flex;flex-direction:column;box-sizing:border-box;border-radius:20px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 18px 40px rgba(60,45,25,.18)}
-.ht-front{align-items:center;justify-content:center;padding:36px 30px;text-align:center;background:#eeede7}
-.ht-back{transform:rotateY(180deg);padding:32px 28px 24px;background:color-mix(in srgb,var(--tint) 12%,#fbf8f2);overflow-y:auto}
-.ht-splash{position:absolute;pointer-events:none;filter:hue-rotate(var(--shift,0deg)) saturate(var(--sat,.5)) brightness(.97)}
-.ht-splash-top{left:0;top:0;width:62%}
-.ht-splash-bottom{right:0;bottom:0;width:60%}
-.ht-card-label{position:relative;margin:0;font:600 12px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#5a4a30}
-.ht-front .ht-card-label{position:absolute;top:26px;left:0;right:0}
-.ht-card-title{position:relative;margin:0;font:italic 500 30px/1.25 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-turn{position:absolute;left:50%;bottom:22px;translate:-50% 0;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border:0;border-radius:999px;background:rgba(255,255,255,.85);color:var(--hp-ink);font:600 14px "DM Sans",sans-serif;cursor:pointer;box-shadow:0 4px 12px rgba(60,45,25,.12)}
-.ht-back .ht-turn{position:static;translate:none;align-self:flex-start;margin-top:auto;background:#fff}
-.ht-turn:focus-visible{outline:3px solid var(--hp-olive);outline-offset:2px}
-.ht-back-title{margin:12px 0 0;font:700 24px/1.2 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-back p{margin:12px 0 0;font-size:15px;line-height:1.55;color:var(--hp-body)}
-.ht-back .ht-small{font-size:13.5px;line-height:1.5}
-.ht-back .ht-say{padding-left:14px;border-left:3px solid var(--tint);font:italic 17px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-back blockquote{margin:12px 0 4px;font:italic 16px/1.55 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-rituals .ht-card{flex-basis:350px}
-.ht-back .ht-turn{flex-shrink:0}
-.ht-back-list{list-style:none;margin:14px 0 16px;padding:0}
-.ht-back-list li{position:relative;padding:9px 0 9px 22px;border-top:1px solid rgba(29,27,23,.1);font-size:16px;line-height:1.4;color:var(--hp-ink)}
-.ht-back-list li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--tint)}
-.ht-back-list-sm li{padding:6px 0 6px 20px;font-size:14px}
-.ht-back-list-sm li::before{top:13px}
+
+.ht-rituals{padding:110px 0 120px;background:#fff}
+.ht-scripts{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.ht-scripts>li{padding:4px 44px 4px 0}
+.ht-scripts>li+li{padding-left:44px;border-left:1px solid #e2d5bf}
+.ht-scripts h3{margin:0;font:700 30px/1.15 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-script-note{margin:14px 0 0;font-size:15.5px;line-height:1.65;color:var(--hp-body)}
+.ht-scripts blockquote{margin:20px 0 0;padding-left:18px;border-left:3px solid var(--hp-sand);font:italic 500 19px/1.6 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-closing{padding:120px 0;text-align:center;background:radial-gradient(60% 80% at 50% 100%,rgba(255,255,255,.5),transparent 70%),#ebe0cd;border-top:1px solid #dccdb4}
+.ht-closing-inner{position:relative}
+.ht-closing .hp-eyebrow{display:block}
+.ht-final{margin:22px auto 0;max-width:860px;font:500 clamp(34px,4vw,54px)/1.2 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.ht-final em{display:block;color:var(--hp-brown)}
+.ht-closing-stem{left:0;top:-60px;width:170px;transform:rotate(-18deg)}
+.ht-closing-branch{right:0;top:-30px;width:170px;transform:rotate(20deg)}
 
 /* Emotions band */
 .ht-pauses{flex-direction:column}
@@ -603,11 +583,7 @@ html{scroll-behavior:smooth}
 .ht-pauses .hp-phrase{display:block}
 .ht-pauses .ht-pauses-note{margin-top:28px;max-width:640px;font:400 18px/1.6 "DM Sans",sans-serif;color:#f1ece2}
 
-/* During the conversation */
 
-.ht-rituals{padding-top:100px}
-.ht-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.ht-chips li{padding:8px 16px;border-radius:999px;border:1px solid #e4d9c7;font-size:15px;line-height:1.3;color:var(--hp-ink)}
 .ht-ways{padding:110px 0 120px;background:var(--hp-cream)}
 .ht-ways-list{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .ht-ways-list>li{padding:8px 48px 8px 0}
@@ -619,13 +595,7 @@ html{scroll-behavior:smooth}
 .ht-ways-options>div{padding:18px 0;border-top:1px solid #e2d5bf}
 .ht-ways-options dt{font:700 19px/1.3 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
 .ht-ways-options dd{margin:6px 0 0;font-size:16px;line-height:1.65;color:var(--hp-body)}
-.ht-alone{padding:100px 0 140px;text-align:center;max-width:760px}
-.ht-alone .hp-eyebrow{display:block}
-.ht-final{margin:22px 0 0;font:italic 500 clamp(30px,3.4vw,44px)/1.25 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
-.ht-alone .hp-btn{margin-top:36px}
 
-@media (prefers-reduced-motion: reduce){.ht-card-inner{transition:none}}
-@media(max-width:1100px){.ht-rail-centre{justify-content:flex-start}}
 @media(max-width:900px){.ht-hero{padding:48px 0 44px}
 .ht-hero-sub{font-size:20px}
 .ht-hero-stem,.ht-hero-branch{display:none}
@@ -634,22 +604,24 @@ html{scroll-behavior:smooth}
 .ht-contents a{padding:18px 56px 18px 18px}
 .ht-contents-arrow{left:auto;right:16px;top:50%;bottom:auto;translate:0 -50%}
 .ht-contents a:hover .ht-contents-arrow{translate:0 calc(-50% + 3px)}
-.ht-deck-section{padding:24px 0 64px}
 .ht-steps-section{padding:64px 0 24px}
 .ht-step,.ht-step+.ht-step{grid-template-columns:1fr;gap:24px;margin-top:48px}
 .ht-step-flip .ht-step-media{order:0}
 .ht-step-media>img:not(.hp-flora){height:400px;border-radius:20px}
 .ht-step-flower{left:-20px;top:-44px;width:104px}
 .ht-step-flower-r{left:auto;right:-14px;top:auto;bottom:-36px;width:100px}
+.ht-step-flower-tr{left:auto;right:-14px;top:-40px;width:110px}
+.ht-step-flower-bl{left:-16px;top:auto;bottom:-34px;width:96px}
 .ht-step-num{font-size:60px}
 .ht-step h3{font-size:32px}
 .ht-step-lead{font-size:20px}
-.ht-rail{margin-top:24px}
-.ht-card,.ht-rituals .ht-card{flex-basis:min(320px,84vw);aspect-ratio:7/13}
-.ht-card-title{font-size:27px}
-.ht-rituals{padding-top:64px}
 .ht-ways{padding:64px 0 72px}
 .ht-ways-list{grid-template-columns:1fr;margin-top:36px}
 .ht-ways-list>li,.ht-ways-list>li+li{padding:28px 0;border-left:0;border-top:1px solid #dccdb4}
 .ht-ways-list h3{font-size:28px}
-.ht-alone{padding:64px 0 80px}}
+.ht-rituals{padding:64px 0 72px}
+.ht-scripts{grid-template-columns:1fr;margin-top:32px}
+.ht-scripts>li,.ht-scripts>li+li{padding:28px 0;border-left:0;border-top:1px solid #e2d5bf}
+.ht-scripts h3{font-size:26px}
+.ht-closing{padding:80px 0}
+.ht-closing-stem,.ht-closing-branch{display:none}}
