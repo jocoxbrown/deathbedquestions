@@ -611,7 +611,7 @@ html{scroll-behavior:smooth}
 .ht-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .ht-chips li{padding:8px 16px;border-radius:999px;border:1px solid #e4d9c7;font-size:15px;line-height:1.3;color:var(--hp-ink)}
 .ht-ways{padding:110px 0 120px;background:var(--hp-cream)}
-.ht-ways-intro{margin:14px 0 0;max-width:620px;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.ht-ways-intro{margin:14px 0 0;font-size:17px;line-height:1.7;color:var(--hp-body)}
 .ht-ways-list{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .ht-ways-list>li{padding:8px 48px 8px 0}
 .ht-ways-list>li+li{padding-left:48px;border-left:1px solid #dccdb4}
