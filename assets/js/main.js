@@ -1,1 +1,2 @@
 const button=document.querySelector('.menu-button');const nav=document.querySelector('#site-nav');if(button&&nav){button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open));});}
+const heroCard=document.querySelector('.hp-hero-card');if(heroCard){const turn=()=>heroCard.classList.toggle('is-flipped');heroCard.addEventListener('click',turn);heroCard.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();turn();}});}
