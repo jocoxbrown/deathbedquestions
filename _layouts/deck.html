@@ -33,7 +33,7 @@ layout: default
 <div class="pd-story-copy">
 <span class="pd-quote-mark" aria-hidden="true">“</span>
 <blockquote class="pd-lede">{{ d.lede }}</blockquote>
-<p class="pd-story-text">{{ d.story }}</p>
+<div class="pd-story-text">{{ d.story | markdownify }}</div>
 </div>
 <div class="pd-inside">
 <p class="hp-eyebrow">Inside this deck</p>
