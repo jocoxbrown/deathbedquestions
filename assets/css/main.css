@@ -247,28 +247,38 @@ a:hover .hp-arrow{translate:4px 0}
 .hp-fan:hover img:nth-child(3){translate:28px 6px;rotate:4deg}
 
 /* Footer (all pages) */
-.site-footer{background:var(--hp-olive);color:#fff;padding:0 0 40px;font-family:"DM Sans",sans-serif}
+.site-footer{background:var(--hp-olive);color:#fff;padding:0 0 36px;font-family:"DM Sans",sans-serif}
 .is-home .site-footer{margin-top:0}
-.sf-wrap{width:min(calc(100% - 160px),1280px);margin-inline:auto;padding-top:80px}
-.sf-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:56px}
-.sf-line{margin:0;font:italic 400 30px/1.25 "Playfair Display",Georgia,serif}
-.sf-intro p:not(.sf-line){margin:18px 0 0;font-size:15px;line-height:1.6;color:#eeeae0}
-.sf-links{display:flex;flex-direction:column;gap:12px}
-.sf-links h2{margin:0;font:700 13px "DM Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff}
-.sf-links a{font-size:15px;color:#fff;text-decoration:none}
-.sf-links a:hover{text-decoration:underline}
-.news-band{margin-top:56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:center;padding:44px 52px;border-radius:24px;background:var(--hp-sand);color:var(--hp-ink);box-shadow:0 18px 40px rgba(40,35,20,.18)}
+.footer-connect+.sf-wrap{padding-top:24px}
+.sf-wrap{width:min(calc(100% - 160px),1280px);margin-inline:auto;padding-top:96px}
+.news-band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center;padding:56px 64px;border-radius:28px;background:var(--hp-sand);color:var(--hp-ink);box-shadow:0 24px 50px rgba(40,35,20,.2)}
 .news-band .hp-eyebrow{color:#5a4a30;font-weight:700}
-.news-line{margin:12px 0 0;font:500 30px/1.25 "Playfair Display",Georgia,serif}
+.news-line{margin:14px 0 0;max-width:460px;font:500 32px/1.25 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.news-band .signup{max-width:none;margin:0}
 .news-band .signup label{font-weight:600;font-size:14px;color:var(--hp-ink)}
 .news-band .signup-row{margin-top:10px;gap:10px}
-.news-band .signup-row input{height:58px;padding:0 22px;border:0;border-radius:999px;background:#fff;font:16px "DM Sans",sans-serif}
-.news-band .signup-row button{height:58px;padding:0 32px;border:0;border-radius:999px;background:var(--hp-ink);color:#fff;font:700 16px "DM Sans",sans-serif;cursor:pointer}
+.news-band .signup-row input{flex:1 1 auto;min-width:0;height:58px;box-sizing:border-box;padding:0 24px;border:0;border-radius:999px;background:#fff;font:16px "DM Sans",sans-serif}
+.news-band .signup-row button{flex:none;height:58px;padding:0 34px;border:0;border-radius:999px;background:var(--hp-ink);color:#fff;font:700 16px "DM Sans",sans-serif;cursor:pointer}
 .news-band .signup-row button:hover{filter:brightness(1.25)}
-.news-band .signup-consent,.news-band .signup p{color:#4a3f2c}
-.news-band .signup p{margin:10px 0 0;font-size:13px}
+.news-band .signup-consent{display:flex;align-items:flex-start;gap:10px;margin-top:16px;font-size:14px;line-height:1.5;color:#4a3f2c}
+.news-band .signup-consent input{margin:3px 0 0;width:16px;height:16px;accent-color:var(--hp-ink)}
+.news-band .signup p{margin:10px 0 0;font-size:13px;line-height:1.5;color:#5a4d36}
 .news-band .signup a{color:inherit}
-.sf-bottom{margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,.3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#eeeae0}
+.sf-grid{margin-top:88px;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr) minmax(0,1fr);gap:64px}
+.sf-brand{display:inline-block}
+.sf-brand img{display:block;width:170px;filter:brightness(0) invert(1);opacity:.95}
+.sf-line{margin:28px 0 0;font:italic 400 28px/1.3 "Playfair Display",Georgia,serif}
+.sf-desc{margin:14px 0 0;max-width:420px;font-size:15.5px;line-height:1.6;color:#eeeae0}
+.sf-social{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:10px 18px;border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-size:14.5px;text-decoration:none;transition:background .2s ease,border-color .2s ease}
+.sf-social:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.sf-links{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding-top:6px}
+.sf-links h2{margin:0 0 6px;font:700 12.5px "DM Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#e6dfcf}
+.sf-links a{font-size:16px;color:#fff;text-decoration:none;text-underline-offset:4px}
+.sf-links a:hover{text-decoration:underline}
+.sf-bottom{margin-top:80px;padding-top:28px;border-top:1px solid rgba(255,255,255,.28);display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;font-size:13.5px;color:#eeeae0}
+.sf-bottom p{margin:0;display:flex;align-items:center;gap:10px}
+.sf-bottom a{color:inherit;text-underline-offset:3px}
+.sf-motto{font:italic 16px "Playfair Display",Georgia,serif}
 
 /* Tablet */
 @media(max-width:1100px){.hp-essential-text{white-space:normal}
@@ -302,11 +312,12 @@ a:hover .hp-arrow{translate:4px 0}
 .hp-fan img:nth-child(2){left:100px;top:20px}
 .hp-fan img:nth-child(3){left:180px;top:44px}
 .sf-wrap{padding-top:56px}
-.sf-grid{grid-template-columns:1fr 1fr;gap:36px 24px}
+.sf-grid{margin-top:56px;grid-template-columns:1fr 1fr;gap:44px 24px}
 .sf-intro{grid-column:1/-1}
-.news-band{grid-template-columns:1fr;gap:20px;padding:28px 22px;border-radius:20px}
-.news-line{font-size:22px;line-height:1.3}
-.sf-line{font-size:26px}}
+.news-band{grid-template-columns:1fr;gap:24px;padding:32px 24px;border-radius:22px}
+.news-line{font-size:24px;line-height:1.3}
+.sf-line{font-size:24px}
+.sf-bottom{margin-top:56px;flex-direction:column;align-items:flex-start}}
 /* Phone */
 @media(max-width:600px){.announce-bar{font-size:11px;gap:4px 14px}
 .announce-bar .announce-dot{display:none}
@@ -333,7 +344,7 @@ a:hover .hp-arrow{translate:4px 0}
 .hp-order h2{font-size:34px}
 .hp-order .hp-btn{width:100%}
 .news-band .signup-row{flex-direction:column}
-.news-band .signup-row input,.news-band .signup-row button{height:52px;width:100%}}
+.news-band .signup-row input,.news-band .signup-row button{flex:none;height:54px;width:100%}}
 .is-home main{overflow-x:clip}
 .footer-connect .footer-order{border-radius:999px;background:var(--hp-ink);font:700 16px "DM Sans",sans-serif}
 
