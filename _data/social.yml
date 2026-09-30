@@ -1,0 +1,10 @@
+# Footer social links. Leave a url empty to hide that icon.
+- name: Instagram
+  icon: instagram
+  url: "https://www.instagram.com/deathbedquestions"
+- name: X (Twitter)
+  icon: x
+  url: ""
+- name: TikTok
+  icon: tiktok
+  url: ""
