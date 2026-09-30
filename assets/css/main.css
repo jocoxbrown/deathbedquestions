@@ -545,9 +545,7 @@ html{scroll-behavior:smooth}
 .ht-step+.ht-step{margin-top:110px}
 .ht-step-flip .ht-step-media{order:2}
 .ht-step-media{position:relative}
-.ht-step-media>img:not(.hp-flora){display:block;width:100%;height:480px;object-fit:cover;border-radius:24px;box-shadow:0 26px 54px rgba(60,45,25,.2)}
-.ht-step-media-card{display:grid;place-items:center;height:480px;border-radius:24px;background:#efe5d4}
-.ht-step-media-card>img:not(.hp-flora){width:auto;height:400px;max-width:80%;object-fit:contain;border-radius:14px;rotate:-3deg;box-shadow:0 18px 36px rgba(60,45,25,.18)}
+.ht-step-media>img:not(.hp-flora){display:block;width:100%;height:600px;object-fit:cover;border-radius:24px;box-shadow:0 26px 54px rgba(60,45,25,.2)}
 .ht-kind-list{list-style:none;margin:20px 0 0;padding:0}
 .ht-kind-list li{padding:10px 0;border-bottom:1px solid #eee4d4;font:italic 500 21px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
 .ht-step-flower{left:-60px;top:-70px;width:170px;transform:rotate(-16deg);z-index:1}
@@ -641,9 +639,7 @@ html{scroll-behavior:smooth}
 .ht-steps-section{padding:64px 0 24px}
 .ht-step,.ht-step+.ht-step{grid-template-columns:1fr;gap:24px;margin-top:48px}
 .ht-step-flip .ht-step-media{order:0}
-.ht-step-media>img:not(.hp-flora){height:300px;border-radius:20px}
-.ht-step-media-card{height:340px}
-.ht-step-media-card>img:not(.hp-flora){height:280px}
+.ht-step-media>img:not(.hp-flora){height:400px;border-radius:20px}
 .ht-step-flower{left:-20px;top:-44px;width:104px}
 .ht-step-flower-r{left:auto;right:-14px;top:auto;bottom:-36px;width:100px}
 .ht-step-num{font-size:60px}
