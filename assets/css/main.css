@@ -519,7 +519,8 @@ html{scroll-behavior:smooth}
 /* ==========================================================
    How to Use page (ht-*): steps and rituals as turnable cards
    ========================================================== */
-.ht-hero{position:relative;padding:88px 0 72px;text-align:center}
+.ht-hero{position:relative;padding:88px 0 80px;text-align:center;background:radial-gradient(60% 70% at 50% 0%,rgba(255,255,255,.55),transparent 70%),#ebe0cd;border-bottom:1px solid #dccdb4}
+.ht-hero-inner{position:relative}
 .ht-hero .hp-eyebrow{display:block}
 .ht-hero h1{margin:20px 0 0;font:800 clamp(46px,5.6vw,80px)/1 "Playfair Display",Georgia,serif;letter-spacing:-.02em;color:var(--hp-olive-text)}
 .ht-hero-sub{margin:26px auto 0;max-width:640px;font:500 24px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
@@ -539,19 +540,26 @@ html{scroll-behavior:smooth}
 
 .ht-deck-section{padding:40px 0 110px}
 .ht-rail-hint{margin:10px 0 0;font-size:16px;color:var(--hp-body)}
-.ht-guide-section{padding:40px 0 110px}
-.ht-guide{position:relative;margin-top:40px;padding:72px 80px 64px;border-radius:28px;background:#eeede7;box-shadow:0 18px 44px rgba(60,45,25,.12);overflow:hidden;--sat:1}
-.ht-guide .ht-splash{opacity:.7}
-.ht-guide .ht-splash-top{width:300px}
-.ht-guide .ht-splash-bottom{width:290px}
-.ht-guide-steps{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 72px}
-.ht-guide-steps>li{padding-top:26px;border-top:1px solid rgba(29,27,23,.16)}
-.ht-numeral{display:block;font:italic 600 44px/1 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
-.ht-guide-steps h3{margin:14px 0 0;font:700 32px/1.15 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-guide-steps p{margin:12px 0 0;font-size:16px;line-height:1.65;color:var(--hp-body)}
-.ht-guide-steps .ht-guide-lead{font:italic 500 21px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-guide-steps .ht-say{padding-left:16px;border-left:3px solid var(--hp-sand);font:italic 17px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-guide .ht-chips li{background:rgba(255,255,255,.7)}
+.ht-steps-section{padding:100px 0 60px;background:#fff}
+.ht-step{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:88px;align-items:center;margin-top:72px}
+.ht-step+.ht-step{margin-top:110px}
+.ht-step-flip .ht-step-media{order:2}
+.ht-step-media{position:relative}
+.ht-step-media>img:not(.hp-flora){display:block;width:100%;height:480px;object-fit:cover;border-radius:24px;box-shadow:0 26px 54px rgba(60,45,25,.2)}
+.ht-step-flower{left:-60px;top:-70px;width:170px;transform:rotate(-16deg);z-index:1}
+.ht-step-flower-r{left:auto;right:-50px;top:auto;bottom:-56px;width:160px;transform:rotate(12deg)}
+.ht-step-num{margin:0;font:italic 500 88px/1 "Playfair Display",Georgia,serif;color:var(--hp-sand)}
+.ht-step h3{margin:6px 0 0;font:700 44px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-step-lead{margin:18px 0 0;font:italic 500 23px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-step-copy>p:not(.ht-step-num):not(.ht-step-lead){margin:16px 0 0;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.ht-step-copy .ht-say{padding-left:18px;border-left:3px solid var(--hp-sand);font:italic 18px/1.55 "Playfair Display",Georgia,serif!important;color:var(--hp-ink)!important}
+.ht-step-copy .ht-list-label{margin-bottom:0!important;font-weight:600;color:var(--hp-ink)!important}
+.ht-list{list-style:none;margin:10px 0 0;padding:0}
+.ht-list li{position:relative;padding:9px 0 9px 24px;border-bottom:1px solid #eee4d3;font-size:17px;line-height:1.45;color:var(--hp-ink)}
+.ht-list li::before{content:"";position:absolute;left:3px;top:17px;width:8px;height:8px;border-radius:50%;background:var(--hp-brown)}
+.ht-list-inline{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:18px}
+.ht-list-inline li{border:0;padding:4px 0 4px 20px}
+.ht-list-inline li::before{top:12px}
 .ht-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 .ht-rail-nav{display:flex;gap:10px}
 .ht-rail-nav[hidden]{display:none}
@@ -619,7 +627,7 @@ html{scroll-behavior:smooth}
 
 @media (prefers-reduced-motion: reduce){.ht-card-inner{transition:none}}
 @media(max-width:1100px){.ht-rail-centre{justify-content:flex-start}}
-@media(max-width:900px){.ht-hero{padding:48px 0 40px}
+@media(max-width:900px){.ht-hero{padding:48px 0 44px}
 .ht-hero-sub{font-size:20px}
 .ht-hero-stem,.ht-hero-branch{display:none}
 .ht-contents{margin-top:32px}
@@ -627,14 +635,16 @@ html{scroll-behavior:smooth}
 .ht-contents a{padding:18px 56px 18px 18px}
 .ht-contents-arrow{left:auto;right:16px;top:50%;bottom:auto;translate:0 -50%}
 .ht-contents a:hover .ht-contents-arrow{translate:0 calc(-50% + 3px)}
-.ht-deck-section,.ht-guide-section{padding:24px 0 64px}
-.ht-guide{margin-top:28px;padding:40px 24px 36px;border-radius:22px}
-.ht-guide .ht-splash-top{width:190px}
-.ht-guide .ht-splash-bottom{width:180px}
-.ht-guide-steps{grid-template-columns:1fr;gap:32px}
-.ht-guide-steps h3{font-size:26px}
-.ht-numeral{font-size:36px}
-.ht-guide-steps .ht-guide-lead{font-size:19px}
+.ht-deck-section{padding:24px 0 64px}
+.ht-steps-section{padding:64px 0 24px}
+.ht-step,.ht-step+.ht-step{grid-template-columns:1fr;gap:24px;margin-top:48px}
+.ht-step-flip .ht-step-media{order:0}
+.ht-step-media>img:not(.hp-flora){height:300px;border-radius:20px}
+.ht-step-flower{left:-20px;top:-44px;width:104px}
+.ht-step-flower-r{left:auto;right:-14px;top:auto;bottom:-36px;width:100px}
+.ht-step-num{font-size:60px}
+.ht-step h3{font-size:32px}
+.ht-step-lead{font-size:20px}
 .ht-rail{margin-top:24px}
 .ht-card,.ht-rituals .ht-card{flex-basis:min(320px,84vw);aspect-ratio:7/13}
 .ht-card-title{font-size:27px}
