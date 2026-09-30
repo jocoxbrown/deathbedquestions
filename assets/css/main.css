@@ -571,8 +571,7 @@ html{scroll-behavior:smooth}
 .ht-scripts blockquote{margin:20px 0 0;padding-left:18px;border-left:3px solid var(--hp-sand);font:italic 500 19px/1.6 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ht-closing{padding:120px 0;text-align:center;background:radial-gradient(60% 80% at 50% 100%,rgba(255,255,255,.5),transparent 70%),#ebe0cd;border-top:1px solid #dccdb4}
 .ht-closing-inner{position:relative}
-.ht-closing .hp-eyebrow{display:block}
-.ht-final{margin:22px auto 0;max-width:860px;font:500 clamp(34px,4vw,54px)/1.2 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.ht-final{margin:0 auto;max-width:860px;font:500 clamp(34px,4vw,54px)/1.2 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
 .ht-final em{display:block;color:var(--hp-brown)}
 .ht-closing-stem{left:0;top:-60px;width:170px;transform:rotate(-18deg)}
 .ht-closing-branch{right:0;top:-30px;width:170px;transform:rotate(20deg)}
