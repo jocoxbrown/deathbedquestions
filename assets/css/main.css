@@ -435,10 +435,6 @@ html{scroll-behavior:smooth}
 .pd-copy h1{margin:22px 0 0;font:800 clamp(40px,4.6vw,64px)/1.02 "Playfair Display",Georgia,serif;letter-spacing:-.01em;color:var(--hp-olive-text)}
 .pd-desc{margin:22px 0 0;font:italic 24px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .pd-intro{margin:18px 0 0;font-size:17px;line-height:1.7;color:var(--hp-body)}
-.pd-explores{margin:16px 0 0;font-size:16px;line-height:1.6;color:var(--hp-body)}
-.pd-explores strong{color:var(--hp-ink)}
-.pd-promise{margin:34px 0 0;padding-top:24px;border-top:1px solid #e4d9c7;font:italic 600 20px/1.35 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.pd-promise span{display:block;margin-top:6px;font:400 15px/1.5 "DM Sans",sans-serif;color:var(--hp-body)}
 .pd-story{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start;margin-top:90px;padding:72px 72px 64px;border-radius:28px;background:color-mix(in srgb,var(--deck) 10%,#fbf8f2)}
 .pd-story-flower{right:-50px;top:-60px;width:170px;transform:rotate(12deg)}
 .pd-quote-mark{display:block;font:400 110px/.55 "Playfair Display",Georgia,serif;color:var(--deck)}
