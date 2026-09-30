@@ -550,7 +550,7 @@ html{scroll-behavior:smooth}
 .ht-step-flower-r{left:auto;right:-50px;top:auto;bottom:-56px;width:160px;transform:rotate(12deg)}
 .ht-step-flower-tr{left:auto;right:-54px;top:-64px;width:180px;transform:rotate(24deg)}
 .ht-step-flower-bl{left:-56px;top:auto;bottom:-50px;width:150px;transform:rotate(-10deg)}
-.ht-step-flower-sm{width:130px}
+.ht-step-flower-branch{width:170px;bottom:-70px;transform:rotate(-120deg)}
 .ht-step-num{margin:0;font:italic 500 88px/1 "Playfair Display",Georgia,serif;color:var(--hp-sand)}
 .ht-step h3{margin:6px 0 0;font:700 44px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ht-step-lead{margin:18px 0 0;font:italic 500 23px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
