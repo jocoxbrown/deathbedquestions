@@ -1,10 +1,80 @@
 ---
-layout: page
+layout: default
 title: "The Decks"
 description: "Explore all seven Death Bed Questions conversation decks."
 permalink: /the-decks/
 ---
-<h2>Six themed decks, plus The Essential Collection.</h2>
-<figure><img src="{{ site.baseurl }}/assets/images/Vector.png" alt="" loading="lazy"></figure>
-Each deck contains 52 question cards, plus one user guide card. That is 312 questions across the six themed decks. The Essentials Collection contains a curated selection from the six themes; it is not an additional set of completely different questions. When my mum was dying, I had 5 months to say goodbye. Every night after work I went to the hospital and we would sit with a cup of tea or a cold fanta and ice cream on the hot nights and we managed to work our way through all of them, sometimes it was just one question other days we would power through 10 or more, our conversations were rich and peppered with things we’d never explored before in life. It helped us both to say goodbye and heal whilst we could. The memories are one of my most treasured possessions.<section class="deck-grid"><a class="deck-card" href="{{ site.baseurl }}/product/roots-heritage/"><img src="{{ site.baseurl }}/assets/images/Roots-and-Heritage.png" alt="Roots &amp; Heritage"><h2>Roots & Heritage</h2><p>A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/childhood-becoming/"><img src="{{ site.baseurl }}/assets/images/Childhood-and-Becoming.png" alt="Childhood &amp; Becoming"><h2>Childhood & Becoming</h2><p>A tender return to the moments and influences that shaped who you became.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/love-connection/"><img src="{{ site.baseurl }}/assets/images/Love-Connection-Deck.png" alt="Love &amp; Connection"><h2>Love & Connection</h2><p>A heart-opening deck designed to deepen closeness, trust, and emotional understanding.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/loss-regret-forgiveness/"><img src="{{ site.baseurl }}/assets/images/Loss-Regret-Forgiveness-1.png" alt="Loss, Regret &amp; Forgiveness"><h2>Loss, Regret & Forgiveness</h2><p>A tender deck for exploring grief, regret, forgiveness, and emotional release.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/meaning-purpose/"><img src="{{ site.baseurl }}/assets/images/Meaning-Purpose-Deck.png" alt="Meaning &amp; Purpose"><h2>Meaning & Purpose</h2><p>A reflective deck for discovering what truly mattered.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/legacy-letting-go/"><img src="{{ site.baseurl }}/assets/images/Legacy-and-letting-go.png" alt="Legacy &amp; Letting Go"><h2>Legacy & Letting Go</h2><p>A sacred deck designed to help you explore endings, legacy, and release.</p></a><a class="deck-card" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><img src="{{ site.baseurl }}/assets/images/banner-image.png" alt="The Essential Collection"><h2>The Essential Collection</h2><p>A curated selection of question cards from the six themes, not an additional set of completely different questions.</p></a></section>
-<section class="who-for"><h2>Who It's For</h2><img class="heading-rule" src="{{ site.baseurl }}/assets/images/Vector.png" alt=""><ul><li>Those who want deeper relationships</li><li>Anyone preparing for a goodbye</li><li>Those healing from loss</li><li>Anyone who feels called to connect on a deeper level</li><li>Those who believe conversations can change lives</li></ul></section>
+{% assign themed = site.data.decks | where_exp: "d", "d.essential != true" %}
+{% assign essential = site.data.decks | where: "essential", true | first %}
+<section class="dk-hero hp-wrap">
+<div class="dk-hero-copy hp-intro">
+<p class="hp-eyebrow hp-eyebrow-line">The decks</p>
+<h1>Which conversation is waiting for you?</h1>
+<h2 class="dk-sub">Six themed decks, plus The Essential Collection.</h2>
+<dl class="dk-stats"><div><dt>6</dt><dd>themed decks</dd></div><div><dt>312</dt><dd>questions to explore</dd></div><div><dt>52</dt><dd>cards in every deck</dd></div></dl>
+</div>
+<div class="dk-hero-media hp-intro-late">
+<div class="hp-glow dk-hero-glow" aria-hidden="true"></div>
+<div class="dk-hero-fan">{% for d in themed %}<a class="dk-jump-card" href="#{{ d.anchor }}" aria-label="Go to {{ d.name }}" style="--i:{{ forloop.index0 }}"><img src="{{ site.baseurl }}{{ d.image }}" alt=""></a>{% endfor %}</div>
+<img class="hp-flora dk-hero-branch" src="{{ site.baseurl }}/assets/images/home/dried-cream-branch.webp" alt="" aria-hidden="true">
+</div>
+</section>
+
+<nav class="dk-chips hp-wrap" aria-label="Jump to a deck">{% for d in themed %}<a href="#{{ d.anchor }}"><span style="background: {{ d.color }}"></span>{{ d.name }}</a>{% endfor %}<a class="dk-chip-essential" href="#essential">The Essential Collection</a></nav>
+
+<section class="dk-story hp-wrap hp-reveal"><div class="dk-story-panel">
+<img class="hp-flora dk-story-flower" src="{{ site.baseurl }}/assets/images/home/dried-hydrangea.webp" alt="" aria-hidden="true" loading="lazy">
+<div class="dk-story-quote"><span class="hp-quote-mark" aria-hidden="true">“</span><blockquote>Sometimes it was just one question, other days we would power through ten or more.</blockquote></div>
+<div class="dk-story-text">
+<p>When my mum was dying, I had five months to say goodbye. Every night after work I went to the hospital and we would sit with a cup of tea, or a cold Fanta and ice cream on the hot nights, and we managed to work our way through all of them.</p>
+<p>Our conversations were rich and peppered with things we’d never explored before in life. It helped us both to say goodbye and heal whilst we could.</p>
+<p class="dk-story-end">The memories are one of my most treasured possessions.</p>
+<p class="hp-attribution">Jo Cox-Brown</p>
+</div>
+</div></section>
+
+<section class="dk-list">
+<div class="hp-wrap">
+<p class="hp-eyebrow">The six themed decks</p>
+<h2 class="dk-list-title">Six themes, one for every part of a life.</h2>
+{% for d in themed %}
+<article id="{{ d.anchor }}" class="dk-row hp-reveal{% cycle '', ' dk-row-flip' %}" style="--deck: {{ d.color }}">
+<div class="dk-row-media"><span class="dk-row-circle" aria-hidden="true"></span><img src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork" loading="lazy"></div>
+<div class="dk-row-copy">
+<p class="dk-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</p>
+<h3>{{ d.name }}</h3>
+<p class="dk-desc">{{ d.description }}</p>
+<p class="dk-explores"><strong>The questions explore</strong> {{ d.explores }}.</p>
+<p class="dk-meta"><span aria-hidden="true"></span>52 question cards, plus one user guide card</p>
+<div class="dk-actions"><a class="hp-btn hp-btn-primary" href="{{ d.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ d.slug }}/">View the deck {% include arrow.html %}</a></div>
+</div>
+</article>
+{% endfor %}
+</div>
+</section>
+
+<section id="essential" class="dk-essential hp-wrap hp-reveal"><div class="dk-essential-panel">
+<div>
+<p class="hp-eyebrow hp-essential-label">Can’t choose just one?</p>
+<h2>The Essential Collection</h2>
+<p>A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</p>
+<div class="dk-actions"><a class="hp-btn dk-btn-ink" href="{{ essential.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ essential.slug }}/">View the collection {% include arrow.html %}</a></div>
+</div>
+<div class="dk-essential-fan" aria-hidden="true">{% for i in (0..3) %}{% assign pick = "3,1,0,4" | split: "," %}{% assign idx = pick[i] | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}</div>
+</div></section>
+
+<section class="dk-who hp-reveal"><div class="hp-wrap dk-who-grid">
+<img class="hp-flora dk-who-flower" src="{{ site.baseurl }}/assets/images/home/dried-delphinium-stem.webp" alt="" aria-hidden="true" loading="lazy">
+<div>
+<p class="hp-eyebrow">Who the decks are for</p>
+<h2>Wherever you are, there’s a place to begin.</h2>
+<a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/how-to-use/">Read how to use the cards {% include arrow.html %}</a>
+</div>
+<ol class="dk-who-list">
+<li>Those who want deeper relationships</li>
+<li>Anyone preparing for a goodbye</li>
+<li>Those healing from loss</li>
+<li>Anyone who feels called to connect on a deeper level</li>
+<li>Those who believe conversations can change lives</li>
+</ol>
+</div></section>

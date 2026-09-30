@@ -1,0 +1,126 @@
+# One entry per deck. The Decks page and every deck page read from here,
+# so a change to a description, list or Amazon link only needs making once.
+- slug: roots-heritage
+  anchor: roots
+  name: "Roots & Heritage"
+  color: "#9A5F3C"
+  image: /assets/images/Roots-and-Heritage-600x1036.png
+  image_full: /assets/images/Roots-and-Heritage.png
+  amazon: https://www.amazon.co.uk/dp/B0HFTBFC8X
+  description: "A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations."
+  explores: "ancestry, family lines and inherited stories"
+  intro: "This deck invites you into the landscapes of your ancestry, the stories you inherited, the patterns that shaped your family, the wounds and wisdom passed from one generation to the next."
+  for_you:
+    - "You want to understand your family story"
+    - "You’re curious about ancestry or lineage"
+    - "You’re exploring generational patterns"
+  supports:
+    - "Healing intergenerational wounds"
+    - "Understanding inherited behaviours"
+    - "Revealing untold family stories"
+- slug: childhood-becoming
+  anchor: childhood
+  name: "Childhood & Becoming"
+  color: "#C79A8F"
+  image: /assets/images/Childhood-and-Becoming-600x1035.png
+  image_full: /assets/images/Childhood-and-Becoming.png
+  amazon: https://www.amazon.co.uk/dp/B0HFT2VGY6
+  description: "A tender return to the moments and influences that shaped who you became."
+  explores: "early memories, shaping experiences and the inner child"
+  intro: "This deck invites you to step gently back into your childhood: the innocence, joy, confusion, wonder and early shaping experiences."
+  for_you:
+    - "You want to explore formative memories"
+    - "You’re doing inner child work"
+    - "You want to understand how childhood shaped identity"
+  supports:
+    - "Inner child healing"
+    - "Emotional awareness"
+    - "Strengthening family bonds"
+- slug: love-connection
+  anchor: love
+  name: "Love & Connection"
+  color: "#A85F65"
+  image: /assets/images/Love-Connection-Deck-600x1035.png
+  image_full: /assets/images/Love-Connection-Deck.png
+  amazon: https://www.amazon.co.uk/dp/B0HFTBBD24
+  description: "A heart-opening deck designed to deepen closeness, trust, and emotional understanding."
+  explores: "deeper intimacy, honesty and emotional truth"
+  intro: "This deck explores the many forms of love: romantic, friendship, chosen family and deep bonds."
+  for_you:
+    - "You want deeper intimacy"
+    - "You’re repairing or strengthening a relationship"
+    - "You want meaningful conversations"
+  supports:
+    - "Emotional communication"
+    - "Relational healing"
+    - "Vulnerability and truth"
+- slug: loss-regret-forgiveness
+  anchor: loss
+  name: "Loss, Regret & Forgiveness"
+  color: "#7D788C"
+  image: /assets/images/Loss-Regret-Forgiveness-1-600x1035.png
+  image_full: /assets/images/Loss-Regret-Forgiveness-1.png
+  amazon: https://www.amazon.co.uk/dp/B0HFT87JYK
+  description: "A tender deck for exploring grief, regret, forgiveness, and emotional release."
+  explores: "grief, healing, release and truth-telling"
+  intro: "This deck opens a space for acknowledgement, healing and repair."
+  for_you:
+    - "You are grieving"
+    - "You’re carrying regret or unspoken truth"
+    - "You want emotional closure"
+  supports:
+    - "Grief processing"
+    - "Forgiveness"
+    - "Healing relational ruptures"
+- slug: meaning-purpose
+  anchor: meaning
+  name: "Meaning & Purpose"
+  color: "#4F6475"
+  image: /assets/images/Meaning-Purpose-Deck-600x1035.png
+  image_full: /assets/images/Meaning-Purpose-Deck.png
+  amazon: https://www.amazon.co.uk/dp/B0HFKJMTPV
+  description: "A reflective deck for discovering what truly mattered."
+  explores: "values, wisdom, personal truth and life direction"
+  intro: "This deck explores values, identity, spiritual insight and meaning-making."
+  for_you:
+    - "You’re exploring purpose"
+    - "You’re in transition"
+    - "You want clarity or direction"
+  supports:
+    - "Life review"
+    - "Values clarity"
+    - "Spiritual reflection"
+- slug: legacy-letting-go
+  anchor: legacy
+  name: "Legacy & Letting Go"
+  color: "#8FA897"
+  image: /assets/images/Legacy-and-letting-go-600x1035.png
+  image_full: /assets/images/Legacy-and-letting-go.png
+  amazon: https://www.amazon.co.uk/dp/B0HFSZFS3L
+  description: "A sacred deck designed to help you explore endings, legacy, and release."
+  explores: "endings, blessings, continuation and peaceful transition"
+  intro: "Legacy & Letting Go explores the final chapters of life: the wisdom we leave, the memories we bless, and the acceptance that arrives when we allow ourselves to let go."
+  for_you:
+    - "You are preparing to say goodbye"
+    - "You want to explore meaning or legacy"
+    - "You’re supporting someone through end-of-life"
+  supports:
+    - "Peaceful acceptance"
+    - "Legacy creation"
+    - "Emotional closure"
+- slug: the-mixed-deck-essentials-collection
+  anchor: essential
+  essential: true
+  name: "The Essential Collection"
+  color: "#999a7f"
+  amazon: https://www.amazon.co.uk/dp/B0HFTBFHD3
+  description: "A curated starting point: 52 cards specially selected from across all six decks."
+  explores: "questions drawn from all six decks"
+  intro: "The Essential Collection contains a curated selection from the six themes; it is not an additional set of completely different questions."
+  for_you:
+    - "You want one versatile deck"
+    - "You’re facilitating groups or workshops"
+  supports:
+    - "Deep conversations"
+    - "Group facilitation"
+    - "Emotional insight"
