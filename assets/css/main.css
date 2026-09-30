@@ -439,21 +439,16 @@ html{scroll-behavior:smooth}
 .pd-explores strong{color:var(--hp-ink)}
 .pd-promise{margin:34px 0 0;padding-top:24px;border-top:1px solid #e4d9c7;font:italic 600 20px/1.35 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .pd-promise span{display:block;margin-top:6px;font:400 15px/1.5 "DM Sans",sans-serif;color:var(--hp-body)}
-.pd-lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;margin-top:90px}
-.pd-acc{border-radius:22px;background:#fff;box-shadow:0 8px 24px rgba(60,45,25,.07);overflow:hidden;transition:box-shadow .3s ease}
-.pd-acc[open]{box-shadow:0 14px 34px rgba(60,45,25,.12)}
-.pd-acc summary{display:flex;align-items:center;gap:16px;padding:28px 32px;cursor:pointer;list-style:none}
-.pd-acc summary::-webkit-details-marker{display:none}
-.pd-acc summary:hover .pd-acc-icon{background:var(--deck);color:#fff}
-.pd-acc summary:focus-visible{outline:3px solid var(--hp-olive);outline-offset:-3px;border-radius:22px}
-.pd-acc-mark{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:var(--deck)}
-.pd-acc-title{flex-grow:1;font:700 24px/1.25 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.pd-acc-icon{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:color-mix(in srgb,var(--deck) 16%,#fff);color:var(--hp-ink);transition:background-color .3s ease,color .3s ease,rotate .35s ease}
-.pd-acc[open] .pd-acc-icon{rotate:45deg;background:var(--deck);color:#fff}
-.pd-acc ul{list-style:none;margin:0;padding:0 32px 22px 60px;animation:pd-drop .4s cubic-bezier(.2,.7,.2,1)}
-.pd-acc li{padding:14px 0;border-top:1px solid #eee4d3;font-size:17px;line-height:1.5}
-@keyframes pd-drop{from{opacity:0;translate:0 -8px}to{opacity:1;translate:0 0}}
-@media (prefers-reduced-motion: reduce){.pd-acc ul{animation:none}}
+.pd-story{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start;margin-top:90px;padding:72px 72px 64px;border-radius:28px;background:color-mix(in srgb,var(--deck) 10%,#fbf8f2)}
+.pd-story-flower{right:-50px;top:-60px;width:170px;transform:rotate(12deg)}
+.pd-quote-mark{display:block;font:400 110px/.55 "Playfair Display",Georgia,serif;color:var(--deck)}
+.pd-lede{margin:12px 0 0;font:italic 500 34px/1.28 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.pd-story-text{margin:26px 0 0;font-size:17px;line-height:1.75;color:var(--hp-body)}
+.pd-features{list-style:none;margin:18px 0 0;padding:0;counter-reset:feat;border-top:1px solid rgba(29,27,23,.14)}
+.pd-features li{counter-increment:feat;position:relative;padding:22px 0 22px 52px;border-bottom:1px solid rgba(29,27,23,.14)}
+.pd-features li::before{content:counter(feat,decimal-leading-zero);position:absolute;left:0;top:25px;font:700 16px "Playfair Display",Georgia,serif;color:var(--deck)}
+.pd-features h2{margin:0;font:italic 600 22px/1.3 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.pd-features p{margin:6px 0 0;font-size:16px;line-height:1.6;color:var(--hp-body)}
 .pd-others{margin-top:110px}
 .pd-others .hp-decks-head h2{margin:14px 0 0;font:700 clamp(30px,3vw,42px)/1.1 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
 .pd-others-grid{margin-top:44px;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:24px}
@@ -466,7 +461,7 @@ html{scroll-behavior:smooth}
 @media(max-width:1100px){.pd-others-grid{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr))}
 .pd-others-grid .hp-deck-name{font-size:16px}
 .dk-hero-branch{right:-20px}}
-@media(max-width:900px){.dk-hero,.dk-row,.dk-story-panel,.dk-essential-panel,.dk-who-grid,.pd-hero,.pd-lists{grid-template-columns:1fr}
+@media(max-width:900px){.dk-hero,.dk-row,.dk-story-panel,.dk-essential-panel,.dk-who-grid,.pd-hero,.pd-story{grid-template-columns:1fr}
 .dk-hero{gap:24px;padding:36px 0 48px}
 .dk-hero-media{height:300px;max-width:420px;width:100%;margin-inline:auto}
 .dk-jump-card{left:calc(12px + var(--i) * 44px);top:calc(40px + (var(--i) - 2.5) * (var(--i) - 2.5) * 5px);width:112px}
@@ -506,10 +501,11 @@ html{scroll-behavior:smooth}
 .pd-media{height:420px;border-radius:22px}
 .pd-card{width:200px}
 .pd-desc{font-size:20px}
-.pd-lists{margin-top:56px;gap:16px}
-.pd-acc summary{padding:22px 20px;gap:12px}
-.pd-acc-title{font-size:20px}
-.pd-acc ul{padding:0 20px 16px 44px}
+.pd-story{gap:36px;margin-top:56px;padding:40px 24px 32px;border-radius:22px}
+.pd-story-flower{right:-14px;top:-44px;width:100px}
+.pd-lede{font-size:26px}
+.pd-features h2{font-size:19px}
+.pd-features li{padding-left:40px}
 .pd-essential{margin-top:72px}
 .pd-essential .dk-essential-panel h2{font-size:32px}
 .pd-others{margin-top:72px}

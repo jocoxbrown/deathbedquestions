@@ -31,9 +31,17 @@ layout: default
 </div>
 </section>
 
-<section class="pd-lists hp-reveal">
-<details class="pd-acc"><summary><span class="pd-acc-mark" aria-hidden="true"></span><span class="pd-acc-title">This deck may be for you if…</span><span class="pd-acc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><ul>{% for i in d.for_you %}<li>{{ i }}</li>{% endfor %}</ul></details>
-<details class="pd-acc"><summary><span class="pd-acc-mark" aria-hidden="true"></span><span class="pd-acc-title">This deck can support…</span><span class="pd-acc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><ul>{% for i in d.supports %}<li>{{ i }}</li>{% endfor %}</ul></details>
+<section class="pd-story hp-reveal">
+<img class="hp-flora pd-story-flower" src="{{ site.baseurl }}/assets/images/home/dried-delphinium-flower.webp" alt="" aria-hidden="true" loading="lazy">
+<div class="pd-story-copy">
+<span class="pd-quote-mark" aria-hidden="true">“</span>
+<blockquote class="pd-lede">{{ d.lede }}</blockquote>
+<p class="pd-story-text">{{ d.story }}</p>
+</div>
+<div class="pd-inside">
+<p class="hp-eyebrow">Inside this deck</p>
+<ol class="pd-features">{% for f in d.features %}<li><h2>{{ f.title }}</h2><p>{{ f.text }}</p></li>{% endfor %}</ol>
+</div>
 </section>
 
 <section class="pd-others hp-reveal">
