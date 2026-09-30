@@ -563,6 +563,7 @@ html{scroll-behavior:smooth}
 
 
 .ht-rituals{padding:110px 0 120px;background:#fff}
+.ht-scripts-intro{margin:14px 0 0;font-size:17px;line-height:1.7;color:var(--hp-body)}
 .ht-scripts{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
 .ht-scripts>li{padding:4px 44px 4px 0}
 .ht-scripts>li+li{padding-left:44px;border-left:1px solid #e2d5bf}
