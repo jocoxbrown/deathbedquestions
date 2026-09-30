@@ -529,7 +529,7 @@ html{scroll-behavior:smooth}
 .ht-hero-branch{right:-20px;top:80px;width:190px;transform:rotate(20deg)}
 .ht-contents{margin:44px auto 0;max-width:1100px;text-align:left}
 .ht-contents .hp-eyebrow{text-align:center}
-.ht-contents ol{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ht-contents ol{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .ht-contents a{position:relative;display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;padding:22px 22px 52px;border-radius:18px;background:#fff;border:1px solid #e4d9c7;text-decoration:none;color:var(--hp-ink);transition:border-color .3s ease,box-shadow .3s ease,translate .3s ease}
 .ht-contents a:hover,.ht-contents a:focus-visible{border-color:var(--hp-olive);box-shadow:0 12px 28px rgba(60,45,25,.12);translate:0 -3px}
 .ht-contents-num{font:italic 600 22px/1 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
@@ -546,6 +546,10 @@ html{scroll-behavior:smooth}
 .ht-step-flip .ht-step-media{order:2}
 .ht-step-media{position:relative}
 .ht-step-media>img:not(.hp-flora){display:block;width:100%;height:480px;object-fit:cover;border-radius:24px;box-shadow:0 26px 54px rgba(60,45,25,.2)}
+.ht-step-media-card{display:grid;place-items:center;height:480px;border-radius:24px;background:#efe5d4}
+.ht-step-media-card>img:not(.hp-flora){width:auto;height:400px;max-width:80%;object-fit:contain;border-radius:14px;rotate:-3deg;box-shadow:0 18px 36px rgba(60,45,25,.18)}
+.ht-kind-list{list-style:none;margin:20px 0 0;padding:0}
+.ht-kind-list li{padding:10px 0;border-bottom:1px solid #eee4d4;font:italic 500 21px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
 .ht-step-flower{left:-60px;top:-70px;width:170px;transform:rotate(-16deg);z-index:1}
 .ht-step-flower-r{left:auto;right:-50px;top:auto;bottom:-56px;width:160px;transform:rotate(12deg)}
 .ht-step-num{margin:0;font:italic 500 88px/1 "Playfair Display",Georgia,serif;color:var(--hp-sand)}
@@ -605,22 +609,20 @@ html{scroll-behavior:smooth}
 .ht-pauses .ht-pauses-note{margin-top:28px;max-width:640px;font:400 18px/1.6 "DM Sans",sans-serif;color:#f1ece2}
 
 /* During the conversation */
-.ht-during{padding:120px 0 40px;text-align:center}
-.ht-during .hp-eyebrow{display:block}
-.ht-during .dk-list-title{max-width:820px;margin-inline:auto}
-.ht-kind-cards{list-style:none;margin:48px 0 0;padding:0;display:flex;justify-content:center;gap:28px}
-.ht-kind-cards li{position:relative;display:grid;place-items:center;width:240px;aspect-ratio:7/10;padding:28px 24px;box-sizing:border-box;border-radius:18px;overflow:hidden;background:#eeede7;box-shadow:0 18px 40px rgba(60,45,25,.16)}
-.ht-kind-cards li:nth-child(1){transform:rotate(-4deg)}
-.ht-kind-cards li:nth-child(3){transform:rotate(4deg)}
-.ht-kind-cards p{position:relative;margin:0;font:italic 500 23px/1.35 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-body{margin:36px auto 0;max-width:640px;font-size:17px;line-height:1.7;color:var(--hp-body)}
-.ht-witness-line{margin:40px auto 0;max-width:860px;font:500 clamp(28px,3vw,40px)/1.25 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
-.ht-witness-line em{color:var(--hp-brown)}
 
 .ht-rituals{padding-top:100px}
 .ht-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .ht-chips li{padding:8px 16px;border-radius:999px;border:1px solid #e4d9c7;font-size:15px;line-height:1.3;color:var(--hp-ink)}
-.ht-alone{padding:60px 0 140px;text-align:center;max-width:760px}
+.ht-ways{padding:110px 0 120px;background:var(--hp-cream)}
+.ht-ways-intro{margin:14px 0 0;max-width:620px;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.ht-ways-list{list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.ht-ways-list>li{padding:8px 48px 8px 0}
+.ht-ways-list>li+li{padding-left:48px;border-left:1px solid #dccdb4}
+.ht-ways-icon{display:block;color:var(--hp-brown)}
+.ht-ways-list h3{margin:22px 0 0;font:700 34px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-ways-lead{margin:12px 0 0;font:italic 500 20px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-ways-list>li>p:not(.ht-ways-lead){margin:14px 0 0;font-size:16.5px;line-height:1.7;color:var(--hp-body)}
+.ht-alone{padding:100px 0 140px;text-align:center;max-width:760px}
 .ht-alone .hp-eyebrow{display:block}
 .ht-final{margin:22px 0 0;font:italic 500 clamp(30px,3.4vw,44px)/1.25 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
 .ht-alone .hp-btn{margin-top:36px}
@@ -640,6 +642,8 @@ html{scroll-behavior:smooth}
 .ht-step,.ht-step+.ht-step{grid-template-columns:1fr;gap:24px;margin-top:48px}
 .ht-step-flip .ht-step-media{order:0}
 .ht-step-media>img:not(.hp-flora){height:300px;border-radius:20px}
+.ht-step-media-card{height:340px}
+.ht-step-media-card>img:not(.hp-flora){height:280px}
 .ht-step-flower{left:-20px;top:-44px;width:104px}
 .ht-step-flower-r{left:auto;right:-14px;top:auto;bottom:-36px;width:100px}
 .ht-step-num{font-size:60px}
@@ -648,9 +652,9 @@ html{scroll-behavior:smooth}
 .ht-rail{margin-top:24px}
 .ht-card,.ht-rituals .ht-card{flex-basis:min(320px,84vw);aspect-ratio:7/13}
 .ht-card-title{font-size:27px}
-.ht-kind-cards{flex-direction:column;align-items:center;gap:20px}
-.ht-kind-cards li{width:min(280px,100%);aspect-ratio:auto;min-height:170px}
-.ht-kind-cards li:nth-child(n){transform:none}
-.ht-during{padding:72px 0 24px}
 .ht-rituals{padding-top:64px}
-.ht-alone{padding:48px 0 80px}}
+.ht-ways{padding:64px 0 72px}
+.ht-ways-list{grid-template-columns:1fr;margin-top:36px}
+.ht-ways-list>li,.ht-ways-list>li+li{padding:28px 0;border-left:0;border-top:1px solid #dccdb4}
+.ht-ways-list h3{font-size:28px}
+.ht-alone{padding:64px 0 80px}}
