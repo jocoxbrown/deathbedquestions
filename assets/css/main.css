@@ -531,6 +531,20 @@ html{scroll-behavior:smooth}
 .ht-jump a:hover{border-color:var(--hp-olive)}
 
 .ht-deck-section{padding:40px 0 110px}
+.ht-rail-hint{margin:10px 0 0;font-size:16px;color:var(--hp-body)}
+.ht-guide-section{padding:40px 0 110px}
+.ht-guide{position:relative;margin-top:40px;padding:72px 80px 64px;border-radius:28px;background:#eeede7;box-shadow:0 18px 44px rgba(60,45,25,.12);overflow:hidden;--sat:1}
+.ht-guide .ht-splash{opacity:.7}
+.ht-guide .ht-splash-top{width:300px}
+.ht-guide .ht-splash-bottom{width:290px}
+.ht-guide-steps{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 72px}
+.ht-guide-steps>li{padding-top:26px;border-top:1px solid rgba(29,27,23,.16)}
+.ht-numeral{display:block;font:italic 600 44px/1 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
+.ht-guide-steps h3{margin:14px 0 0;font:700 32px/1.15 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-guide-steps p{margin:12px 0 0;font-size:16px;line-height:1.65;color:var(--hp-body)}
+.ht-guide-steps .ht-guide-lead{font:italic 500 21px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-guide-steps .ht-say{padding-left:16px;border-left:3px solid var(--hp-sand);font:italic 17px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ht-guide .ht-chips li{background:rgba(255,255,255,.7)}
 .ht-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 .ht-rail-nav{display:flex;gap:10px}
 .ht-rail-nav[hidden]{display:none}
@@ -589,6 +603,8 @@ html{scroll-behavior:smooth}
 .ht-witness-line em{color:var(--hp-brown)}
 
 .ht-rituals{padding-top:100px}
+.ht-chips{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.ht-chips li{padding:8px 16px;border-radius:999px;border:1px solid #e4d9c7;font-size:15px;line-height:1.3;color:var(--hp-ink)}
 .ht-alone{padding:60px 0 140px;text-align:center;max-width:760px}
 .ht-alone .hp-eyebrow{display:block}
 .ht-final{margin:22px 0 0;font:italic 500 clamp(30px,3.4vw,44px)/1.25 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
@@ -599,7 +615,14 @@ html{scroll-behavior:smooth}
 @media(max-width:900px){.ht-hero{padding:48px 0 40px}
 .ht-hero-sub{font-size:20px}
 .ht-hero-stem,.ht-hero-branch{display:none}
-.ht-deck-section{padding:24px 0 64px}
+.ht-deck-section,.ht-guide-section{padding:24px 0 64px}
+.ht-guide{margin-top:28px;padding:40px 24px 36px;border-radius:22px}
+.ht-guide .ht-splash-top{width:190px}
+.ht-guide .ht-splash-bottom{width:180px}
+.ht-guide-steps{grid-template-columns:1fr;gap:32px}
+.ht-guide-steps h3{font-size:26px}
+.ht-numeral{font-size:36px}
+.ht-guide-steps .ht-guide-lead{font-size:19px}
 .ht-rail{margin-top:24px}
 .ht-card,.ht-rituals .ht-card{flex-basis:min(320px,84vw);aspect-ratio:7/13}
 .ht-card-title{font-size:27px}
