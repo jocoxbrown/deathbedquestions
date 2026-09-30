@@ -524,7 +524,7 @@ html{scroll-behavior:smooth}
 .ht-hero .hp-eyebrow{display:block}
 .ht-hero h1{margin:20px 0 0;font:800 clamp(46px,5.6vw,80px)/1 "Playfair Display",Georgia,serif;letter-spacing:-.02em;color:var(--hp-olive-text)}
 .ht-hero-sub{margin:26px auto 0;max-width:640px;font:500 24px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-hero-hint{margin:16px 0 0;font-size:16px;color:var(--hp-body)}
+.ht-hero-hint{margin:16px 0 0;font-size:15.5px;color:var(--hp-body)}
 .ht-hero-stem{left:-10px;top:40px;width:190px;transform:rotate(-18deg)}
 .ht-hero-branch{right:-20px;top:80px;width:190px;transform:rotate(20deg)}
 .ht-contents{margin:44px auto 0;max-width:1100px;text-align:left}
