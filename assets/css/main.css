@@ -440,6 +440,9 @@ html{scroll-behavior:smooth}
 .pd-quote-mark{display:block;font:400 110px/.55 "Playfair Display",Georgia,serif;color:var(--deck)}
 .pd-lede{margin:12px 0 0;font:italic 500 38px/1.25 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .pd-story-text{margin:26px 0 0;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.pd-story-text p{margin:0}
+.pd-story-text p+p{margin-top:16px}
+.pd-story-text strong{font-weight:600;color:var(--hp-ink)}
 .pd-features{list-style:none;margin:18px 0 0;padding:0;counter-reset:feat;border-top:1px solid rgba(29,27,23,.14)}
 .pd-features li{counter-increment:feat;position:relative;padding:22px 0 22px 52px;border-bottom:1px solid rgba(29,27,23,.14)}
 .pd-features li::before{content:counter(feat,decimal-leading-zero);position:absolute;left:0;top:25px;font:700 16px "Playfair Display",Georgia,serif;color:var(--deck)}
