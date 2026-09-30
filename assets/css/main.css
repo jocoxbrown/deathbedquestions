@@ -561,9 +561,6 @@ html{scroll-behavior:smooth}
 .ht-list{list-style:none;margin:10px 0 0;padding:0}
 .ht-list li{position:relative;padding:9px 0 9px 24px;border-bottom:1px solid #eee4d3;font-size:17px;line-height:1.45;color:var(--hp-ink)}
 .ht-list li::before{content:"";position:absolute;left:3px;top:17px;width:8px;height:8px;border-radius:50%;background:var(--hp-brown)}
-.ht-list-inline{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:18px}
-.ht-list-inline li{border:0;padding:4px 0 4px 20px}
-.ht-list-inline li::before{top:12px}
 .ht-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 .ht-rail-nav{display:flex;gap:10px}
 .ht-rail-nav[hidden]{display:none}
