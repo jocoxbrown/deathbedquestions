@@ -10,14 +10,17 @@
   description: "A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations."
   explores: "ancestry, family lines and inherited stories"
   intro: "This deck invites you into the landscapes of your ancestry, the stories you inherited, the patterns that shaped your family, the wounds and wisdom passed from one generation to the next."
-  for_you:
-    - "You want to understand your family story"
-    - "You’re curious about ancestry or lineage"
-    - "You’re exploring generational patterns"
-  supports:
-    - "Healing intergenerational wounds"
-    - "Understanding inherited behaviours"
-    - "Revealing untold family stories"
+  lede: "Every family carries stories. Some get told often. Others fade until no one remembers to ask."
+  story: "Death Bed Questions: Roots & Heritage is a deck of 52 questions built to help people talk about ancestry, family history, and the generations that came before them. For someone near the end of life, it’s a chance to pass on family knowledge before it disappears. For everyone else, it’s a reason to finally ask and actually listen. A single question might uncover a forgotten story, a family tradition, or a piece of hard-won wisdom that’s been passed down for years without anyone writing it down."
+  features:
+    - title: "52 questions about where we come from"
+      text: "Explores ancestry, family history, inherited beliefs, and the traditions passed from one generation to the next."
+    - title: "For family gatherings and generational conversations"
+      text: "Use with parents, grandparents, and loved ones around a table, during a visit, or in a quiet one-to-one moment."
+    - title: "Handled with care for generational patterns"
+      text: "Explores inherited behaviours, resilience, and family wounds, without requiring every question to be answered."
+    - title: "A deck for remembering what matters"
+      text: "Each card measures 7cm x 12cm, light enough to bring along to every family visit that counts."
 - slug: childhood-becoming
   anchor: childhood
   name: "Childhood & Becoming"
@@ -28,14 +31,17 @@
   description: "A tender return to the moments and influences that shaped who you became."
   explores: "early memories, shaping experiences and the inner child"
   intro: "This deck invites you to step gently back into your childhood: the innocence, joy, confusion, wonder and early shaping experiences."
-  for_you:
-    - "You want to explore formative memories"
-    - "You’re doing inner child work"
-    - "You want to understand how childhood shaped identity"
-  supports:
-    - "Inner child healing"
-    - "Emotional awareness"
-    - "Strengthening family bonds"
+  lede: "Before someone was a parent, a partner, or a grandparent, they were a child, with their own hopes, fears, and small adventures."
+  story: "Death Bed Questions: Childhood & Becoming is a deck of 52 questions built to help people revisit those early years and share the memories that shaped who they became. For someone near the end of life, it can surface stories their family has never heard, a chance to be known not just as they are now, but as they always were. Use it alone with a journal, or share it across generations at a kitchen table or a hospital bedside. A question might bring a laugh, a memory that takes a minute to settle, or a story no one thought to ask about until now."
+  features:
+    - title: "52 questions that reach back to the beginning"
+      text: "Revisits childhood homes, early friendships, and the moments of joy or struggle that shaped a life."
+    - title: "For quiet reflection or shared conversation"
+      text: "Explore alone with a journal, or share it between generations: parent and child, grandparent and grandchild."
+    - title: "Welcomed in life review and hospice settings"
+      text: "Used by therapists, hospice teams, palliative care professionals, and death doulas."
+    - title: "Made to travel, meant to be kept"
+      text: "Each card measures 7cm x 12cm, small enough for a bedside table and meaningful enough to become a keepsake."
 - slug: love-connection
   anchor: love
   name: "Love & Connection"
@@ -46,14 +52,19 @@
   description: "A heart-opening deck designed to deepen closeness, trust, and emotional understanding."
   explores: "deeper intimacy, honesty and emotional truth"
   intro: "This deck explores the many forms of love: romantic, friendship, chosen family and deep bonds."
-  for_you:
-    - "You want deeper intimacy"
-    - "You’re repairing or strengthening a relationship"
-    - "You want meaningful conversations"
-  supports:
-    - "Emotional communication"
-    - "Relational healing"
-    - "Vulnerability and truth"
+  lede: "Some of the truest things we feel for each other are the hardest to say out loud."
+  story: "Death Bed Questions: Love & Connection is a deck of 52 questions built to open the conversations that matter before there’s no more time left to have them: about romantic love, chosen family, old friendships, and the bonds that shape a life without anyone quite noticing. Each question makes room for what’s gone unsaid, whether that’s gratitude, an apology, or a feeling that was always there but never spoken. There’s no pressure to answer every card and no wrong way to begin. One question might bring on laughter. The next might bring tears, or a memory that changes how you see someone you thought you already knew."
+  features:
+    - title: "52 questions for the love that deserves words"
+      text: "Explores trust, intimacy, friendship, and the relationships that have carried a life. The love that’s easy to feel and hard to say out loud."
+    - title: "For when time feels more precious"
+      text: "Made for people approaching the end of life, living with serious illness, or simply wanting to say what still needs saying to someone they love."
+    - title: "A gentle opening for hard-to-start conversations"
+      text: "Use during quiet visits, family moments, or one-to-one conversations, when the right words won’t come on their own."
+    - title: "Trusted in hospice, therapy and grief support"
+      text: "Used by hospices, palliative care teams, therapists, counsellors, and death doulas supporting reflection and connection."
+    - title: "Made to be held, not just read"
+      text: "Each card measures 7cm x 12cm, a keepsake as much as a conversation piece."
 - slug: loss-regret-forgiveness
   anchor: loss
   name: "Loss, Regret & Forgiveness"
@@ -64,14 +75,19 @@
   description: "A tender deck for exploring grief, regret, forgiveness, and emotional release."
   explores: "grief, healing, release and truth-telling"
   intro: "This deck opens a space for acknowledgement, healing and repair."
-  for_you:
-    - "You are grieving"
-    - "You’re carrying regret or unspoken truth"
-    - "You want emotional closure"
-  supports:
-    - "Grief processing"
-    - "Forgiveness"
-    - "Healing relational ruptures"
+  lede: "Some things get heavier the longer they stay unspoken."
+  story: "Death Bed Questions: Loss, Regret & Forgiveness is a deck of 52 questions built to gently open up what’s been carried in silence: losses that changed us, words never said, feelings never let go. These questions don’t push anyone toward forgiveness or resolution before they’re ready. They just give people a place to start. For someone near the end of life, that might mean speaking more honestly about regret. For family, it might mean finally hearing a truth that’s waited years to be said. Whatever comes up, relief, sadness, recognition, or simply a pause, it’s welcome here."
+  features:
+    - title: "52 questions for what’s still being carried"
+      text: "Opens space for grief, regret, forgiveness, and the truths that get heavier the longer they stay unspoken."
+    - title: "Not about forcing resolution"
+      text: "A starting point for conversations that feel too difficult to begin alone. No pressure to forgive, explain, or arrive anywhere in particular."
+    - title: "For the things that need to be heard"
+      text: "Made for people near the end of life who want to speak more openly before time becomes more limited."
+    - title: "Supporting families, grief work and therapy"
+      text: "Used by therapists, counsellors, grief workers, hospice teams, and death doulas."
+    - title: "A companion for the hardest conversations"
+      text: "Each card measures 7cm x 12cm, small enough to hold in one hand, big enough to hold what matters."
 - slug: meaning-purpose
   anchor: meaning
   name: "Meaning & Purpose"
@@ -82,14 +98,19 @@
   description: "A reflective deck for discovering what truly mattered."
   explores: "values, wisdom, personal truth and life direction"
   intro: "This deck explores values, identity, spiritual insight and meaning-making."
-  for_you:
-    - "You’re exploring purpose"
-    - "You’re in transition"
-    - "You want clarity or direction"
-  supports:
-    - "Life review"
-    - "Values clarity"
-    - "Spiritual reflection"
+  lede: "Some of the most important conversations happen once time starts to feel limited."
+  story: "Death Bed Questions: Meaning & Purpose is a deck of 52 questions built to help people reflect on what has actually mattered to them: their values, beliefs, identity, and the meaning they’ve made of their life. There’s no set order and no need to land on a perfect answer. A question might get a short reply, or it might turn into a story, a memory, a laugh, or a long pause that says more than words could. This deck isn’t looking for the right answer. It’s here to help someone be understood a little more deeply while there’s still time to ask."
+  features:
+    - title: "52 questions about what has truly mattered"
+      text: "Explores values, identity, wisdom, and the sources of meaning that shaped a life."
+    - title: "A gentle invitation to look back"
+      text: "Made for people reflecting on the life they’ve lived: the beliefs they’ve held, the lessons they’ve learned, the truths worth sharing."
+    - title: "For clarity when time feels more precious"
+      text: "Suited to people approaching end of life or living with serious illness who want to speak from the heart while there’s time."
+    - title: "Used thoughtfully in care and reflection settings"
+      text: "Welcomed by hospices, palliative care teams, therapists, counsellors, and death doulas."
+    - title: "A small deck for life’s biggest questions"
+      text: "Each card measures 7cm x 12cm, easy to hold in one hand, hard to forget once asked."
 - slug: legacy-letting-go
   anchor: legacy
   name: "Legacy & Letting Go"
@@ -100,14 +121,19 @@
   description: "A sacred deck designed to help you explore endings, legacy, and release."
   explores: "endings, blessings, continuation and peaceful transition"
   intro: "Legacy & Letting Go explores the final chapters of life: the wisdom we leave, the memories we bless, and the acceptance that arrives when we allow ourselves to let go."
-  for_you:
-    - "You are preparing to say goodbye"
-    - "You want to explore meaning or legacy"
-    - "You’re supporting someone through end-of-life"
-  supports:
-    - "Peaceful acceptance"
-    - "Legacy creation"
-    - "Emotional closure"
+  lede: "Saying goodbye isn’t only about endings. It’s also about remembering, blessing, and deciding what we hope carries on after us."
+  story: "Death Bed Questions: Legacy & Letting Go is a deck of 52 questions built to help people near the end of life reflect on the life they’ve lived and what they most want remembered. For families, it gives a reason to sit down, listen, and hold onto words and stories that might otherwise be lost. There’s no expectation to feel peaceful or resolved. A card might bring back a memory, spark laughter, surface a practical wish, or just lead to a few quiet minutes together."
+  features:
+    - title: "52 questions about what remains"
+      text: "Explores final chapters, blessings, memory, and the legacy someone hopes will continue in the people they love."
+    - title: "A gentle path toward peace"
+      text: "Invites reflection on endings, gratitude, and release, without asking anyone to feel ready, resolved, or certain of anything."
+    - title: "For goodbyes that deserve more than silence"
+      text: "Made for people preparing to say goodbye, and for families who want to listen while there’s still time."
+    - title: "Held with care by professionals too"
+      text: "Used by hospice teams, palliative care professionals, therapists, counsellors, and death doulas."
+    - title: "A deck made to be passed down"
+      text: "Each card measures 7cm x 12cm, small enough to keep close and meaningful enough to keep for good."
 - slug: the-mixed-deck-essentials-collection
   anchor: essential
   essential: true
@@ -117,10 +143,16 @@
   description: "A curated starting point: 52 cards specially selected from across all six decks."
   explores: "questions drawn from all six decks"
   intro: "The Essential Collection contains a curated selection from the six themes; it is not an additional set of completely different questions."
-  for_you:
-    - "You want one versatile deck"
-    - "You’re facilitating groups or workshops"
-  supports:
-    - "Deep conversations"
-    - "Group facilitation"
-    - "Emotional insight"
+  lede: "Sometimes it only takes one question to open a door that’s been closed for years."
+  story: "Death Bed Questions began as a personal act of healing, a way to ask what was never asked before it was too late. The Essentials Collection brings together 52 of the most powerful questions from all six Death Bed Questions decks: love and connection, roots and heritage, childhood and becoming, loss and forgiveness, meaning and purpose, legacy and letting go. It’s one deck built to go wherever a conversation is needed, whether that’s at a bedside, a kitchen table, or a quiet evening between old friends. There’s no order to follow and nothing you have to answer. A question might bring laughter. It might just as easily bring silence, tears, or a memory that hasn’t been spoken aloud in decades. All of it has a place here."
+  features:
+    - title: "A lifetime of questions, one deck"
+      text: "52 of the most searching questions pulled from all six Death Bed Questions collections: love, roots, childhood, loss, meaning, and legacy. One deck for the conversations that hold a whole life."
+    - title: "Born from loss, made for the living"
+      text: "Created after asking too late what should have been asked sooner. This deck exists so no one has to wonder what someone wanted to say."
+    - title: "For every chapter, every relationship"
+      text: "Moves between memory, meaning, grief, and gratitude. One companion for family tables, hospice rooms, and quiet evenings that matter."
+    - title: "Welcomed by families and professionals alike"
+      text: "Used at home with loved ones or introduced by therapists, death doulas, hospice teams, and palliative care staff."
+    - title: "A keepsake made to last"
+      text: "Each card measures 7cm x 12cm, small enough to carry and made to be picked up again and again."
