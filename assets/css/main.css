@@ -621,7 +621,10 @@ html{scroll-behavior:smooth}
 .ht-ways-icon{display:block;color:var(--hp-brown)}
 .ht-ways-list h3{margin:22px 0 0;font:700 34px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ht-ways-lead{margin:12px 0 0;font:italic 500 20px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-ways-list>li>p:not(.ht-ways-lead){margin:14px 0 0;font-size:16.5px;line-height:1.7;color:var(--hp-body)}
+.ht-ways-options{margin:22px 0 0}
+.ht-ways-options>div{padding:18px 0;border-top:1px solid #e2d5bf}
+.ht-ways-options dt{font:700 19px/1.3 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
+.ht-ways-options dd{margin:6px 0 0;font-size:16px;line-height:1.65;color:var(--hp-body)}
 .ht-alone{padding:100px 0 140px;text-align:center;max-width:760px}
 .ht-alone .hp-eyebrow{display:block}
 .ht-final{margin:22px 0 0;font:italic 500 clamp(30px,3.4vw,44px)/1.25 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
