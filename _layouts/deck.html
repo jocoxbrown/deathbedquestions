@@ -4,6 +4,8 @@ layout: default
 {% assign d = site.data.decks | where: "slug", page.deck | first %}
 {% assign others = site.data.decks | where_exp: "o", "o.slug != page.deck" %}
 {% assign themed = site.data.decks | where_exp: "o", "o.essential != true" %}
+{% assign essential = site.data.decks | where: "essential", true | first %}
+{% assign pick = "3,1,0,4" | split: "," %}
 <article class="pd" style="--deck: {{ d.color }}">
 <div class="hp-wrap">
 <a class="pd-back" href="{{ site.baseurl }}/the-decks/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All decks</a>
@@ -12,7 +14,7 @@ layout: default
 <div class="pd-media hp-intro-late">
 <span class="pd-circle" aria-hidden="true"></span>
 {% if d.essential %}
-<div class="pd-fan" aria-hidden="true">{% assign pick = "3,1,0,4" | split: "," %}{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
+<div class="pd-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
 {% else %}
 <img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">
 {% endif %}
@@ -24,19 +26,30 @@ layout: default
 <p class="pd-intro">{{ d.intro }}</p>
 <p class="pd-explores"><strong>The questions explore</strong> {{ d.explores }}.</p>
 <p class="dk-meta"><span aria-hidden="true"></span>52 question cards, plus one user guide card</p>
-<div class="dk-actions"><a class="hp-btn hp-btn-primary" href="{{ d.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/how-to-use/">How to use the cards {% include arrow.html %}</a></div>
+<div class="dk-actions"><a class="hp-btn hp-btn-primary" href="{{ d.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a></div>
 <p class="pd-promise">Ask deeply. Listen wholly. Love courageously.<span>Draw one card or many, choose a theme, and move at your own pace.</span></p>
 </div>
 </section>
 
 <section class="pd-lists hp-reveal">
-<div class="pd-list"><h2>This deck may be for you if</h2><ul>{% for i in d.for_you %}<li>{{ i }}</li>{% endfor %}</ul></div>
-<div class="pd-list"><h2>This deck can support</h2><ul>{% for i in d.supports %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<details class="pd-acc"><summary><span class="pd-acc-mark" aria-hidden="true"></span><span class="pd-acc-title">This deck may be for you if…</span><span class="pd-acc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><ul>{% for i in d.for_you %}<li>{{ i }}</li>{% endfor %}</ul></details>
+<details class="pd-acc"><summary><span class="pd-acc-mark" aria-hidden="true"></span><span class="pd-acc-title">This deck can support…</span><span class="pd-acc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><ul>{% for i in d.supports %}<li>{{ i }}</li>{% endfor %}</ul></details>
 </section>
 
 <section class="pd-others hp-reveal">
-<div class="hp-decks-head"><div><p class="hp-eyebrow">Explore the other decks</p><h2>Every theme holds its own conversations.</h2></div><a class="hp-text-link" href="{{ site.baseurl }}/the-decks/">See all the decks {% include arrow.html %}</a></div>
-<div class="pd-others-grid">{% for o in others %}{% unless o.essential %}<a class="hp-deck" href="{{ site.baseurl }}/product/{{ o.slug }}/"><img src="{{ site.baseurl }}{{ o.image }}" alt="{{ o.name }} deck artwork" loading="lazy"><span class="hp-deck-name">{{ o.name }}</span></a>{% endunless %}{% endfor %}{% unless d.essential %}<a class="pd-other-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><span class="hp-eyebrow">Can’t choose just one?</span><span class="hp-deck-name">The Essential Collection</span>{% include arrow.html %}</a>{% endunless %}</div>
+<div class="hp-decks-head"><div><p class="hp-eyebrow">Explore the other decks</p><h2>Which will you choose?</h2></div><a class="hp-text-link" href="{{ site.baseurl }}/the-decks/">See all the decks {% include arrow.html %}</a></div>
+<div class="pd-others-grid">{% for o in others %}{% unless o.essential %}<a class="hp-deck" href="{{ site.baseurl }}/product/{{ o.slug }}/"><img src="{{ site.baseurl }}{{ o.image }}" alt="{{ o.name }} deck artwork" loading="lazy"><span class="hp-deck-name">{{ o.name }}</span></a>{% endunless %}{% endfor %}</div>
 </section>
+{% unless d.essential %}
+<section class="pd-essential hp-reveal"><div class="dk-essential-panel">
+<div>
+<p class="hp-eyebrow hp-essential-label">Want one that covers all themes?</p>
+<h2>The Essential Collection</h2>
+<p>A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</p>
+<div class="dk-actions"><a class="hp-btn dk-btn-ink" href="{{ essential.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ essential.slug }}/">View the collection {% include arrow.html %}</a></div>
+</div>
+<div class="dk-essential-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}</div>
+</div></section>
+{% endunless %}
 </div>
 </article>
