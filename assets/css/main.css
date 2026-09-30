@@ -526,9 +526,16 @@ html{scroll-behavior:smooth}
 .ht-hero-hint{margin:16px 0 0;font-size:16px;color:var(--hp-body)}
 .ht-hero-stem{left:-10px;top:40px;width:190px;transform:rotate(-18deg)}
 .ht-hero-branch{right:-20px;top:80px;width:190px;transform:rotate(20deg)}
-.ht-jump{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.ht-jump a{display:inline-flex;align-items:center;height:44px;padding:0 20px;border-radius:999px;background:#fff;border:1px solid #e4d9c7;font-size:15px;font-weight:600;text-decoration:none;color:var(--hp-ink)}
-.ht-jump a:hover{border-color:var(--hp-olive)}
+.ht-contents{margin:44px auto 0;max-width:1100px;text-align:left}
+.ht-contents .hp-eyebrow{text-align:center}
+.ht-contents ol{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ht-contents a{position:relative;display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;padding:22px 22px 52px;border-radius:18px;background:#fff;border:1px solid #e4d9c7;text-decoration:none;color:var(--hp-ink);transition:border-color .3s ease,box-shadow .3s ease,translate .3s ease}
+.ht-contents a:hover,.ht-contents a:focus-visible{border-color:var(--hp-olive);box-shadow:0 12px 28px rgba(60,45,25,.12);translate:0 -3px}
+.ht-contents-num{font:italic 600 22px/1 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
+.ht-contents-title{margin-top:6px;font:700 20px/1.2 "Playfair Display",Georgia,serif}
+.ht-contents-text{font-size:14.5px;line-height:1.5;color:var(--hp-body)}
+.ht-contents-arrow{position:absolute;left:22px;bottom:18px;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f1ebe0;color:var(--hp-ink);transition:translate .3s ease}
+.ht-contents a:hover .ht-contents-arrow{translate:0 3px}
 
 .ht-deck-section{padding:40px 0 110px}
 .ht-rail-hint{margin:10px 0 0;font-size:16px;color:var(--hp-body)}
@@ -615,6 +622,11 @@ html{scroll-behavior:smooth}
 @media(max-width:900px){.ht-hero{padding:48px 0 40px}
 .ht-hero-sub{font-size:20px}
 .ht-hero-stem,.ht-hero-branch{display:none}
+.ht-contents{margin-top:32px}
+.ht-contents ol{grid-template-columns:1fr;gap:10px}
+.ht-contents a{padding:18px 56px 18px 18px}
+.ht-contents-arrow{left:auto;right:16px;top:50%;bottom:auto;translate:0 -50%}
+.ht-contents a:hover .ht-contents-arrow{translate:0 calc(-50% + 3px)}
 .ht-deck-section,.ht-guide-section{padding:24px 0 64px}
 .ht-guide{margin-top:28px;padding:40px 24px 36px;border-radius:22px}
 .ht-guide .ht-splash-top{width:190px}
