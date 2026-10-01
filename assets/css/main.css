@@ -584,12 +584,6 @@ html{scroll-behavior:smooth}
 .ht-scripts h3{margin:0;font:700 30px/1.15 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ht-script-note{margin:14px 0 0;font-size:15.5px;line-height:1.65;color:var(--hp-body)}
 .ht-scripts blockquote{margin:20px 0 0;padding-left:18px;border-left:3px solid var(--hp-sand);font:italic 500 19px/1.6 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.ht-closing{padding:120px 0;text-align:center;background:radial-gradient(60% 80% at 50% 100%,rgba(255,255,255,.5),transparent 70%),#ebe0cd;border-top:1px solid #dccdb4}
-.ht-closing-inner{position:relative}
-.ht-final{margin:0 auto;max-width:860px;font:500 clamp(34px,4vw,54px)/1.2 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
-.ht-final em{display:block;color:var(--hp-brown)}
-.ht-closing-stem{left:0;top:-60px;width:170px;transform:rotate(-18deg)}
-.ht-closing-branch{right:0;top:-30px;width:170px;transform:rotate(20deg)}
 
 /* Emotions band */
 .ht-pauses{flex-direction:column}
@@ -636,6 +630,4 @@ html{scroll-behavior:smooth}
 .ht-rituals{padding:64px 0 72px}
 .ht-scripts{grid-template-columns:1fr;margin-top:32px}
 .ht-scripts>li,.ht-scripts>li+li{padding:28px 0;border-left:0;border-top:1px solid #e2d5bf}
-.ht-scripts h3{font-size:26px}
-.ht-closing{padding:80px 0}
-.ht-closing-stem,.ht-closing-branch{display:none}}
+.ht-scripts h3{font-size:26px}}
