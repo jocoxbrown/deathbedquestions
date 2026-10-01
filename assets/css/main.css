@@ -733,7 +733,7 @@ html{scroll-behavior:smooth}
 .pr-who{padding:110px 0;text-align:center;background:linear-gradient(180deg,#f7f2ea,#f4eee3)}
 .pr-who .hp-eyebrow{display:block}
 .pr-who-text{margin:22px auto 0;max-width:660px;font-size:17px;line-height:1.7;color:var(--hp-body)}
-.pr-intro-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;margin-top:64px;text-align:left}
+.pr-intro-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;margin-top:48px;text-align:left}
 .pr-intro-card .hp-eyebrow{margin-bottom:14px}
 .pr-uses{padding:100px 0 110px;background:linear-gradient(180deg,#eef0e6,#f1efe6)}
 .pr-quiz{padding:110px 0;background:linear-gradient(180deg,#f7f2ea,#fbf8f2)}

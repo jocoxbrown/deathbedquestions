@@ -47,7 +47,7 @@
     - Have a grounding exercise ready for the end of the session.
 
 - id: social
-  name: Social worker
+  name: Social Worker
   as: As a social worker
   icon: social
   introduce: You might introduce a card informally during a visit, as a way to get to know the person behind the paperwork, their history, their family and what matters to them.
@@ -69,7 +69,7 @@
     - Follow your safeguarding procedures if something concerning is shared.
 
 - id: health
-  name: Healthcare professional
+  name: Healthcare Professional
   as: As a healthcare professional
   icon: health
   introduce: You might leave a deck with a patient or family, or offer a single card during a quieter moment of care, as a way to talk about more than symptoms.
@@ -135,7 +135,7 @@
     - Pass any concerns on to the care team or family.
 
 - id: other
-  name: Another practitioner
+  name: Another Practitioner
   as: As another practitioner
   icon: other
   introduce: Whether you’re a death doula, celebrant, coach, group facilitator or activities coordinator, you might introduce the cards as an invitation to a conversation that’s often hard to start.
