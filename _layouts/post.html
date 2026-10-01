@@ -1,4 +1,36 @@
 ---
 layout: default
 ---
-<article class="post wrap"><header class="page-heading"><p class="eyebrow">Letters for the Living</p><h1>{{ page.title }}</h1><p>{{ page.date | date: "%e %B %Y" }}</p></header><div class="page-content">{{ content }}</div><section class="post-signup"><h2>Stay connected</h2>{% include signup.html source="blog" %}</section></article>
+{% assign words = content | number_of_words %}
+<article class="wp">
+<header class="wp-hero">
+<div class="hp-wrap wp-hero-inner hp-intro">
+<a class="pd-back" href="{{ site.baseurl }}/writings-letters-for-the-living/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All writings</a>
+<p class="wr-meta"><span class="wr-tag">{{ page.category | default: "Writing" }}</span>{{ words | divided_by: 200 | plus: 1 }} min read</p>
+<h1>{{ page.title }}</h1>
+{% if page.description %}<p class="wp-desc">{{ page.description }}</p>{% endif %}
+<p class="wp-by">Jo Cox-Brown</p>
+</div>
+</header>
+{% if page.image and page.image != "" %}<div class="hp-wrap wp-image hp-intro-late"><img src="{{ page.image | relative_url }}" alt=""></div>{% endif %}
+<div class="wp-body">
+{{ content }}
+{% if page.signoff and page.signoff != "" %}<p class="wp-signoff">{{ page.signoff | replace: ", ", ",<br>" }}</p>{% endif %}
+</div>
+{% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+{% if others.size > 0 %}
+<section class="wp-more">
+<div class="hp-wrap">
+<div class="hp-decks-head"><div><p class="hp-eyebrow">Keep reading</p><h2 class="dk-list-title">More writings</h2></div><a class="hp-text-link" href="{{ site.baseurl }}/writings-letters-for-the-living/">All writings {% include arrow.html %}</a></div>
+<ul class="wr-grid wr-grid-more">
+{% for post in others limit:3 %}
+<li><a class="wr-card" href="{{ post.url | relative_url }}">
+<span class="wr-card-media">{% if post.image and post.image != "" %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="wr-mark" aria-hidden="true">“</span>{% endif %}</span>
+<span class="wr-card-body"><span class="wr-meta"><span class="wr-tag">{{ post.category | default: "Writing" }}</span></span><span class="wr-card-title">{{ post.title }}</span><span class="wr-card-desc">{{ post.description }}</span><span class="wr-read">Read {% include arrow.html %}</span></span>
+</a></li>
+{% endfor %}
+</ul>
+</div>
+</section>
+{% endif %}
+</article>
