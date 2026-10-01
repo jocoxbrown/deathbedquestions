@@ -1,21 +1,120 @@
 ---
-layout: page
-title: "Professional Edition"
-description: "Death Bed Questions for therapists, counsellors, death doulas and end-of-life professionals."
+layout: default
+title: "For Professionals"
+description: "A facilitator's guide to using Death Bed Questions with clients and groups: who it's for, how it can be used, principles for safe practice and suggested session formats."
 permalink: /professional-edition/
 ---
-Draw one or many cards, choose themes, move at your own pace 
-<h2>Complete Facilitation Guide</h2>
-<h3>Full Spectrum of Applications</h3>
-<ul><li>Life review sessions</li><li>Legacy and memory work</li><li>Grief processing</li><li>Inner child healing</li></ul>
-<ul><li>Relationship repair</li><li>End of life preparation</li><li>Meaning-making practices</li></ul>
-Trauma-Informed Use Guidance
-When used in professional settings, adherence to ethical and trauma-informed practices is paramount:
-<ul><li>Obtain consent</li><li>Allow the client to pause or pass</li><li>Use only one card if needed</li><li>Offer emotional containment and aftercare</li><li>Never pressure for disclosure</li><li>Refer if deep trauma is triggered</li></ul>
-The facilitator’s role is to hold space, not diagnose, interrogate or advise.
-<h2>Suggested Session Formats</h2>
-<h3>One-to-one session</h3>
-<ul><li>Grounding breath</li><li>One card drawn by the client</li><li>Silent reflection</li><li>Gentle sharing</li><li>Closing ritual</li><li>Optional journalling</li></ul>
-<h3>Group session</h3>
-<ul><li>Intention setting</li><li>Passing of decks</li><li>Each person draws one card</li><li>Optional sharing circle</li><li>Closing blessing</li></ul>
-These questions can act as a doorway to healing, reconciliation and peace.
+{% assign img = site.baseurl | append: "/assets/images" %}
+{% assign d = site.data.decks %}
+<section class="pr-hero">
+<div class="hp-wrap pr-hero-grid">
+<div class="pr-hero-copy hp-intro">
+<p class="hp-eyebrow hp-eyebrow-line">For professionals</p>
+<h1>Death Bed Questions in your practice.</h1>
+<p class="pr-hero-sub">A facilitator’s guide for professionals who support people through illness, loss and the end of life.</p>
+<nav class="pr-jump" aria-label="On this page"><a href="#what">What it is</a><a href="#uses">How it can be used</a><a href="#role">Find your role</a><a href="#principles">Safe practice</a></nav>
+</div>
+<div class="pr-hero-media hp-intro-late"><img src="{{ img }}/home/pro-hands.webp" alt="Two people holding hands beside candles" width="600" height="450"></div>
+</div>
+</section>
+
+<section id="what" class="pr-who">
+<div class="hp-wrap hp-reveal">
+<h2 class="pr-title">Made for the people who sit beside others.</h2>
+<div class="pr-intro-row">
+<div class="pr-fan" aria-hidden="true"><img src="{{ img }}/home/card-feel-safe.webp" alt=""><img src="{{ img }}/home/card-most-alive.webp" alt=""><img src="{{ img }}/home/card-home.webp" alt=""></div>
+<div class="pr-intro-card">
+<p class="hp-eyebrow">What is Death Bed Questions?</p>
+<p class="pr-intro-q">Do you hold space for people facing the hardest conversations of their lives?</p>
+<p>This guide shows how the Death Bed Questions decks can be used in one-to-one and group settings. It uses the same cards as every other deck, with added structure, consent and care.</p>
+<p class="pr-intro-note">The decks are a tool for reflection, conversation and meaning-making. They are not a clinical or diagnostic tool.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="uses" class="pr-uses">
+<div class="hp-wrap hp-reveal">
+<p class="hp-eyebrow">How it can be used</p>
+<h2 class="pr-title">Six kinds of work, and the decks that suit them.</h2>
+<ul class="pr-use-grid">
+<li><h3>Life review</h3><p>Looking back over a whole life, its turning points and what it has meant.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/childhood-becoming/">Childhood &amp; Becoming</a><a href="{{ site.baseurl }}/product/meaning-purpose/">Meaning &amp; Purpose</a></p></li>
+<li><h3>Legacy and memory work</h3><p>Capturing stories, values and wishes to pass on to the people who remain.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/legacy-letting-go/">Legacy &amp; Letting Go</a><a href="{{ site.baseurl }}/product/roots-heritage/">Roots &amp; Heritage</a></p></li>
+<li><h3>Grief support</h3><p>Giving space to what has been lost, and what is still being carried.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/loss-regret-forgiveness/">Loss, Regret &amp; Forgiveness</a></p></li>
+<li><h3>Relationship reflection</h3><p>Helping people say what matters to the people they love, while they can.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/love-connection/">Love &amp; Connection</a></p></li>
+<li><h3>End-of-life preparation</h3><p>Opening gentle conversations about wishes, fears and what comes next.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/legacy-letting-go/">Legacy &amp; Letting Go</a></p></li>
+<li><h3>Meaning-making</h3><p>Exploring values, beliefs and purpose, and what a life has stood for.</p><p class="pr-deck-tags"><a href="{{ site.baseurl }}/product/meaning-purpose/">Meaning &amp; Purpose</a><a href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/">The Essential Collection</a></p></li>
+</ul>
+</div>
+</section>
+
+<section id="role" class="pr-quiz">
+<div class="hp-wrap">
+<div class="pr-quiz-head hp-reveal">
+<p class="hp-eyebrow">Find your role</p>
+<h2 class="pr-title">What could it look like in your setting?</h2>
+<p class="pr-quiz-sub">Choose the role closest to yours to see how Death Bed Questions might fit into your work. These are possibilities, not prescriptions: you know your setting best.</p>
+</div>
+<div class="pr-quiz-box">
+<p class="pr-quiz-q" id="pr-quiz-q">I work as a…</p>
+<div class="pr-role-list" role="group" aria-labelledby="pr-quiz-q">{% for r in site.data.professions %}<button type="button" class="pr-role" aria-pressed="false" aria-controls="role-{{ r.id }}" data-role="{{ r.id }}"><span class="pr-icon" aria-hidden="true">{% case r.icon %}{% when "therapist" %}<svg viewBox="0 0 32 32"><path d="M6 24c0-4 3.6-7 8-7"/><circle cx="14" cy="10" r="4.5"/><path d="M19 22.5h8M23 18.5v8"/></svg>{% when "counsellor" %}<svg viewBox="0 0 32 32"><path d="M5 9a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-8l-5 4v-4H8a3 3 0 0 1-3-3z"/><path d="M23 12h1a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-1v3l-4-3h-5"/></svg>{% when "social" %}<svg viewBox="0 0 32 32"><circle cx="11" cy="10" r="3.6"/><circle cx="22" cy="12" r="3"/><path d="M4 25c0-4 3.1-7 7-7s7 3 7 7"/><path d="M18.5 19.5c1-.9 2.2-1.4 3.5-1.4 3 0 5.5 2.4 5.5 5.5"/></svg>{% when "health" %}<svg viewBox="0 0 32 32"><path d="M5 15 16 6l11 9"/><path d="M8 13v13h16V13"/><path d="M16 16v6M13 19h6"/></svg>{% when "chaplain" %}<svg viewBox="0 0 32 32"><path d="M16 5c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/><path d="M12 26h8M16 20v6"/></svg>{% when "carer" %}<svg viewBox="0 0 32 32"><path d="M16 21s-6-3.6-6-7.8A3.3 3.3 0 0 1 16 11a3.3 3.3 0 0 1 6 2.2C22 17.4 16 21 16 21z"/><path d="M4 22c3 0 5 1 7 3h10c1.5 0 2-2 0-2.5"/><path d="M28 22c-2 0-3.5.6-5 1.5"/></svg>{% when "other" %}<svg viewBox="0 0 32 32"><path d="M16 5v6M16 21v6M5 16h6M21 16h6"/><path d="M9 9l3 3M20 20l3 3M23 9l-3 3M12 20l-3 3"/></svg>{% endcase %}</span><span>{{ r.name }}</span></button>{% endfor %}</div>
+<p class="pr-result-empty" hidden>Choose a role above to see how a session might look.</p>
+{% for r in site.data.professions %}
+<div class="pr-result" id="role-{{ r.id }}" tabindex="-1">
+<h3 class="pr-result-title">{{ r.as }}</h3>
+<div class="pr-result-grid">
+<div class="pr-result-main">
+<p class="pr-result-label">How you might introduce it</p>
+<p class="pr-result-intro">{{ r.introduce }}</p>
+<p class="pr-result-label">Conversations that may be most relevant</p>
+<p class="pr-result-themes">{{ r.themes }}</p>
+<p class="pr-deck-tags">{% for slug in r.decks %}{% assign dk = site.data.decks | where: "slug", slug | first %}<a href="{{ site.baseurl }}/product/{{ dk.slug }}/">{{ dk.name }}</a>{% endfor %}</p>
+</div>
+<div class="pr-result-session">
+<p class="pr-result-label">What a session could look like</p>
+<ol class="pr-flow">{% for st in r.session %}<li><strong>{{ st[0] }}</strong><span>{{ st[1] }}</span></li>{% endfor %}</ol>
+</div>
+</div>
+<div class="pr-result-grid pr-result-foot">
+<div><p class="pr-result-label">Ways to weave it into your practice</p><ul class="pr-ticks">{% for t in r.practice %}<li>{{ t }}</li>{% endfor %}</ul></div>
+<div><p class="pr-result-label">Using it sensitively</p><ul class="pr-ticks pr-ticks-care">{% for t in r.care %}<li>{{ t }}</li>{% endfor %}</ul></div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+
+<section id="principles" class="pr-principles">
+<div class="hp-wrap pr-principles-grid">
+<div class="pr-principles-head hp-reveal">
+<p class="hp-eyebrow">Principles for safe practice</p>
+<h2 class="pr-title">Essential for everyone, whatever your role.</h2>
+<p>However you use the cards, these principles help keep every conversation safe, respectful and in the person’s control.</p>
+</div>
+<ol class="pr-steps hp-reveal">
+<li><h3>Create safety</h3><p>Build emotional and psychological safety before the first card is drawn.</p></li>
+<li><h3>Respect consent and boundaries</h3><p>Explain what the cards are, and agree together whether and how to use them.</p></li>
+<li><h3>Know when to pause or stop</h3><p>Watch for signs that someone needs a break, and make stopping easy.</p></li>
+<li><h3>Be mindful of grief, trauma and vulnerability</h3><p>Questions about a life can touch deep places. Go gently.</p></li>
+<li><h3>Stay within your role</h3><p>Work within the boundaries of your professional role and training.</p></li>
+<li><h3>Signpost when needed</h3><p>Know when to refer on or seek additional support, and where to find it.</p></li>
+<li><h3>Let them stay in control</h3><p>The person being supported decides what, and how much, they share.</p></li>
+</ol>
+</div>
+<div class="hp-wrap">
+<blockquote class="pr-quote hp-reveal">The facilitator’s role is to hold space, <em>not diagnose, interrogate or advise.</em></blockquote>
+<div class="pr-responsibility hp-reveal">
+<p class="pr-result-label">A note on responsibility</p>
+<p>Death Bed Questions is a conversation resource. It is not a substitute for professional judgement, training, safeguarding procedures or legal responsibilities. Each practitioner remains responsible for using it safely, appropriately and within the standards and requirements of their own profession and setting.</p>
+</div>
+</div>
+</section>
+
+<section class="pr-cta">
+<div class="hp-wrap pr-cta-inner hp-reveal">
+<p class="pr-cta-line">These questions can act as a doorway to healing, reconciliation and peace.</p>
+<p class="pr-cta-sub">Using Death Bed Questions in your practice, or thinking about it? We’d love to hear from you.</p>
+<div class="dk-actions pr-cta-actions"><a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/the-decks/">Explore the decks {% include arrow.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/contact/">Get in touch</a></div>
+</div>
+</section>
