@@ -633,12 +633,11 @@ html{scroll-behavior:smooth}
 .ht-scripts h3{font-size:26px}}
 
 /* About page (ab-*) */
-.ab-hero{padding:72px 0 96px;background:radial-gradient(60% 70% at 30% 0%,rgba(255,255,255,.55),transparent 70%),#ebe0cd;border-bottom:1px solid #dccdb4}
-.ab-hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:88px;align-items:center}
-.ab-hero h1{margin:20px 0 0;font:800 clamp(46px,5.4vw,78px)/1.02 "Playfair Display",Georgia,serif;letter-spacing:-.02em;color:var(--hp-olive-text)}
-.ab-hero-sub{margin:28px 0 0;max-width:560px;font:500 23px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.ab-hero{padding:56px 0 64px;background:radial-gradient(60% 70% at 30% 0%,rgba(255,255,255,.55),transparent 70%),#ebe0cd;border-bottom:1px solid #dccdb4}
+.ab-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:96px;align-items:center}
+.ab-hero h1{margin:20px 0 0;max-width:640px;font:800 clamp(40px,4.4vw,64px)/1.06 "Playfair Display",Georgia,serif;letter-spacing:-.02em;color:var(--hp-olive-text)}
 .ab-hero-media{position:relative;margin:0}
-.ab-hero-photo{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:220px 220px 28px 28px;box-shadow:0 34px 70px -10px rgba(60,45,25,.38),0 10px 22px rgba(60,45,25,.14)}
+.ab-hero-photo{display:block;width:100%;aspect-ratio:5/6;object-fit:cover;object-position:50% 30%;border-radius:220px 220px 28px 28px;box-shadow:0 34px 70px -10px rgba(60,45,25,.38),0 10px 22px rgba(60,45,25,.14)}
 .ab-hero-media figcaption{margin-top:16px;text-align:center;font:italic 16px "Playfair Display",Georgia,serif;color:var(--hp-body)}
 .ab-hero-stem{left:-70px;bottom:40px;width:170px;transform:rotate(-14deg);z-index:1}
 .ab-jo{padding:110px 0 100px;max-width:860px;text-align:center}
@@ -676,9 +675,9 @@ html{scroll-behavior:smooth}
 .ab-art-row img{display:block;width:100%;aspect-ratio:600/1035;object-fit:cover;border-radius:12px;box-shadow:0 14px 30px -10px rgba(60,45,25,.35);transition:translate .3s ease}
 .ab-art-row a:hover img{translate:0 -6px}
 .ab-art-row span{font:600 15px/1.3 "Playfair Display",Georgia,serif;text-align:center;text-wrap:balance}
-@media(max-width:900px){.ab-hero{padding:40px 0 56px}
-.ab-hero-grid{grid-template-columns:1fr;gap:40px}
-.ab-hero-sub{font-size:20px}
+@media(max-width:900px){.ab-hero{padding:36px 0 48px}
+.ab-hero-grid{grid-template-columns:1fr;gap:32px}
+.ab-hero-media{max-width:320px;margin:0 auto}
 .ab-hero-stem{display:none}
 .ab-hero-photo{border-radius:160px 160px 22px 22px}
 .ab-jo{padding:72px 0 64px}
