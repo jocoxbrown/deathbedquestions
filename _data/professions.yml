@@ -1,0 +1,157 @@
+# Roles for the "Find your role" section on the Professional page.
+# icon: one of therapist, counsellor, social, health, chaplain, carer, other
+# decks: deck slugs from _data/decks.yml
+
+- id: therapist
+  name: Therapist
+  as: As a therapist
+  icon: therapist
+  introduce: You might offer the cards as an optional, gentle way into a session, inviting a client to look through a deck and choose a question that draws them, rather than one you choose for them.
+  session:
+    - ["Check in", "Begin as you usually would, and ask whether they’d like to try a card today."]
+    - ["Choose", "The client picks a card, or chooses a theme that feels right."]
+    - ["Reflect", "Leave space before anything is said."]
+    - ["Explore", "Follow what emerges, at their pace."]
+    - ["Ground", "Close the session gently, as you would any other."]
+  practice:
+    - Use a single card as an opening when a client finds it hard to begin.
+    - Return to one question over several sessions as themes deepen.
+    - Suggest a card for reflective journalling between sessions.
+  themes: Identity, relationships, memory and meaning
+  decks: [childhood-becoming, love-connection, meaning-purpose]
+  care:
+    - Let the client choose, skip or put a card back at any time.
+    - Slow down when a question touches something raw.
+    - Keep the cards within your existing therapeutic frame and contract.
+
+- id: counsellor
+  name: Counsellor
+  as: As a counsellor
+  icon: counsellor
+  introduce: You might offer the cards as one option among others, explaining that there are no right answers and that any card can be passed.
+  session:
+    - ["Agree a focus", "Talk about what the client would like to explore."]
+    - ["Pick a theme", "Choose a deck that fits, such as loss or relationships."]
+    - ["One question", "Work with a single card at a time."]
+    - ["Reflect back", "Listen, and gently reflect what you hear."]
+    - ["Close", "Bring the session to a calm, contained end."]
+  practice:
+    - Bring in a card when a conversation feels stuck.
+    - Match a themed deck to the focus of a session.
+    - Invite a client to take a question home to sit with.
+  themes: Loss, regret, relationships and change
+  decks: [loss-regret-forgiveness, love-connection, the-mixed-deck-essentials-collection]
+  care:
+    - Let the client set the pace and depth.
+    - Don’t push for more than they want to share.
+    - Have a grounding exercise ready for the end of the session.
+
+- id: social
+  name: Social worker
+  as: As a social worker
+  icon: social
+  introduce: You might introduce a card informally during a visit, as a way to get to know the person behind the paperwork, their history, their family and what matters to them.
+  session:
+    - ["Settle in", "Take a moment before the formal part of the visit."]
+    - ["Offer a card", "Make clear it’s entirely optional."]
+    - ["Listen", "Let the person lead the conversation."]
+    - ["Note what matters", "With their permission, record wishes or preferences."]
+    - ["Close", "Thank them for sharing."]
+  practice:
+    - Use Roots & Heritage questions to understand family history and connections.
+    - Open conversations about wishes and preferences for the future.
+    - Suggest selected cards to families to help them talk together.
+  themes: Family, history, wishes and what matters most
+  decks: [roots-heritage, legacy-letting-go, the-mixed-deck-essentials-collection]
+  care:
+    - Be mindful of the power in your role, and keep the cards separate from assessment.
+    - Make it clear that saying no will never affect their support.
+    - Follow your safeguarding procedures if something concerning is shared.
+
+- id: health
+  name: Healthcare professional
+  as: As a healthcare professional
+  icon: health
+  introduce: You might leave a deck with a patient or family, or offer a single card during a quieter moment of care, as a way to talk about more than symptoms.
+  session:
+    - ["Find a calm moment", "Choose a time when there’s no rush."]
+    - ["Offer one card", "A single question is often enough."]
+    - ["Listen", "Give your full attention, even briefly."]
+    - ["Notice wishes", "Pay attention to anything about what matters most to them."]
+    - ["Hand over", "Share anything important with the wider care team."]
+  practice:
+    - Keep a deck on the ward, in the hospice or in the family room.
+    - Suggest families use the cards together during visits.
+    - Use a card to open conversations about what matters most, alongside care planning.
+  themes: Love, legacy, wishes and what matters most
+  decks: [legacy-letting-go, love-connection, the-mixed-deck-essentials-collection]
+  care:
+    - Be mindful of fatigue and pain; one question may be plenty.
+    - Stay within your clinical role and boundaries.
+    - Refer on to psychological or spiritual care when needed.
+
+- id: chaplain
+  name: Chaplain
+  as: As a chaplain or spiritual carer
+  icon: chaplain
+  introduce: You might offer the cards as a companion to presence, an invitation to reflect on meaning, belief and what has given a life its shape.
+  session:
+    - ["Be still", "Begin with a moment of quiet."]
+    - ["Choose", "The person draws a card or picks a theme."]
+    - ["Reflect", "Allow time to sit with the question."]
+    - ["Share", "Listen without steering."]
+    - ["Close", "End with a blessing, a prayer or silence, as they wish."]
+  practice:
+    - Use Meaning & Purpose questions for reflection, whatever someone’s faith.
+    - Offer a card alongside ritual, prayer or a quiet visit.
+    - Support families gathered at a bedside to talk together.
+  themes: Meaning, belief, forgiveness and legacy
+  decks: [meaning-purpose, legacy-letting-go, loss-regret-forgiveness]
+  care:
+    - Honour every belief, and none.
+    - Don’t steer towards particular answers.
+    - Follow the person’s lead on how much they want to explore.
+
+- id: carer
+  name: Carer
+  as: As a carer
+  icon: carer
+  introduce: You might keep a deck nearby and offer a question during an ordinary moment, over a cup of tea, on a quiet afternoon or while sitting together.
+  session:
+    - ["Sit together", "Choose a relaxed, comfortable moment."]
+    - ["Pick a card", "Choose one together, or let them choose."]
+    - ["Listen", "Enjoy the story; there’s no need to fix anything."]
+    - ["Share back", "Offer a memory of your own if it feels right."]
+    - ["End warmly", "Thank them for sharing."]
+  practice:
+    - Make one question part of a daily or weekly routine.
+    - Write down stories to share with family later.
+    - Use Childhood & Becoming and Roots & Heritage for gentle reminiscence.
+  themes: Childhood, family, home and memory
+  decks: [childhood-becoming, roots-heritage, the-mixed-deck-essentials-collection]
+  care:
+    - Watch for tiredness or distress, and stop whenever needed.
+    - Start with lighter questions.
+    - Pass any concerns on to the care team or family.
+
+- id: other
+  name: Another practitioner
+  as: As another practitioner
+  icon: other
+  introduce: Whether you’re a death doula, celebrant, coach, group facilitator or activities coordinator, you might introduce the cards as an invitation to a conversation that’s often hard to start.
+  session:
+    - ["Set intentions", "Agree ground rules and why you’re gathered."]
+    - ["Choose", "Draw a card, or pass the deck around a circle."]
+    - ["Reflect", "Give everyone time to think."]
+    - ["Share", "Passing is always allowed."]
+    - ["Close", "Finish with a shared moment or ritual."]
+  practice:
+    - Use the cards in groups, memory cafés or workshops.
+    - Use questions as prompts for legacy projects, letters or eulogies.
+    - Offer a deck for families to keep using at home.
+  themes: Legacy, love, memory and meaning
+  decks: [the-mixed-deck-essentials-collection, legacy-letting-go, love-connection]
+  care:
+    - Stay within your training and experience.
+    - Agree group ground rules before you begin.
+    - Know where to signpost if someone needs more support.
