@@ -645,16 +645,15 @@ html{scroll-behavior:smooth}
 .ab-jo-lead{margin:18px 0 0;font:500 clamp(28px,2.8vw,38px)/1.35 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ab-jo-lead strong{color:var(--hp-olive-text)}
 .ab-story{padding:120px 0;background:#f1efe6}
+.ab-story-head{margin-bottom:56px}
 .ab-story-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:96px;align-items:start}
 .ab-story-side{position:sticky;top:40px}
-.ab-story-side h2{margin:16px 0 0;font:700 clamp(36px,3.6vw,52px)/1.1 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
-.ab-story-text{padding-top:44px}
-.ab-story-flowers{position:relative;height:560px;margin-top:24px}
+.ab-story-head h2{margin:16px 0 0;font:700 clamp(36px,3.6vw,52px)/1.1 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.ab-story-text{padding-top:0}
+.ab-story-flowers{position:relative;height:760px;margin-top:0}
 .ab-sf{position:absolute;pointer-events:none;filter:drop-shadow(0 10px 16px rgba(60,45,25,.2))}
-.ab-sf-1{left:20px;top:10px;width:230px;transform:rotate(-10deg)}
-.ab-sf-2{left:170px;top:60px;width:260px;transform:rotate(16deg)}
-.ab-sf-3{left:60px;top:330px;width:200px;transform:rotate(-6deg)}
-.ab-sf-4{left:270px;top:340px;width:150px;transform:rotate(24deg)}
+.ab-sf-1{left:-30px;top:0;width:400px;transform:rotate(-8deg)}
+.ab-sf-2{left:120px;top:130px;width:420px;transform:rotate(14deg)}
 .ab-story-text p{margin:0 0 22px;font-size:18px;line-height:1.8;color:var(--hp-body)}
 .ab-story-text p.ab-story-lead{margin-bottom:30px;font:500 clamp(24px,2.3vw,30px)/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .ab-story-text p.ab-story-lead::first-letter{float:left;margin:8px 12px 0 0;font:700 84px/.8 "Playfair Display",Georgia,serif;color:var(--hp-brown)}
@@ -695,12 +694,12 @@ html{scroll-behavior:smooth}
 .ab-story{padding:64px 0 72px}
 .ab-story-grid{grid-template-columns:1fr;gap:12px}
 .ab-story-side{position:static}
-.ab-story-flowers{height:300px;max-width:340px;margin:12px auto 0}
-.ab-sf-1{left:10px;top:0;width:130px}
-.ab-sf-2{left:120px;top:20px;width:150px}
-.ab-sf-3{left:40px;top:170px;width:120px}
-.ab-sf-4{left:200px;top:180px;width:90px}
-.ab-story-text{padding-top:32px}
+.ab-story-flowers{height:400px;max-width:350px;margin:0 auto}
+.ab-sf-1{left:-10px;top:0;width:220px}
+.ab-sf-2{left:100px;top:60px;width:250px}
+.ab-story-head{margin-bottom:24px}
+.ab-story-head h2 br{display:none}
+.ab-story-text{padding-top:24px}
 .ab-story-text p{font-size:17px}
 .ab-story-text p.ab-story-lead::first-letter{font-size:66px}
 .ab-beliefs{padding:72px 0}
