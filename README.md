@@ -11,7 +11,8 @@ Writings live in the `_posts` folder, one file per piece. Each one appears autom
    - `title`: the title of the piece.
    - `category`: `Letter` or `Reflection` (any new word creates a new filter button).
    - `description`: one sentence shown on the card.
-   - `image`: optional, e.g. `/assets/images/home/my-photo.webp`. Leave empty for a soft quote-mark card.
+   - `flower`: optional, the pressed flower shown on its card, e.g. `/assets/images/home/dried-lace.webp`. Leave empty and one is picked automatically.
+     Available: `dried-lace`, `dried-delphinium-bloom`, `dried-yellow-stem`, `dried-hydrangea-branch`, `dried-cream-branch`, `dried-delphinium-stem`, `dried-hydrangea`.
    - `featured: true` puts it in the large "Start here" spot (only one at a time).
    - `signoff`: optional, e.g. `"With love, Jo"`.
 3. Write the piece below the second `---` line, with an empty line between paragraphs.

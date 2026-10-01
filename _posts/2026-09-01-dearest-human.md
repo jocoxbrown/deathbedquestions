@@ -3,7 +3,7 @@ layout: post
 title: "Dearest human"
 category: Letter
 description: "A welcome letter from Jo, for whoever finds their way here."
-image: "/assets/images/home/about-hands-card.webp"
+flower: "/assets/images/home/dried-delphinium-bloom.webp"
 featured: true
 signoff: "With love, Jo"
 ---
