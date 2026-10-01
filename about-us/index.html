@@ -1,13 +1,91 @@
 ---
-layout: page
+layout: default
 title: "About Us"
-description: "The story behind Death Bed Questions and its creator, Jo Cox-Brown."
+description: "The story behind Death Bed Questions, its creator Jo Cox-Brown and illustrator Kate Stowe."
 permalink: /about-us/
 ---
-<section class="bio"><div class="bio-text"><h2>About Jo Cox-Brown</h2><img class="heading-rule" src="{{ site.baseurl }}/assets/images/Vector.png" alt="">
-<p><strong>Jo Cox-Brown</strong> is the creator of <em>Death Bed Questions</em>. She's an Irish writer, seeker, healer, and guardian of sacred conversations. Born from personal loss and love, her work is rooted in a deep belief that honest conversations have the power to heal, connect, and transform lives.</p>
-<blockquote class="bio-quote">“Honest conversations have the power to heal, connect, and transform lives.”</blockquote>
-<p>Through <em>Death Bed Questions</em>, Jo creates emotional spaces where truth can be spoken, stories can be shared, and love can be expressed before it’s too late. This deck is part of her wider commitment to fostering meaningful human connection, encouraging us all to ask deeply, listen fully, and live with greater courage and compassion.</p></div></section>
-<section class="bio"><div class="bio-text"><h2>Meet Illustrator: Kate Stowe</h2><img class="heading-rule" src="{{ site.baseurl }}/assets/images/Vector.png" alt="">
-<p><strong>Kate Stowe</strong>, illustrator of <em>Death Bed Questions</em>, is a hospice volunteer who honors the end of life as a sacred threshold. Through her experiences, she has witnessed the healing power of courageous conversations and open-hearted presence in supporting living and dying well.</p><p>Kate lives in Sonoma County, California, with her husband and two teenage sons. She spends her days inspired by the natural world, practicing wonder and respect through her art.</p>
-<p><a class="button" href="mailto:katestowe@outlook.com?subject=Death%20Bed%20Questions">Contact Kate</a></p></div></section>
+{% assign img = site.baseurl | append: "/assets/images" %}
+{% assign themed = site.data.decks | where_exp: "d", "d.essential != true" %}
+<section class="ab-hero">
+<div class="hp-wrap ab-hero-grid">
+<div class="ab-hero-copy hp-intro">
+<p class="hp-eyebrow hp-eyebrow-line">About Death Bed Questions</p>
+<h1>The story, the people and the heart behind the questions.</h1>
+</div>
+<div class="ab-hero-media hp-intro-late">
+<img class="ab-hero-photo" src="{{ img }}/home/about-decks.webp" alt="Death Bed Questions decks laid out on a table" width="1100" height="1648">
+</div>
+</div>
+</section>
+
+<section class="ab-jo">
+<div class="hp-wrap">
+<div class="ab-book hp-reveal">
+<div class="ab-page ab-page-l"><img class="ab-jo-photo" src="{{ img }}/home/about-jo.webp" alt="Jo Cox-Brown holding a Loss, Regret &amp; Forgiveness deck" width="1100" height="1648" loading="lazy"></div>
+<div class="ab-page ab-page-r">
+<p class="hp-eyebrow">Meet Jo</p>
+<p class="ab-jo-lead"><strong>Jo Cox-Brown</strong> is the creator of <em>Death Bed Questions</em>. She’s an Irish writer, seeker, healer and guardian of sacred conversations.</p>
+<img class="hp-flora ab-jo-flower" src="{{ img }}/home/dried-cream-branch.webp" alt="" aria-hidden="true" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<section class="ab-story">
+<div class="hp-wrap ab-story-head hp-reveal">
+<p class="hp-eyebrow">How it began</p>
+<h2>One family, one hospital room, five months.</h2>
+</div>
+<div class="hp-wrap ab-story-grid">
+<div class="ab-story-side hp-reveal">
+<div class="ab-story-flowers" aria-hidden="true">
+<img class="ab-sf ab-sf-1" src="{{ img }}/home/dried-delphinium-stem.webp" alt="" loading="lazy">
+<img class="ab-sf ab-sf-2" src="{{ img }}/home/dried-cream-branch.webp" alt="" loading="lazy">
+</div>
+</div>
+<div class="ab-story-text hp-reveal">
+<p class="ab-story-lead">Death Bed Questions was created by Jo Cox-Brown. It began with one family, one hospital room, and the five months Jo had left with her mum.</p>
+<p>With time suddenly measured, Jo found herself asking questions she might otherwise never have thought to ask. About childhood. Family. Love. Loss. The choices that shape a life, and the small memories that stay with us.</p>
+<p>Every night after work, Jo went to the hospital and they sat with a cup of tea, or a cold Fanta and ice cream on the hot nights, and talked.</p>
+<p>As they talked, Jo began to discover parts of her mum’s story she had never known. Things that had happened long before she was there to witness them. Stories that might otherwise have quietly disappeared.</p>
+<p class="ab-story-turn">Those conversations became something precious.</p>
+<p>And from them came <em>Death Bed Questions</em>: a collection of thoughtful questions designed to open up the conversations we don’t always think to have.</p>
+<p>Not simply about dying, but about living. About the people we have been, the lives we have led, and the stories we leave behind.</p>
+<p class="ab-story-end">Because sometimes, the simplest questions give us the chance to know someone a little more deeply, while we still can.</p>
+</div>
+</div>
+</section>
+
+<section class="hp-statement ab-quote">
+<div class="hp-glow hp-statement-glow hp-statement-glow-a" aria-hidden="true"></div>
+<div class="hp-glow hp-statement-glow hp-statement-glow-b" aria-hidden="true"></div>
+<div class="hp-wrap">
+<p><span class="hp-phrase">“The memories are one of my</span> <span class="hp-phrase"><em>most treasured possessions.”</em></span></p>
+<p class="ab-quote-by">Jo Cox-Brown</p>
+</div>
+</section>
+
+<section class="ab-beliefs hp-wrap hp-reveal">
+<h2 class="ab-beliefs-title"><span>Jo’s ethos</span></h2>
+<ul class="ab-pillars">
+<li><h3>Ask deeply.</h3><p>The questions we are most afraid to ask are often the ones that matter most.</p></li>
+<li><h3>Listen wholly.</h3><p>Being heard, without being fixed or corrected, is a gift in itself.</p></li>
+<li><h3>Love courageously.</h3><p>Say it now, while there is still time to say it.</p></li>
+</ul>
+</section>
+
+<section class="ab-kate">
+<div class="hp-wrap ab-kate-grid hp-reveal">
+<div class="ab-kate-media">
+<img class="ab-kate-photo" src="{{ img }}/home/about-kate.webp" alt="Kate Stowe" width="700" height="933" loading="lazy">
+<div class="ab-kate-fan" aria-hidden="true">{% assign pick = "2,3,5" | split: "," %}{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
+</div>
+<div class="ab-kate-copy">
+<p class="hp-eyebrow">The illustrations</p>
+<h2>Illustrated by Kate Stowe</h2>
+<p><strong>Kate Stowe</strong> is a hospice volunteer who honours the end of life as a sacred threshold. Through her work she has seen the healing power of courageous conversations and open-hearted presence.</p>
+<p>Kate lives in Sonoma County, California, with her husband and two teenage sons, and draws her inspiration from the natural world.</p>
+<a class="hp-btn hp-btn-outline" href="mailto:katestowe@outlook.com?subject=Death%20Bed%20Questions">Contact Kate</a>
+</div>
+</div>
+</section>
