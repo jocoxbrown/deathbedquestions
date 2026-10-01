@@ -3,7 +3,7 @@ layout: post
 title: "Your title"
 category: Reflection
 description: "One sentence that appears on the Writings page."
-image: ""
+flower: ""
 featured: false
 signoff: ""
 published: false

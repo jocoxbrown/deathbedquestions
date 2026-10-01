@@ -3,7 +3,7 @@ layout: post
 title: "For the living"
 category: Reflection
 description: "Death Bed Questions are not about death. They are about life."
-image: "/assets/images/home/hero-mother-daughter.webp"
+flower: "/assets/images/home/dried-yellow-stem.webp"
 featured: false
 ---
 

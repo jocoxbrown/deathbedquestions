@@ -3,7 +3,7 @@ layout: post
 title: "The questions we carry until it’s too late"
 category: Reflection
 description: "On the questions we live with quietly, and why Death Bed Questions began."
-image: "/assets/images/home/step-set-the-space.webp"
+flower: "/assets/images/home/dried-lace.webp"
 featured: false
 ---
 

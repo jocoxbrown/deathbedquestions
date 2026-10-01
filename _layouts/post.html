@@ -2,8 +2,12 @@
 layout: default
 ---
 {% assign words = content | number_of_words %}
+{% assign img = site.baseurl | append: "/assets/images" %}
+{% if page.flower and page.flower != "" %}{% assign fl = page.flower | relative_url %}{% else %}{% assign fl = img | append: "/home/dried-lace.webp" %}{% endif %}
 <article class="wp">
 <header class="wp-hero">
+<img class="hp-flora wp-fl wp-fl-hero-l" src="{{ img }}/home/dried-hydrangea-branch.webp" alt="" aria-hidden="true">
+<img class="hp-flora wp-fl wp-fl-hero-r" src="{{ fl }}" alt="" aria-hidden="true">
 <div class="hp-wrap wp-hero-inner hp-intro">
 <a class="pd-back" href="{{ site.baseurl }}/writings-letters-for-the-living/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All writings</a>
 <p class="wr-meta"><span class="wr-tag">{{ page.category | default: "Writing" }}</span>{{ words | divided_by: 200 | plus: 1 }} min read</p>
@@ -12,10 +16,13 @@ layout: default
 <p class="wp-by">Jo Cox-Brown</p>
 </div>
 </header>
-{% if page.image and page.image != "" %}<div class="hp-wrap wp-image hp-intro-late"><img src="{{ page.image | relative_url }}" alt=""></div>{% endif %}
+<div class="wp-body-wrap">
+{% if fl contains "yellow-stem" %}{% assign sidel = "dried-delphinium-stem" %}{% else %}{% assign sidel = "dried-yellow-stem" %}{% endif %}<img class="hp-flora wp-fl wp-fl-side-l" src="{{ img }}/home/{{ sidel }}.webp" alt="" aria-hidden="true" loading="lazy">
+{% if fl contains "delphinium-bloom" %}{% assign side = "dried-lace" %}{% else %}{% assign side = "dried-delphinium-bloom" %}{% endif %}<img class="hp-flora wp-fl wp-fl-side-r" src="{{ img }}/home/{{ side }}.webp" alt="" aria-hidden="true" loading="lazy">
 <div class="wp-body">
 {{ content }}
 {% if page.signoff and page.signoff != "" %}<p class="wp-signoff">{{ page.signoff | replace: ", ", ",<br>" }}</p>{% endif %}
+</div>
 </div>
 {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
 {% if others.size > 0 %}
@@ -25,7 +32,7 @@ layout: default
 <ul class="wr-grid wr-grid-more">
 {% for post in others limit:3 %}
 <li><a class="wr-card" href="{{ post.url | relative_url }}">
-<span class="wr-card-media">{% if post.image and post.image != "" %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="wr-mark" aria-hidden="true">“</span>{% endif %}</span>
+<span class="wr-card-media wr-flower-media">{% if post.flower and post.flower != "" %}<img src="{{ post.flower | relative_url }}" alt="" loading="lazy">{% else %}<img src="{{ img }}/home/dried-cream-branch.webp" alt="" loading="lazy">{% endif %}</span>
 <span class="wr-card-body"><span class="wr-meta"><span class="wr-tag">{{ post.category | default: "Writing" }}</span></span><span class="wr-card-title">{{ post.title }}</span><span class="wr-card-desc">{{ post.description }}</span><span class="wr-read">Read {% include arrow.html %}</span></span>
 </a></li>
 {% endfor %}

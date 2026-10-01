@@ -7,6 +7,7 @@ permalink: /writings-letters-for-the-living/
 {% assign img = site.baseurl | append: "/assets/images" %}
 {% assign featured = site.posts | where: "featured", true | first %}
 {% unless featured %}{% assign featured = site.posts | first %}{% endunless %}
+{% assign flowers = "dried-lace,dried-delphinium-bloom,dried-yellow-stem,dried-hydrangea-branch,dried-cream-branch,dried-hydrangea" | split: "," %}
 {% assign cats = site.posts | map: "category" | uniq | sort %}
 <section class="wr-hero">
 <div class="hp-wrap wr-hero-inner hp-intro">
@@ -21,7 +22,7 @@ permalink: /writings-letters-for-the-living/
 {% if featured %}
 <section class="wr-featured hp-wrap hp-reveal">
 <a class="wr-feature" href="{{ featured.url | relative_url }}">
-<span class="wr-feature-media">{% if featured.image and featured.image != "" %}<img src="{{ featured.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="wr-mark" aria-hidden="true">“</span>{% endif %}</span>
+<span class="wr-feature-media wr-flower-media">{% if featured.flower and featured.flower != "" %}{% assign fl = featured.flower | relative_url %}{% else %}{% assign fl = img | append: "/home/" | append: flowers[0] | append: ".webp" %}{% endif %}<img src="{{ fl }}" alt="" loading="lazy"></span>
 <span class="wr-feature-copy">
 <span class="wr-meta"><span class="wr-tag">{% if featured.featured %}Start here{% else %}Latest{% endif %}</span>{% assign words = featured.content | number_of_words %}{{ words | divided_by: 200 | plus: 1 }} min read</span>
 <span class="wr-feature-title">{{ featured.title }}</span>
@@ -42,7 +43,7 @@ permalink: /writings-letters-for-the-living/
 <ul class="wr-grid">
 {% for post in site.posts %}
 <li class="hp-reveal" data-cat="{{ post.category | slugify }}"><a class="wr-card" href="{{ post.url | relative_url }}">
-<span class="wr-card-media">{% if post.image and post.image != "" %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy">{% else %}<span class="wr-mark" aria-hidden="true">“</span>{% endif %}</span>
+<span class="wr-card-media wr-flower-media">{% if post.flower and post.flower != "" %}{% assign fl = post.flower | relative_url %}{% else %}{% assign fi = forloop.index0 | modulo: flowers.size %}{% assign fl = img | append: "/home/" | append: flowers[fi] | append: ".webp" %}{% endif %}<img src="{{ fl }}" alt="" loading="lazy"></span>
 <span class="wr-card-body">
 <span class="wr-meta"><span class="wr-tag">{{ post.category | default: "Writing" }}</span>{% assign words = post.content | number_of_words %}{{ words | divided_by: 200 | plus: 1 }} min read</span>
 <span class="wr-card-title">{{ post.title }}</span>
