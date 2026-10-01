@@ -12,29 +12,33 @@ permalink: /about-us/
 <p class="hp-eyebrow hp-eyebrow-line">About Death Bed Questions</p>
 <h1>The story, the people and the heart behind the questions.</h1>
 </div>
-<figure class="ab-hero-media hp-intro-late">
+<div class="ab-hero-media hp-intro-late">
 <img class="hp-flora ab-hero-stem" src="{{ img }}/home/dried-delphinium-stem.webp" alt="" aria-hidden="true">
-<img class="ab-hero-photo" src="{{ img }}/home/about-jo.webp" alt="Jo Cox-Brown holding a Loss, Regret &amp; Forgiveness deck" width="1100" height="1648">
-<figcaption>Jo Cox-Brown, creator of Death Bed Questions</figcaption>
-</figure>
+<img class="ab-hero-photo" src="{{ img }}/home/about-decks.webp" alt="Death Bed Questions decks laid out on a table" width="1100" height="1648">
+</div>
 </div>
 </section>
 
-<section class="ab-jo hp-wrap hp-reveal">
+<section class="ab-jo hp-reveal">
+<div class="hp-wrap ab-jo-grid">
+<img class="ab-jo-photo" src="{{ img }}/home/about-jo.webp" alt="Jo Cox-Brown holding a Loss, Regret &amp; Forgiveness deck" width="1100" height="1648" loading="lazy">
+<div class="ab-jo-copy">
 <p class="hp-eyebrow">Meet Jo</p>
 <p class="ab-jo-lead"><strong>Jo Cox-Brown</strong> is the creator of <em>Death Bed Questions</em>. She’s an Irish writer, seeker, healer and guardian of sacred conversations.</p>
-<p class="ab-jo-text">Born from personal loss and love, her work is rooted in a deep belief that honest conversations have the power to heal, connect and transform lives. Through <em>Death Bed Questions</em>, Jo creates spaces where truth can be spoken, stories can be shared, and love can be expressed before it’s too late.</p>
+</div>
+</div>
 </section>
 
 <section class="ab-story">
-<div class="hp-wrap">
+<div class="hp-wrap ab-story-col hp-reveal">
 <p class="hp-eyebrow">How it began</p>
-<h2 class="dk-list-title">From one hospital room to six decks.</h2>
-<ol class="ab-chapters">
-<li class="hp-reveal"><span class="ab-chapter-num" aria-hidden="true">01</span><h3>Five months to say goodbye</h3><p>When Jo’s mum was dying, they had five months together. Every night after work, Jo went to the hospital and they sat with a cup of tea, or a cold Fanta and ice cream on the hot nights, and talked.</p></li>
-<li class="hp-reveal"><span class="ab-chapter-num" aria-hidden="true">02</span><h3>Questions that opened doors</h3><p>Some nights it was just one question; other nights they worked through ten or more. Their conversations were full of things they had never explored before, and they helped them both to say goodbye and to heal while they still could.</p></li>
-<li class="hp-reveal"><span class="ab-chapter-num" aria-hidden="true">03</span><h3>Made for the living</h3><p>What began as a personal act of healing became six decks, so that no one else has to wonder what someone they love wanted to say. Today they’re used at kitchen tables and bedsides, and by hospice teams, therapists and death doulas.</p></li>
-</ol>
+<p class="ab-story-lead">Death Bed Questions was created by Jo Cox-Brown. It began with one family, one hospital room, and the five months Jo had left with her mum.</p>
+<p>With time suddenly measured, Jo found herself asking questions she might otherwise never have thought to ask. About childhood. Family. Love. Loss. The choices that shape a life, and the small memories that stay with us. Every night after work, Jo went to the hospital and they sat with a cup of tea, or a cold Fanta and ice cream on the hot nights, and talked.</p>
+<p>As they talked, Jo began to discover parts of her mum’s story she had never known. Things that had happened long before she was there to witness them. Stories that might otherwise have quietly disappeared.</p>
+<p class="ab-story-turn">Those conversations became something precious.</p>
+<p>And from them came <em>Death Bed Questions</em>: a collection of thoughtful questions designed to open up the conversations we don’t always think to have.</p>
+<p>Not simply about dying, but about living. About the people we have been, the lives we have led, and the stories we leave behind.</p>
+<p class="ab-story-end">Because sometimes, the simplest questions give us the chance to know someone a little more deeply, while we still can.</p>
 </div>
 </section>
 
@@ -48,7 +52,7 @@ permalink: /about-us/
 </section>
 
 <section class="ab-beliefs hp-wrap hp-reveal">
-<p class="hp-eyebrow">What Jo believes</p>
+<h2 class="ab-beliefs-title">Jo’s ethos</h2>
 <ul class="ab-pillars">
 <li><h3>Ask deeply.</h3><p>The questions we are most afraid to ask are often the ones that matter most.</p></li>
 <li><h3>Listen wholly.</h3><p>Being heard, without being fixed or corrected, is a gift in itself.</p></li>
@@ -58,7 +62,10 @@ permalink: /about-us/
 
 <section class="ab-kate">
 <div class="hp-wrap ab-kate-grid hp-reveal">
+<div class="ab-kate-media">
 <img class="ab-kate-photo" src="{{ img }}/home/about-kate.webp" alt="Kate Stowe" width="700" height="933" loading="lazy">
+<div class="ab-kate-fan" aria-hidden="true">{% assign pick = "2,3,5" | split: "," %}{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
+</div>
 <div class="ab-kate-copy">
 <p class="hp-eyebrow">The illustrations</p>
 <h2>Illustrated by Kate Stowe</h2>
@@ -66,9 +73,5 @@ permalink: /about-us/
 <p>Kate lives in Sonoma County, California, with her husband and two teenage sons, and draws her inspiration from the natural world.</p>
 <a class="hp-btn hp-btn-outline" href="mailto:katestowe@outlook.com?subject=Death%20Bed%20Questions">Contact Kate</a>
 </div>
-</div>
-<div class="hp-wrap ab-art hp-reveal">
-<p class="ab-art-label">Kate’s artwork for the six decks</p>
-<ul class="ab-art-row">{% for d in themed %}<li><a href="{{ site.baseurl }}/product/{{ d.slug }}/"><img src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork" loading="lazy"><span>{{ d.name }}</span></a></li>{% endfor %}</ul>
 </div>
 </section>
