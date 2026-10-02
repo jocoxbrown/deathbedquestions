@@ -58,3 +58,41 @@ permalink: /writings-letters-for-the-living/
 {% endif %}
 </div>
 </section>
+
+{% assign mem = site.data.memories %}
+<section id="share" class="wr-share">
+<div class="hp-wrap">
+<div class="wr-share-head hp-reveal">
+<p class="hp-eyebrow">Shared memories</p>
+<h2 class="dk-list-title">Add your voice.</h2>
+<p class="wr-share-sub">Answer this month’s question, or share a memory of someone you love. Every submission is read with care before it’s shared here, anonymously, for others to find.</p>
+</div>
+<div class="wr-share-grid">
+<div class="wr-share-q hp-reveal">
+{% if mem.card and mem.card != "" %}<img class="wr-share-card" src="{{ mem.card | relative_url }}" alt="A Death Bed Questions card reading “{{ mem.question }}”" loading="lazy">{% endif %}
+<p class="wr-share-label">This month’s question</p>
+<p class="wr-share-question">{{ mem.question }}</p>
+</div>
+<form class="wr-form hp-reveal" action="{{ site.memories_form }}" method="post" data-email="{{ site.memories_email }}" data-question="{{ mem.question | escape }}">
+<fieldset class="wr-kind"><legend class="visually-hidden">What would you like to share?</legend>
+<label><input type="radio" name="kind" value="answer" checked> Answer the question</label>
+<label><input type="radio" name="kind" value="memory"> Share a memory</label>
+</fieldset>
+<label class="wr-field"><span>Your words</span><textarea name="message" rows="6" required maxlength="1500" placeholder="Take your time…"></textarea></label>
+<label class="wr-field"><span>Sign as <em>(optional)</em></span><input type="text" name="signed" maxlength="60" placeholder="e.g. A daughter in Leeds"></label>
+<p class="wr-form-note">Please don’t include full names or anything that could identify you or others.</p>
+<label class="wr-consent"><input type="checkbox" name="consent" value="yes" required> I’m happy for this to be shared anonymously on the Death Bed Questions website.</label>
+<input type="text" name="_gotcha" class="signup-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit" class="hp-btn hp-btn-primary">Share {% include arrow.html %}</button>
+<p class="wr-form-done" role="status" hidden>Thank you for sharing. Your words will be read with care, and may appear here soon.</p>
+</form>
+</div>
+<div class="wr-wall">
+{% if mem.entries.size > 0 %}
+<ul class="wr-wall-list">{% for e in mem.entries %}<li class="wr-note hp-reveal"><p class="wr-note-kind">{% if e.kind == "memory" %}A memory{% else %}{{ mem.question }}{% endif %}</p><blockquote>{{ e.text }}</blockquote><p class="wr-note-by">{{ e.signed | default: "Anonymous" }}</p></li>{% endfor %}</ul>
+{% else %}
+<div class="wr-wall-empty hp-reveal"><span class="wr-mark" aria-hidden="true">“</span><p>Shared memories will appear here. Yours could be the first.</p></div>
+{% endif %}
+</div>
+</div>
+</section>

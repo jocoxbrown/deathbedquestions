@@ -1,0 +1,12 @@
+# Shared memories on the Writings page.
+#
+# question: the current "question of the month". Change it whenever you like.
+# card: optional image of the matching question card.
+# entries: approved submissions, newest first. Only add ones you are happy to publish.
+#   - text: "The memory or answer, exactly as shared (remove any names or identifying details)."
+#     signed: "A daughter in Leeds"   # optional; leave empty to show "Anonymous"
+#     kind: answer                     # answer (to the question) or memory
+
+question: "What made you feel safe as a child?"
+card: "/assets/images/home/card-feel-safe.webp"
+entries: []
