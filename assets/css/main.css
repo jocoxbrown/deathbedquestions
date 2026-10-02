@@ -1008,7 +1008,7 @@ html{scroll-behavior:smooth}
 .wr-note blockquote{margin:14px 0 0;font:italic 500 20px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .wr-note-by{margin:16px 0 0;font-size:14px;color:#7a6c55}
 .wr-wall-empty{max-width:520px;margin:0 auto;text-align:center}
-.wr-wall-empty .wr-mark{width:80px;height:80px;margin:0 auto;border-radius:50%;font-size:64px}
+.wr-wall-empty .wr-mark{width:80px;height:80px;margin:0 auto;border-radius:50%;font-size:64px;box-sizing:border-box;padding:.31em .06em 0 0}
 .wr-wall-empty p{margin:14px 0 0;font:italic 19px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-body)}
 @media(max-width:900px){.wr-share{padding:64px 0 72px}
 .wr-share-grid{grid-template-columns:1fr;gap:36px;margin-top:32px}
