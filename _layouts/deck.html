@@ -16,7 +16,7 @@ layout: default
 {% if d.essential %}
 <div class="pd-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
 {% else %}
-<img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">
+{% if d.box %}<img class="pd-card pd-box" src="{{ site.baseurl }}{{ d.box }}" alt="{{ d.name }} tuckbox" width="600" height="1003">{% else %}<img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">{% endif %}
 {% endif %}
 </div>
 <div class="pd-copy hp-intro">
