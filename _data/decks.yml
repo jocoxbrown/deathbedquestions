@@ -122,6 +122,7 @@
   color: "#4F6475"
   image: /assets/images/Meaning-Purpose-Deck-600x1035.png
   image_full: /assets/images/Meaning-Purpose-Deck.png
+  box: /assets/images/boxes/box-meaning-purpose.webp
   amazon: https://www.amazon.co.uk/dp/B0HFKJMTPV
   description: "A reflective deck for discovering what truly mattered."
   explores: "values, wisdom, personal truth and life direction"
@@ -177,6 +178,7 @@
   anchor: essential
   essential: true
   name: "The Essential Collection"
+  box: /assets/images/boxes/box-the-mixed-deck-essentials-collection.webp
   color: "#999a7f"
   amazon: https://www.amazon.co.uk/dp/B0HFTBFHD3
   description: "A curated starting point: 52 cards specially selected from across all six decks."

@@ -60,7 +60,7 @@ permalink: /the-decks/
 <p>A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</p>
 <div class="dk-actions"><a class="hp-btn dk-btn-ink" href="{{ essential.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ essential.slug }}/">View the collection {% include arrow.html %}</a></div>
 </div>
-<div class="dk-essential-fan" aria-hidden="true">{% for i in (0..3) %}{% assign pick = "3,1,0,4" | split: "," %}{% assign idx = pick[i] | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}</div>
+<div class="dk-essential-fan" aria-hidden="true">{% for i in (0..3) %}{% assign pick = "3,1,0,4" | split: "," %}{% assign idx = pick[i] | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}{% if essential.box %}<img class="dk-essential-box" src="{{ site.baseurl }}{{ essential.box }}" alt="" loading="lazy">{% endif %}</div>
 </div></section>
 
 <section class="dk-who hp-reveal"><div class="hp-wrap dk-who-grid">

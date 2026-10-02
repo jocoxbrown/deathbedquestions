@@ -418,6 +418,7 @@ html{scroll-behavior:smooth}
 .dk-essential-fan img:nth-child(2),.pd-fan img:nth-child(2){left:150px;top:40px;transform:rotate(-5deg)}
 .dk-essential-fan img:nth-child(3),.pd-fan img:nth-child(3){left:240px;top:36px;transform:rotate(4deg)}
 .dk-essential-fan img:nth-child(4),.pd-fan img:nth-child(4){left:330px;top:70px;transform:rotate(13deg)}
+.dk-essential-fan img.dk-essential-box{left:185px;top:58px;width:200px;border-radius:4px;transform:rotate(-1.5deg);box-shadow:0 26px 50px rgba(60,45,25,.35);z-index:1}
 
 /* Who the decks are for */
 .dk-who{position:relative;overflow:hidden;padding:120px 0;background:#eeeae0}
@@ -498,6 +499,7 @@ html{scroll-behavior:smooth}
 .dk-essential-fan img:nth-child(2),.pd-fan img:nth-child(2){left:60px;top:24px}
 .dk-essential-fan img:nth-child(3),.pd-fan img:nth-child(3){left:120px;top:22px}
 .dk-essential-fan img:nth-child(4),.pd-fan img:nth-child(4){left:180px;top:50px}
+.dk-essential-fan img.dk-essential-box{left:88px;top:28px;width:120px}
 .dk-who{padding:72px 0}
 .dk-who-grid{gap:36px}
 .dk-who h2{font-size:34px}
