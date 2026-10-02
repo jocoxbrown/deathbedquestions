@@ -65,7 +65,7 @@ permalink: /writings-letters-for-the-living/
 <div class="wr-share-head hp-reveal">
 <p class="hp-eyebrow">Shared memories</p>
 <h2 class="dk-list-title">Add your voice.</h2>
-<p class="wr-share-sub">Answer this month’s question, or share a memory of someone you love. Every submission is read with care before it’s shared here, anonymously, for others to find.</p>
+<p class="wr-share-sub"><strong>Answer this month’s question, or share a memory of someone you love.</strong><br><em>Every submission is read with care before it’s shared here, anonymously, for others to find.</em></p>
 </div>
 <div class="wr-share-grid">
 <div class="wr-share-q hp-reveal">
@@ -91,7 +91,7 @@ permalink: /writings-letters-for-the-living/
 {% if mem.entries.size > 0 %}
 <ul class="wr-wall-list">{% for e in mem.entries %}<li class="wr-note hp-reveal"><p class="wr-note-kind">{% if e.kind == "memory" %}A memory{% else %}{{ mem.question }}{% endif %}</p><blockquote>{{ e.text }}</blockquote><p class="wr-note-by">{{ e.signed | default: "Anonymous" }}</p></li>{% endfor %}</ul>
 {% else %}
-<div class="wr-wall-empty hp-reveal"><span class="wr-mark" aria-hidden="true">“</span><p>Shared memories will appear here. Yours could be the first.</p></div>
+<div class="wr-wall-empty hp-reveal"><span class="wr-mark" aria-hidden="true">“</span></div>
 {% endif %}
 </div>
 </div>

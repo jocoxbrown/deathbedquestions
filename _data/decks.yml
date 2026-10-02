@@ -6,6 +6,7 @@
   color: "#9A5F3C"
   image: /assets/images/Roots-and-Heritage-600x1036.png
   image_full: /assets/images/Roots-and-Heritage.png
+  box: /assets/images/boxes/box-roots-heritage.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBFC8X
   description: "A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations."
   explores: "ancestry, family lines and inherited stories"
@@ -32,6 +33,7 @@
   color: "#C79A8F"
   image: /assets/images/Childhood-and-Becoming-600x1035.png
   image_full: /assets/images/Childhood-and-Becoming.png
+  box: /assets/images/boxes/box-childhood-becoming.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT2VGY6
   description: "A tender return to the moments and influences that shaped who you became."
   explores: "early memories, shaping experiences and the inner child"
@@ -60,6 +62,7 @@
   color: "#A85F65"
   image: /assets/images/Love-Connection-Deck-600x1035.png
   image_full: /assets/images/Love-Connection-Deck.png
+  box: /assets/images/boxes/box-love-connection.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBBD24
   description: "A heart-opening deck designed to deepen closeness, trust, and emotional understanding."
   explores: "deeper intimacy, honesty and emotional truth"
@@ -88,6 +91,7 @@
   color: "#7D788C"
   image: /assets/images/Loss-Regret-Forgiveness-1-600x1035.png
   image_full: /assets/images/Loss-Regret-Forgiveness-1.png
+  box: /assets/images/boxes/box-loss-regret-forgiveness.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT87JYK
   description: "A tender deck for exploring grief, regret, forgiveness, and emotional release."
   explores: "grief, healing, release and truth-telling"
@@ -118,6 +122,7 @@
   color: "#4F6475"
   image: /assets/images/Meaning-Purpose-Deck-600x1035.png
   image_full: /assets/images/Meaning-Purpose-Deck.png
+  box: /assets/images/boxes/box-meaning-purpose.webp
   amazon: https://www.amazon.co.uk/dp/B0HFKJMTPV
   description: "A reflective deck for discovering what truly mattered."
   explores: "values, wisdom, personal truth and life direction"
@@ -146,6 +151,7 @@
   color: "#8FA897"
   image: /assets/images/Legacy-and-letting-go-600x1035.png
   image_full: /assets/images/Legacy-and-letting-go.png
+  box: /assets/images/boxes/box-legacy-letting-go.webp
   amazon: https://www.amazon.co.uk/dp/B0HFSZFS3L
   description: "A sacred deck designed to help you explore endings, legacy, and release."
   explores: "endings, blessings, continuation and peaceful transition"
@@ -172,6 +178,7 @@
   anchor: essential
   essential: true
   name: "The Essential Collection"
+  box: /assets/images/boxes/box-the-mixed-deck-essentials-collection.webp
   color: "#999a7f"
   amazon: https://www.amazon.co.uk/dp/B0HFTBFHD3
   description: "A curated starting point: 52 cards specially selected from across all six decks."

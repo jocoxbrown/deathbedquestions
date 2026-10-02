@@ -13,10 +13,10 @@ layout: default
 <section class="pd-hero">
 <div class="pd-media hp-intro-late">
 <span class="pd-circle" aria-hidden="true"></span>
-{% if d.essential %}
+{% if d.essential and d.box == nil %}
 <div class="pd-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="">{% endfor %}</div>
 {% else %}
-<img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">
+{% if d.box %}<img class="pd-card pd-box" src="{{ site.baseurl }}{{ d.box }}" alt="{{ d.name }} tuckbox" width="600" height="1003">{% else %}<img class="pd-card" src="{{ site.baseurl }}{{ d.image }}" alt="{{ d.name }} deck artwork">{% endif %}
 {% endif %}
 </div>
 <div class="pd-copy hp-intro">
@@ -53,7 +53,7 @@ layout: default
 <p>A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</p>
 <div class="dk-actions"><a class="hp-btn dk-btn-ink" href="{{ essential.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ essential.slug }}/">View the collection {% include arrow.html %}</a></div>
 </div>
-<div class="dk-essential-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}</div>
+<div class="dk-essential-fan" aria-hidden="true">{% for p in pick %}{% assign idx = p | plus: 0 %}<img src="{{ site.baseurl }}{{ themed[idx].image }}" alt="" loading="lazy">{% endfor %}{% if essential.box %}<img class="dk-essential-box" src="{{ site.baseurl }}{{ essential.box }}" alt="" loading="lazy">{% endif %}</div>
 </div></section>
 {% endunless %}
 </div>
