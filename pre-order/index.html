@@ -1,7 +1,76 @@
 ---
-layout: page
+layout: default
 title: "Order the decks"
-description: "Order Death Bed Questions conversation decks through Amazon."
+description: "Order Death Bed Questions conversation decks on Amazon: The Essential Collection and six themed decks."
 permalink: /pre-order/
 ---
-<p class="lead">Choose a deck to view its details and order through Amazon.</p><section class="deck-grid"><a class="deck-card" href="{{ site.baseurl }}/product/roots-heritage/"><img src="{{ site.baseurl }}/assets/images/Roots-and-Heritage.png" alt="Roots &amp; Heritage"><h2>Roots & Heritage</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/childhood-becoming/"><img src="{{ site.baseurl }}/assets/images/Childhood-and-Becoming.png" alt="Childhood &amp; Becoming"><h2>Childhood & Becoming</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/love-connection/"><img src="{{ site.baseurl }}/assets/images/Love-Connection-Deck.png" alt="Love &amp; Connection"><h2>Love & Connection</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/loss-regret-forgiveness/"><img src="{{ site.baseurl }}/assets/images/Loss-Regret-Forgiveness-1.png" alt="Loss, Regret &amp; Forgiveness"><h2>Loss, Regret & Forgiveness</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/meaning-purpose/"><img src="{{ site.baseurl }}/assets/images/Meaning-Purpose-Deck.png" alt="Meaning &amp; Purpose"><h2>Meaning & Purpose</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/legacy-letting-go/"><img src="{{ site.baseurl }}/assets/images/Legacy-and-letting-go.png" alt="Legacy &amp; Letting Go"><h2>Legacy & Letting Go</h2><p>View deck and Amazon ordering details</p></a><a class="deck-card" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><img src="{{ site.baseurl }}/assets/images/banner-image.png" alt="The Essential Collection"><h2>The Essential Collection</h2><p>A curated selection from the six themes, not an additional set of completely different questions. View deck and Amazon ordering details.</p></a></section>
+{% assign img = site.baseurl | append: "/assets/images" %}
+{% assign themed = site.data.decks | where_exp: "d", "d.essential != true" %}
+{% assign essential = site.data.decks | where: "essential", true | first %}
+<section class="od-hero">
+<div class="hp-wrap od-hero-grid">
+<div class="od-hero-copy hp-intro">
+<p class="hp-eyebrow hp-eyebrow-line">Order the decks</p>
+<h1>Choose your deck.</h1>
+<p class="od-hero-sub">Every Death Bed Questions deck is available to order on Amazon. Start with The Essential Collection, or choose the theme that speaks to you.</p>
+<div class="dk-actions"><a class="hp-btn hp-btn-primary" href="#decks">Browse the decks {% include arrow.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/the-decks/">Compare the decks</a></div>
+</div>
+<div class="od-shelf hp-intro-late">
+<img class="hp-flora od-shelf-flower" src="{{ img }}/home/dried-yellow-stem.webp" alt="" aria-hidden="true">
+<div class="od-shelf-row">{% for d in themed limit: 3 %}<a class="od-shelf-box" href="#{{ d.anchor }}" aria-label="Go to {{ d.name }}"><img src="{{ site.baseurl }}{{ d.box }}" alt="" width="600" height="986"></a>{% endfor %}<a class="od-shelf-box od-shelf-main" href="#essential" aria-label="Go to {{ essential.name }}"><img src="{{ site.baseurl }}{{ essential.box }}" alt="" width="600" height="986"></a>{% for d in themed offset: 3 %}<a class="od-shelf-box" href="#{{ d.anchor }}" aria-label="Go to {{ d.name }}"><img src="{{ site.baseurl }}{{ d.box }}" alt="" width="600" height="986"></a>{% endfor %}</div>
+</div>
+</div>
+</section>
+
+<section id="essential" class="od-feature hp-wrap hp-reveal">
+<div class="od-feature-panel">
+<div class="od-feature-media"><img src="{{ site.baseurl }}{{ essential.box }}" alt="{{ essential.name }} tuckbox" width="600" height="986" loading="lazy"></div>
+<div class="od-feature-copy">
+<p class="hp-eyebrow">Not sure where to start?</p>
+<h2>{{ essential.name }}</h2>
+<p class="od-feature-lede">{{ essential.description }}</p>
+<p>{{ essential.intro }}</p>
+<div class="dk-actions"><a class="hp-btn dk-btn-ink" href="{{ essential.amazon }}" target="_blank" rel="noopener"><span>Order <span class="visually-hidden">{{ essential.name }} </span>on Amazon</span> {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ essential.slug }}/">View the collection {% include arrow.html %}</a></div>
+</div>
+</div>
+</section>
+
+<section id="decks" class="od-decks hp-wrap">
+<div class="od-decks-head hp-reveal">
+<p class="hp-eyebrow">The six themes</p>
+<h2>Or choose a theme.</h2>
+<p>Each themed deck holds 52 question cards, plus one user guide card.</p>
+</div>
+<ul class="od-grid">
+{% for d in themed %}
+<li id="{{ d.anchor }}" class="od-card hp-reveal" style="--deck: {{ d.color }}">
+<a class="od-card-media" href="{{ site.baseurl }}/product/{{ d.slug }}/" tabindex="-1" aria-hidden="true"><img src="{{ site.baseurl }}{{ d.box }}" alt="" width="600" height="986" loading="lazy"></a>
+<div class="od-card-body">
+<h3><a href="{{ site.baseurl }}/product/{{ d.slug }}/">{{ d.name }}</a></h3>
+<p class="od-card-desc">{{ d.description }}</p>
+<p class="od-card-explores"><strong>The questions explore</strong> {{ d.explores }}.</p>
+<div class="od-card-actions"><a class="hp-btn hp-btn-primary od-btn" href="{{ d.amazon }}" target="_blank" rel="noopener"><span>Order <span class="visually-hidden">{{ d.name }} </span>on Amazon</span> {% include external.html %}</a><a class="od-link" href="{{ site.baseurl }}/product/{{ d.slug }}/"><span>View the deck<span class="visually-hidden">: {{ d.name }}</span></span> {% include arrow.html %}</a></div>
+</div>
+</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="od-info hp-wrap hp-reveal">
+<ul class="od-facts">
+<li><span class="pr-icon od-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="7" y="5" width="15" height="21" rx="2.5"/><path d="M11 9h7M11 13h7M11 17h4"/><path d="M25 9v17a2 2 0 0 1-2 2H11"/></svg></span><h3>52 questions in every deck</h3><p>The themed decks also include a user guide card to help you begin.</p></li>
+<li><span class="pr-icon od-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="9" y="4" width="14" height="24" rx="2.5"/><path d="M5 8v16M27 8v16"/></svg></span><h3>Small enough to keep close</h3><p>Each card measures 7cm x 12cm, easy to bring along on a visit.</p></li>
+<li><span class="pr-icon od-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 9h22l-2.2 12.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8z"/><path d="M11 9V8a5 5 0 0 1 10 0v1"/></svg></span><h3>Ordered through Amazon</h3><p>Every deck is available to order on Amazon, and each button opens the deck’s Amazon page.</p></li>
+</ul>
+</section>
+
+<section class="od-pro hp-wrap hp-reveal">
+<div class="od-pro-panel">
+<div class="od-pro-copy">
+<p class="hp-eyebrow">For your practice or organisation</p>
+<h2>Ordering for your work?</h2>
+<p>If you’re a therapist, care team, chaplain or group facilitator, read the guide for professionals, or get in touch with any questions about using the decks in your work.</p>
+</div>
+<div class="dk-actions od-pro-actions"><a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/professional-edition/">Guide for professionals {% include arrow.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/contact/">Get in touch</a></div>
+</div>
+</section>
