@@ -36,3 +36,11 @@ entries:
 Only publish submissions where the sharing box was ticked, and remove any names or details that could identify someone.
 
 **Changing the question.** Edit `question` and `card` at the top of `_data/memories.yml`. Card images are in `assets/images/home` (e.g. `card-most-alive.webp`).
+
+## Page titles and descriptions (SEO)
+
+Each page sets its search details at the top of its file:
+
+- `title`: shown in the browser tab and as the Google headline, followed by " | Death Bed Questions".
+- `seo_title`: optional. When set, it is used as the whole title instead (the homepage uses this). Keep it under about 60 characters.
+- `description`: the snippet Google usually shows under the headline. Aim for 120–155 characters.
