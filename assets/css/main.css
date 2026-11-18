@@ -1217,3 +1217,16 @@ html{scroll-behavior:smooth}
 .hp-gift-media{height:200px}
 .hp-gift-media img{width:96px}
 .hp-gift-who{min-height:calc(1.45em * 3 + 16px)}}
+/* "When to use them" heading */
+.hp-uses-head{text-align:center}
+.hp-uses-eyebrow{display:inline-flex;align-items:center;gap:16px}
+.hp-uses-eyebrow::before,.hp-uses-eyebrow::after{content:"";width:48px;height:1px;background:currentColor;opacity:.6}
+.hp-uses-head h2{margin:18px auto 0;max-width:none;font-size:clamp(34px,3.4vw,48px);line-height:1.1;letter-spacing:-.01em}
+.hp-uses-head h2 span,.hp-uses-head h2 em{display:block}
+.hp-uses-sub{margin:18px auto 0;max-width:560px;font:italic 20px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-body)}
+.hp-uses-grid{margin-top:60px}
+@media(min-width:1200px){.hp-uses-head h2{white-space:nowrap}
+.hp-uses-head h2 span,.hp-uses-head h2 em{display:inline}}
+@media(max-width:900px){.hp-uses-sub{font-size:18px}}
+@media(max-width:600px){.hp-uses-head h2{font-size:32px}
+.hp-uses-eyebrow::before,.hp-uses-eyebrow::after{width:28px}}
