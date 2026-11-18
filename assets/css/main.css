@@ -1167,3 +1167,5 @@ html{scroll-behavior:smooth}
 .dk-intro p+p{margin-top:10px}
 .dk-about{margin:16px 0 0;max-width:540px;font-size:16.5px;line-height:1.65;color:var(--hp-ink)}
 .dk-use{margin:10px 0 0;max-width:540px;font-size:16px;line-height:1.65;color:var(--hp-body)}
+@media(min-width:1200px){.hp-tagline{font-size:clamp(24px,2vw,30px);white-space:nowrap}
+.hp-uses-head h2{max-width:none;white-space:nowrap}}
