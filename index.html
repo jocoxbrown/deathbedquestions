@@ -47,17 +47,21 @@ permalink: /
 </div></section>
 
 <section class="hp-gift hp-wrap hp-reveal">
+<div class="hp-gift-top">
 <div class="hp-gift-copy">
 <p class="hp-eyebrow">Gifting</p>
 <h2>A thoughtful gift.<br><em>Something to share.</em></h2>
+</div>
+<div class="hp-gift-intro">
 <p>For a partner, friend, parent or grandparent, choose a conversation deck that reflects what interests them—and make time to explore it together.</p>
 <p>It might be a birthday present, a Christmas gift or something to bring on your next visit. During illness or a difficult chapter, it can also be a thoughtful gesture for someone who welcomes conversation and reflection.</p>
 <a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/the-decks/">Find a deck for someone you love {% include arrow.html %}</a>
 </div>
+</div>
 <div class="hp-gift-guide" data-carousel>
 <div class="hp-gift-head"><h3>Who are you choosing for?</h3><div class="hp-car-nav"><button type="button" class="hp-car-btn" data-dir="-1" aria-label="Previous decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="hp-car-btn" data-dir="1" aria-label="Next decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
 <ul class="hp-gift-track" data-track>{% assign guide = "roots-heritage|Someone with family stories to tell;childhood-becoming|Someone whose early years you’d love to hear about;love-connection|Someone you want to feel closer to;loss-regret-forgiveness|Someone ready to talk about what has been hard;meaning-purpose|Someone who enjoys reflection;legacy-letting-go|Someone thinking about what they will pass on" | split: ";" %}{% for g in guide %}{% assign parts = g | split: "|" %}{% assign gd = site.data.decks | where: "slug", parts[0] | first %}
-<li class="hp-gift-slide" style="--deck: {{ gd.color }}"><a href="{{ site.baseurl }}/product/{{ gd.slug }}/"><span class="hp-gift-media"><img src="{{ site.baseurl }}{{ gd.box }}" alt="" width="600" height="986" loading="lazy"></span><span class="hp-gift-who">{{ parts[1] }}</span><span class="hp-gift-deck">{{ gd.name }}</span><span class="hp-gift-more">View the deck {% include arrow.html %}</span></a></li>{% endfor %}
+<li class="hp-gift-slide" style="--deck: {{ gd.color }}"><a href="{{ site.baseurl }}/product/{{ gd.slug }}/"><span class="hp-gift-media"><img src="{{ site.baseurl }}{{ gd.box }}" alt="" width="600" height="986" loading="lazy"></span><span class="hp-gift-who">{{ parts[1] }}</span><span class="hp-gift-deck">{{ gd.name | replace: " & ", " &amp;<br>" }}</span><span class="hp-gift-more">View the deck {% include arrow.html %}</span></a></li>{% endfor %}
 </ul>
 </div>
 <a class="hp-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><img class="hp-essential-box" src="{{ img }}/boxes/box-the-mixed-deck-essentials-collection.webp" alt="The Essential Collection tuckbox" width="600" height="986" loading="lazy"><span class="hp-essential-copy"><span class="hp-eyebrow hp-essential-label">Can’t choose just one?</span><span class="hp-essential-title">The Essential Collection</span><span class="hp-essential-text">A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</span></span><span class="hp-essential-arrow">{% include arrow.html size="24" %}</span></a>

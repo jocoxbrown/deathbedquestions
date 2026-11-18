@@ -1195,3 +1195,25 @@ html{scroll-behavior:smooth}
 .hp-car-btn{width:40px;height:40px}
 .hp-gift-track{padding:4px 20px 8px;scroll-padding-inline:20px;gap:14px}
 .hp-gift-slide{flex-basis:200px}}
+/* Gifting: banner heading on top, full-width carousel below */
+.hp-gift{display:block}
+.hp-gift-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:end}
+.hp-gift-copy h2{font-size:clamp(40px,4.4vw,64px);line-height:1.04}
+.hp-gift-intro>p{margin:0 0 14px;max-width:560px;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.hp-gift-intro .hp-btn{margin-top:14px}
+.hp-gift .hp-gift-guide{margin-top:56px}
+.hp-gift .hp-essential{margin-top:96px}
+.hp-gift-slide{flex-basis:262px}
+.hp-gift-media{height:230px}
+.hp-gift-media img{width:110px}
+.hp-gift-who{min-height:calc(1.45em * 2 + 16px)}
+.hp-gift-deck{font-size:20px}
+@media(max-width:900px){.hp-gift-top{grid-template-columns:1fr;gap:20px}
+.hp-gift .hp-gift-guide{margin-top:40px}
+.hp-gift .hp-essential{margin-top:80px}}
+@media(max-width:600px){.hp-gift-copy h2{font-size:36px}
+.hp-gift-intro .hp-btn{width:100%}
+.hp-gift-slide{flex-basis:220px}
+.hp-gift-media{height:200px}
+.hp-gift-media img{width:96px}
+.hp-gift-who{min-height:calc(1.45em * 3 + 16px)}}
