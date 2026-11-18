@@ -1230,3 +1230,40 @@ html{scroll-behavior:smooth}
 @media(max-width:900px){.hp-uses-sub{font-size:18px}}
 @media(max-width:600px){.hp-uses-head h2{font-size:32px}
 .hp-uses-eyebrow::before,.hp-uses-eyebrow::after{width:28px}}
+/* Gifting: centred heading, descriptions on the cards, deck-coloured titles */
+.hp-gift-top{display:block;text-align:center}
+.hp-gift-top h2{margin:18px 0 0;max-width:none;font:700 clamp(36px,3.9vw,56px)/1.08 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.hp-gift-top h2 em{font-weight:500;color:var(--hp-brown)}
+.hp-gift .hp-gift-guide{margin-top:48px}
+.hp-gift-head{flex-wrap:wrap}
+.hp-gift-head h3{margin-right:auto}
+.hp-gift-all{display:inline-flex;align-items:center;gap:8px;padding-bottom:4px;border-bottom:1.5px solid var(--hp-ink);font-size:15px;font-weight:600;color:var(--hp-ink);text-decoration:none}
+.hp-gift-deck{padding:18px 18px 0;font-size:22px;color:color-mix(in srgb,var(--deck) 72%,#1d1b17)}
+.hp-gift-who{min-height:0;padding:10px 18px 0;font-size:14.5px;line-height:1.5;color:var(--hp-body)}
+.hp-gift-media{background:color-mix(in srgb,var(--deck) 22%,#faf6ef)}
+@media(max-width:900px){.hp-gift-all{order:3;flex-basis:100%;justify-content:flex-start;margin-top:4px}
+.hp-gift-head{row-gap:12px}}
+@media(max-width:600px){.hp-gift-top h2{font-size:34px}
+.hp-gift-top h2 em{display:block}}
+/* About on the olive band */
+.hp-about-band{position:relative;overflow:hidden;background:var(--hp-olive);color:#fff}
+.hp-about-band .hp-about{position:relative}
+.hp-about-band .hp-eyebrow{color:#e8dcc6}
+.hp-about-band .hp-quote-mark{color:#d9c7a6}
+.hp-about-band blockquote{color:#fff}
+.hp-about-band .hp-about-copy>p:not(.hp-eyebrow){color:rgba(255,255,255,.86)}
+.hp-about-band .hp-about-copy>p.hp-attribution{color:#fff}
+.hp-about-band .hp-attribution::before{background:#e8dcc6}
+.hp-about-band .hp-btn-outline{border-color:#fff;color:#fff!important}
+.hp-about-band .hp-btn-outline:hover{background:#fff;color:var(--hp-ink)!important}
+.hp-about-band .hp-about-photo{box-shadow:0 30px 60px -20px rgba(20,18,10,.55)}
+/* Gift carousel header on phones */
+@media(max-width:900px){.hp-gift-head h3{flex-basis:100%}
+.hp-gift-all{order:0;flex-basis:auto;margin-top:0}
+.hp-car-nav{margin-left:auto}}
+@media(max-width:600px){.hp-car-nav{display:none}}
+/* Swap: illness section white, "Explore the decks" on sage */
+.hp-care{background:#fff}
+.hp-decks{background:#e9e8dc}
+.hp-deck-grid .hp-deck{background:#fbf8f2;border-color:#ddd8c6}
+.hp-uses{background:#fff;box-shadow:0 0 0 100vmax #fff;clip-path:inset(0 -100vmax)}

@@ -52,32 +52,20 @@ permalink: /
 
 <section class="hp-gift hp-wrap hp-reveal">
 <div class="hp-gift-top">
-<div class="hp-gift-copy">
-<p class="hp-eyebrow">Gifting</p>
-<h2>A thoughtful gift.<br><em>Something to share.</em></h2>
-</div>
-<div class="hp-gift-intro">
-<p>For a partner, friend, parent or grandparent, choose a conversation deck that reflects what interests them—and make time to explore it together.</p>
-<p>It might be a birthday present, a Christmas gift or something to bring on your next visit. During illness or a difficult chapter, it can also be a thoughtful gesture for someone who welcomes conversation and reflection.</p>
-<a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/the-decks/">Find a deck for someone you love {% include arrow.html %}</a>
-</div>
+<p class="hp-eyebrow hp-uses-eyebrow">Gifting</p>
+<h2>A thoughtful gift. <em>Something to share.</em></h2>
 </div>
 <div class="hp-gift-guide" data-carousel>
-<div class="hp-gift-head"><h3>Who are you choosing for?</h3><div class="hp-car-nav"><button type="button" class="hp-car-btn" data-dir="-1" aria-label="Previous decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="hp-car-btn" data-dir="1" aria-label="Next decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
-<ul class="hp-gift-track" data-track>{% assign guide = "roots-heritage|Someone with family stories to tell;childhood-becoming|Someone whose early years you’d love to hear about;love-connection|Someone you want to feel closer to;loss-regret-forgiveness|Someone ready to talk about what has been hard;meaning-purpose|Someone who enjoys reflection;legacy-letting-go|Someone thinking about what they will pass on" | split: ";" %}{% for g in guide %}{% assign parts = g | split: "|" %}{% assign gd = site.data.decks | where: "slug", parts[0] | first %}
-<li class="hp-gift-slide" style="--deck: {{ gd.color }}"><a href="{{ site.baseurl }}/product/{{ gd.slug }}/"><span class="hp-gift-media"><img src="{{ site.baseurl }}{{ gd.box }}" alt="" width="600" height="986" loading="lazy"></span><span class="hp-gift-who">{{ parts[1] }}</span><span class="hp-gift-deck">{{ gd.name | replace: " & ", " &amp;<br>" }}</span><span class="hp-gift-more">View the deck {% include arrow.html %}</span></a></li>{% endfor %}
+<div class="hp-gift-head"><h3>Who are you choosing for?</h3><a class="hp-gift-all" href="{{ site.baseurl }}/the-decks/">Find a deck for someone you love {% include arrow.html %}</a><div class="hp-car-nav"><button type="button" class="hp-car-btn" data-dir="-1" aria-label="Previous decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button><button type="button" class="hp-car-btn" data-dir="1" aria-label="Next decks"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+<ul class="hp-gift-track" data-track>{% assign guide = "roots-heritage|For a grandparent whose family stories, traditions and roots you’d love to hear more about.;childhood-becoming|For a parent you’d love to know as they were, long before they became Mum or Dad.;love-connection|For a partner or close friend you want to feel even closer to, one question at a time.;loss-regret-forgiveness|For someone ready to talk about what has been hard, gently and in their own time.;meaning-purpose|For someone who loves big questions and thoughtful talk about what matters most.;legacy-letting-go|For someone thinking about what they want to pass on to the people they love." | split: ";" %}{% for g in guide %}{% assign parts = g | split: "|" %}{% assign gd = site.data.decks | where: "slug", parts[0] | first %}
+<li class="hp-gift-slide" style="--deck: {{ gd.color }}"><a href="{{ site.baseurl }}/product/{{ gd.slug }}/"><span class="hp-gift-media"><img src="{{ site.baseurl }}{{ gd.box }}" alt="" width="600" height="986" loading="lazy"></span><span class="hp-gift-deck">{{ gd.name | replace: " & ", " &amp;<br>" }}</span><span class="hp-gift-who">{{ parts[1] }}</span><span class="hp-gift-more">View the deck {% include arrow.html %}</span></a></li>{% endfor %}
 </ul>
 </div>
 <a class="hp-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><img class="hp-essential-box" src="{{ img }}/boxes/box-the-mixed-deck-essentials-collection.webp" alt="The Essential Collection tuckbox" width="600" height="986" loading="lazy"><span class="hp-essential-copy"><span class="hp-eyebrow hp-essential-label">Can’t choose just one?</span><span class="hp-essential-title">The Essential Collection</span><span class="hp-essential-text">A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</span></span><span class="hp-essential-arrow">{% include arrow.html size="24" %}</span></a>
 </section>
 
-<section class="hp-statement">
-<div class="hp-glow hp-statement-glow hp-statement-glow-a" aria-hidden="true"></div>
-<div class="hp-glow hp-statement-glow hp-statement-glow-b" aria-hidden="true"></div>
-<p class="hp-wrap"><span class="hp-phrase">Sometimes it only takes</span> <span class="hp-phrase"><em>one question</em> to open a door</span> <span class="hp-phrase">that’s been closed for years.</span></p>
-</section>
-
-<section class="hp-about hp-wrap hp-reveal">
+<section class="hp-about-band"><div class="hp-glow hp-statement-glow hp-statement-glow-a" aria-hidden="true"></div><div class="hp-glow hp-statement-glow hp-statement-glow-b" aria-hidden="true"></div>
+<div class="hp-about hp-wrap hp-reveal">
 <div class="hp-about-media">
 <img class="hp-flora hp-about-flower" src="{{ img }}/home/dried-delphinium-flower.webp" alt="" aria-hidden="true" loading="lazy">
 <img class="hp-about-photo" src="{{ img }}/home/about-jo.webp" alt="Jo Cox-Brown, creator of Death Bed Questions, holding a deck" width="1100" height="1648" loading="lazy">
@@ -90,6 +78,7 @@ permalink: /
 <p>Death Bed Questions began as a personal act of healing – a way to ask the questions I never got to ask my Dad, my Mum, my team who died in 9/11, and my love Tim, before they were gone. What started as grief slowly became a beautiful gift of light and love.</p>
 <p class="hp-attribution">Jo Cox-Brown, Creator of Death Bed Questions</p>
 <a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/about-us/">Read Jo’s story</a>
+</div>
 </div>
 </section>
 
