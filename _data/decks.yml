@@ -4,8 +4,8 @@
   anchor: roots
   name: "Roots & Heritage"
   color: "#9A5F3C"
-  image: /assets/images/Roots-and-Heritage-600x1036.png
-  image_full: /assets/images/Roots-and-Heritage.png
+  image: /assets/images/cards/card-roots-heritage.webp
+  image_full: /assets/images/cards/card-roots-heritage.webp
   box: /assets/images/boxes/box-roots-heritage.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBFC8X
   description: "A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations."
@@ -60,8 +60,8 @@
   anchor: love
   name: "Love & Connection"
   color: "#A85F65"
-  image: /assets/images/Love-Connection-Deck-600x1035.png
-  image_full: /assets/images/Love-Connection-Deck.png
+  image: /assets/images/cards/card-love-connection.webp
+  image_full: /assets/images/cards/card-love-connection.webp
   box: /assets/images/boxes/box-love-connection.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBBD24
   description: "A heart-opening deck designed to deepen closeness, trust, and emotional understanding."
@@ -89,8 +89,8 @@
   anchor: loss
   name: "Loss, Regret & Forgiveness"
   color: "#7D788C"
-  image: /assets/images/Loss-Regret-Forgiveness-1-600x1035.png
-  image_full: /assets/images/Loss-Regret-Forgiveness-1.png
+  image: /assets/images/cards/card-loss-regret-forgiveness.webp
+  image_full: /assets/images/cards/card-loss-regret-forgiveness.webp
   box: /assets/images/boxes/box-loss-regret-forgiveness.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT87JYK
   description: "A tender deck for exploring grief, regret, forgiveness, and emotional release."
@@ -120,8 +120,8 @@
   anchor: meaning
   name: "Meaning & Purpose"
   color: "#4F6475"
-  image: /assets/images/Meaning-Purpose-Deck-600x1035.png
-  image_full: /assets/images/Meaning-Purpose-Deck.png
+  image: /assets/images/cards/card-meaning-purpose.webp
+  image_full: /assets/images/cards/card-meaning-purpose.webp
   box: /assets/images/boxes/box-meaning-purpose.webp
   amazon: https://www.amazon.co.uk/dp/B0HFKJMTPV
   description: "A reflective deck for discovering what truly mattered."
@@ -149,8 +149,8 @@
   anchor: legacy
   name: "Legacy & Letting Go"
   color: "#8FA897"
-  image: /assets/images/Legacy-and-letting-go-600x1035.png
-  image_full: /assets/images/Legacy-and-letting-go.png
+  image: /assets/images/cards/card-legacy-letting-go.webp
+  image_full: /assets/images/cards/card-legacy-letting-go.webp
   box: /assets/images/boxes/box-legacy-letting-go.webp
   amazon: https://www.amazon.co.uk/dp/B0HFSZFS3L
   description: "A sacred deck designed to help you explore endings, legacy, and release."
