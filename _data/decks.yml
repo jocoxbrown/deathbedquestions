@@ -31,8 +31,8 @@
   anchor: childhood
   name: "Childhood & Becoming"
   color: "#C79A8F"
-  image: /assets/images/Childhood-and-Becoming-600x1035.png
-  image_full: /assets/images/Childhood-and-Becoming.png
+  image: /assets/images/cards/card-childhood-becoming.webp
+  image_full: /assets/images/cards/card-childhood-becoming.webp
   box: /assets/images/boxes/box-childhood-becoming.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT2VGY6
   description: "A tender return to the moments and influences that shaped who you became."
