@@ -194,7 +194,7 @@ a:hover .hp-arrow{translate:4px 0}
 .hp-text-link{flex-shrink:0;display:inline-flex;align-items:center;gap:10px;padding-bottom:6px;border-bottom:1.5px solid var(--hp-ink);font-weight:600;text-decoration:none;color:var(--hp-ink)}
 .hp-deck-grid{margin-top:56px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}
 .hp-deck{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--hp-ink)}
-.hp-deck img{width:100%;aspect-ratio:600/1036;object-fit:cover;border-radius:14px;box-shadow:0 14px 30px rgba(60,45,25,.16);margin-bottom:10px;transform:rotate(-1.5deg);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s ease,translate .5s cubic-bezier(.2,.7,.2,1)}
+.hp-deck img{width:100%;aspect-ratio:600/998;object-fit:cover;border-radius:14px;box-shadow:0 14px 30px rgba(60,45,25,.16);margin-bottom:10px;transform:rotate(-1.5deg);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s ease,translate .5s cubic-bezier(.2,.7,.2,1)}
 .hp-deck:nth-child(even) img{transform:rotate(1.5deg)}
 .hp-deck:hover img{transform:rotate(0deg);translate:0 -10px;box-shadow:0 26px 44px rgba(60,45,25,.26)}
 .hp-deck-name{font:700 21px/1.2 "Playfair Display",Georgia,serif}
