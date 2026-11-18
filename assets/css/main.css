@@ -404,8 +404,6 @@ html{scroll-behavior:smooth}
 .dk-num{margin:0;font:700 64px/1 "Playfair Display",Georgia,serif;color:var(--deck)}
 .dk-row h3{margin:18px 0 0;font:700 44px/1.1 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
 .dk-desc{margin:18px 0 0;max-width:520px;font:italic 22px/1.45 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.dk-explores{margin:20px 0 0;font-size:16px;line-height:1.6;color:var(--hp-body)}
-.dk-explores strong{color:var(--hp-ink)}
 
 /* Essential Collection panel */
 .dk-essential{padding:40px 0 110px;background:#fff;width:auto;box-shadow:0 0 0 100vmax #fff;clip-path:inset(0 -100vmax)}
@@ -1100,3 +1098,72 @@ html{scroll-behavior:smooth}
 .od-btn{width:100%}
 .od-facts{grid-template-columns:1fr;gap:32px}
 .od-pro-actions{flex-direction:column}}
+
+/* Homepage: hero sign-off, when to use them, gifting, illness */
+.hp-hero-sign{margin:22px 0 0;font:600 20px/1.4 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.hp-hero-sign em{color:var(--hp-brown)}
+.hp-uses{padding:110px 0 120px}
+.hp-uses-head h2,.hp-gift-copy h2{margin:14px 0 0;max-width:780px;font:700 clamp(34px,3.4vw,48px)/1.08 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.hp-uses-head h2 em,.hp-gift-copy h2 em{font-weight:500;color:var(--hp-brown)}
+.hp-uses-grid{list-style:none;margin:52px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.hp-use{margin:0}
+.hp-use-media{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:22px;background:#e9e2d4;box-shadow:0 22px 44px -26px rgba(60,45,25,.45)}
+.hp-use-media>img:not(.hp-use-card):not(.hp-flora){display:block;width:100%;height:100%;object-fit:cover}
+.hp-use-art{display:grid;place-items:center;background:radial-gradient(70% 60% at 50% 40%,rgba(255,255,255,.65),transparent 70%),var(--tint)}
+.hp-use-card{position:relative;z-index:1;width:46%;height:auto;border-radius:12px;transform:rotate(-4deg);box-shadow:0 20px 36px -10px rgba(60,45,25,.38)}
+.hp-use-flower{right:-6%;bottom:-6%;width:48%;rotate:-18deg;z-index:0}
+.hp-use h3{margin:22px 0 0;font:700 22px/1.2 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.hp-use p{margin:10px 0 0;font-size:15.5px;line-height:1.6;color:var(--hp-body)}
+.hp-gift{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:88px;align-items:center;padding:120px 0}
+.hp-gift-copy>p:not(.hp-eyebrow){margin:22px 0 0;max-width:560px;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.hp-gift-copy .hp-btn{margin-top:34px}
+.hp-gift-guide{padding:36px 38px 24px;border-radius:26px;background:#fff;border:1px solid #e6dccb;box-shadow:0 28px 56px -30px rgba(60,45,25,.35)}
+.hp-gift-guide h3{margin:0 0 10px;font:700 24px/1.2 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.hp-gift-guide ul{list-style:none;margin:0;padding:0}
+.hp-gift-guide li+li{border-top:1px solid #ece3d3}
+.hp-gift-guide a{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:20px;align-items:center;padding:16px 0;text-decoration:none;color:var(--hp-ink)}
+.hp-gift-guide img{width:52px;height:auto;border-radius:3px;box-shadow:0 10px 18px -6px rgba(60,45,25,.4);transition:translate .4s cubic-bezier(.2,.7,.2,1)}
+.hp-gift-guide a:hover img{translate:0 -4px}
+.hp-gift-text{display:flex;flex-direction:column;gap:2px}
+.hp-gift-who{font-size:15px;color:var(--hp-body)}
+.hp-gift-deck{font:700 20px/1.25 "Playfair Display",Georgia,serif}
+.hp-gift-guide a:hover .hp-gift-deck{text-decoration:underline;text-underline-offset:4px}
+.hp-care{position:relative;overflow:hidden;padding:120px 0;background:#e9e8dc}
+.hp-care-grid{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:96px;align-items:start}
+.hp-care-flower{left:-30px;bottom:-40px;width:190px;rotate:-14deg;opacity:.95}
+.hp-care-head h2{margin:14px 0 0;font:700 clamp(34px,3.6vw,52px)/1.08 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.hp-care-copy>p{margin:0 0 18px;font-size:17px;line-height:1.7;color:var(--hp-body)}
+.hp-care-copy>p:first-child{font:500 21px/1.5 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.hp-btn-wrap{height:auto;min-height:58px;padding:14px 30px;white-space:normal;text-align:left;line-height:1.3}
+.hp-care-copy .hp-btn{margin-top:14px}
+.hp-care-pro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin-top:40px;padding:24px 28px;border-radius:18px;background:rgba(255,255,255,.65);border:1px solid rgba(29,27,23,.1)}
+.hp-care-pro p{margin:0;font-size:15.5px;line-height:1.6;color:var(--hp-body)}
+.hp-care-pro strong{color:var(--hp-ink)}
+.hp-care-pro .hp-btn{min-width:0;height:50px;padding:0 24px;font-size:16px}
+@media(max-width:1100px){.hp-uses-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 24px}
+.hp-gift{gap:48px}
+.hp-care-grid{gap:56px}}
+@media(max-width:900px){.hp-uses{padding:72px 0}
+.hp-gift{grid-template-columns:1fr;padding:72px 0}
+.hp-care{padding:72px 0}
+.hp-care-grid{grid-template-columns:1fr;gap:28px}
+.hp-care-flower{display:none}}
+@media(max-width:600px){.hp-hero-sign{font-size:18px}
+.hp-uses-grid{gap:32px 14px;margin-top:36px}
+.hp-use-media{border-radius:16px}
+.hp-use h3{margin-top:14px;font-size:18px}
+.hp-use p{font-size:14px}
+.hp-gift-guide{padding:26px 20px 14px}
+.hp-gift-guide a{grid-template-columns:44px minmax(0,1fr) auto;gap:14px}
+.hp-gift-guide img{width:44px}
+.hp-gift-deck{font-size:18px}
+.hp-gift-copy .hp-btn,.hp-care-copy .hp-btn{width:100%}
+.hp-care-copy>p:first-child{font-size:19px}
+.hp-care-pro{grid-template-columns:1fr;padding:22px 20px}}
+
+/* The Decks page: intro and deck copy */
+.dk-intro{margin-top:18px;max-width:560px}
+.dk-intro p{margin:0;font-size:17px;line-height:1.65;color:var(--hp-body)}
+.dk-intro p+p{margin-top:10px}
+.dk-about{margin:16px 0 0;max-width:540px;font-size:16.5px;line-height:1.65;color:var(--hp-ink)}
+.dk-use{margin:10px 0 0;max-width:540px;font-size:16px;line-height:1.65;color:var(--hp-body)}

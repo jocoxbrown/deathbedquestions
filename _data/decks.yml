@@ -8,6 +8,10 @@
   image_full: /assets/images/cards/card-roots-heritage.webp
   box: /assets/images/boxes/box-roots-heritage.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBFC8X?th=1
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Discover the stories behind your family history."
+  about: "Explore ancestry, traditions, inherited beliefs and the people and places that shaped you."
+  use: "Bring it to a family gathering, share it across generations or ask a loved one about experiences you’ve never heard."
   description: "A gentle exploration of where you come from, what shaped your lineage, and the stories passed down through generations."
   explores: "ancestry, family lines and inherited stories"
   intro: "This deck invites you into the landscapes of your ancestry, the stories you inherited, the patterns that shaped your family, the wounds and wisdom passed from one generation to the next."
@@ -35,6 +39,10 @@
   image_full: /assets/images/cards/card-childhood-becoming.webp
   box: /assets/images/boxes/box-childhood-becoming.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT2VGY6?th=1
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Get to know the person before the role."
+  about: "Explore early friendships, childhood homes, hopes and formative experiences."
+  use: "Discover who your parents were before they became Mum or Dad, learn about a partner’s younger years or reflect on your own beginnings."
   description: "A tender return to the moments and influences that shaped who you became."
   explores: "early memories, shaping experiences and the inner child"
   intro: "This deck invites you to step gently back into your childhood: the innocence, joy, confusion, wonder and early shaping experiences."
@@ -64,6 +72,10 @@
   image_full: /assets/images/cards/card-love-connection.webp
   box: /assets/images/boxes/box-love-connection.webp
   amazon: https://www.amazon.co.uk/dp/B0HFTBBD24?th=1
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Make time for the relationships that matter."
+  about: "Questions about affection, friendship, intimacy, trust and belonging."
+  use: "Share with a partner, close friend or family member, whether you want to discover something new or express something you find difficult to say."
   description: "A heart-opening deck designed to deepen closeness, trust, and emotional understanding."
   explores: "deeper intimacy, honesty and emotional truth"
   intro: "This deck explores the many forms of love: romantic, friendship, chosen family and deep bonds."
@@ -93,6 +105,10 @@
   image_full: /assets/images/cards/card-loss-regret-forgiveness.webp
   box: /assets/images/boxes/box-loss-regret-forgiveness.webp
   amazon: https://www.amazon.co.uk/dp/B0HFT87JYK?th=1
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Make space for feelings that can be hard to express."
+  about: "Explore grief, regret, forgiveness and past experiences, privately or with someone you trust."
+  use: "There is no expectation to forgive, reconcile or reach a particular conclusion."
   description: "A tender deck for exploring grief, regret, forgiveness, and emotional release."
   explores: "grief, healing, release and truth-telling"
   intro: "This deck opens a space for acknowledgement, healing and repair."
@@ -124,6 +140,10 @@
   image_full: /assets/images/cards/card-meaning-purpose.webp
   box: /assets/images/boxes/box-meaning-purpose.webp
   amazon: https://www.amazon.co.uk/dp/B0HP6QZQ1D?th=1
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Explore what makes life meaningful to you."
+  about: "Reflect on values, beliefs, hopes, lessons and the experiences that shape your outlook."
+  use: "Use for journalling, thoughtful conversation or sharing your perspective during a changing chapter of life."
   description: "A reflective deck for discovering what truly mattered."
   explores: "values, wisdom, personal truth and life direction"
   intro: "This deck explores values, identity, spiritual insight and meaning-making."
@@ -153,6 +173,10 @@
   image_full: /assets/images/cards/card-legacy-letting-go.webp
   box: /assets/images/boxes/box-legacy-letting-go.webp
   amazon: https://www.amazon.co.uk/dp/B0HFSZFS3L
+  # The Decks page: headline, what it explores, how someone might use it
+  headline: "Consider what you want to carry forward and leave with others."
+  about: "Explore wishes, values, gratitude, endings and the influence of a life."
+  use: "A starting point for personal reflection, conversations across generations and sharing what matters near the end of life."
   description: "A sacred deck designed to help you explore endings, legacy, and release."
   explores: "endings, blessings, continuation and peaceful transition"
   intro: "Legacy & Letting Go explores the final chapters of life: the wisdom we leave, the memories we bless, and the acceptance that arrives when we allow ourselves to let go."
