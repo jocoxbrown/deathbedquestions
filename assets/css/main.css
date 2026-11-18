@@ -1177,3 +1177,12 @@ html{scroll-behavior:smooth}
 .hp-gift{row-gap:88px}
 .hp-gift .hp-essential{grid-column:1/-1;margin-top:0}
 @media(max-width:900px){.hp-gift{row-gap:76px}}
+/* Homepage deck tiles: each deck in its own box, centred */
+.hp-deck-grid{gap:20px}
+.hp-deck-grid .hp-deck{align-items:center;gap:8px;padding:16px 14px 22px;border-radius:20px;background:#f7f2ea;border:1px solid #ece3d3;text-align:center;transition:box-shadow .45s ease,border-color .45s ease}
+.hp-deck-grid .hp-deck:hover{border-color:#e0d3bd;box-shadow:0 22px 40px -28px rgba(60,45,25,.45)}
+.hp-deck-grid .hp-deck img{margin-bottom:14px}
+.hp-deck-grid .hp-deck-name{margin-top:4px;text-wrap:balance}
+.hp-deck-grid .hp-deck-desc{text-wrap:pretty}
+@media(min-width:1200px){.hp-deck-grid .hp-deck-name{display:flex;align-items:center;justify-content:center}}
+@media(max-width:600px){.hp-deck-grid .hp-deck{padding:12px 10px 16px;border-radius:16px}}
