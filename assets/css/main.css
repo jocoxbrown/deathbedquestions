@@ -1117,17 +1117,6 @@ html{scroll-behavior:smooth}
 .hp-gift{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:88px;align-items:center;padding:120px 0}
 .hp-gift-copy>p:not(.hp-eyebrow){margin:22px 0 0;max-width:560px;font-size:17px;line-height:1.7;color:var(--hp-body)}
 .hp-gift-copy .hp-btn{margin-top:34px}
-.hp-gift-guide{padding:36px 38px 24px;border-radius:26px;background:#fff;border:1px solid #e6dccb;box-shadow:0 28px 56px -30px rgba(60,45,25,.35)}
-.hp-gift-guide h3{margin:0 0 10px;font:700 24px/1.2 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
-.hp-gift-guide ul{list-style:none;margin:0;padding:0}
-.hp-gift-guide li+li{border-top:1px solid #ece3d3}
-.hp-gift-guide a{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:20px;align-items:center;padding:16px 0;text-decoration:none;color:var(--hp-ink)}
-.hp-gift-guide img{width:52px;height:auto;border-radius:3px;box-shadow:0 10px 18px -6px rgba(60,45,25,.4);transition:translate .4s cubic-bezier(.2,.7,.2,1)}
-.hp-gift-guide a:hover img{translate:0 -4px}
-.hp-gift-text{display:flex;flex-direction:column;gap:2px}
-.hp-gift-who{font-size:15px;color:var(--hp-body)}
-.hp-gift-deck{font:700 20px/1.25 "Playfair Display",Georgia,serif}
-.hp-gift-guide a:hover .hp-gift-deck{text-decoration:underline;text-underline-offset:4px}
 .hp-care{position:relative;overflow:hidden;padding:120px 0;background:#e9e8dc}
 .hp-care-grid{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:96px;align-items:start}
 .hp-care-flower{left:-30px;bottom:-40px;width:190px;rotate:-14deg;opacity:.95}
@@ -1153,10 +1142,6 @@ html{scroll-behavior:smooth}
 .hp-use-media{border-radius:16px}
 .hp-use h3{margin-top:14px;font-size:18px}
 .hp-use p{font-size:14px}
-.hp-gift-guide{padding:26px 20px 14px}
-.hp-gift-guide a{grid-template-columns:44px minmax(0,1fr) auto;gap:14px}
-.hp-gift-guide img{width:44px}
-.hp-gift-deck{font-size:18px}
 .hp-gift-copy .hp-btn,.hp-care-copy .hp-btn{width:100%}
 .hp-care-copy>p:first-child{font-size:19px}
 .hp-care-pro{grid-template-columns:1fr;padding:22px 20px}}
@@ -1186,3 +1171,27 @@ html{scroll-behavior:smooth}
 .hp-deck-grid .hp-deck-desc{text-wrap:pretty}
 @media(min-width:1200px){.hp-deck-grid .hp-deck-name{display:flex;align-items:center;justify-content:center}}
 @media(max-width:600px){.hp-deck-grid .hp-deck{padding:12px 10px 16px;border-radius:16px}}
+/* Gift guide carousel */
+.hp-gift-guide{min-width:0;padding:30px 0 26px;border-radius:26px;background:#fff;border:1px solid #e6dccb;box-shadow:0 28px 56px -30px rgba(60,45,25,.35)}
+.hp-gift-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 30px}
+.hp-gift-head h3{margin:0;font:700 24px/1.2 "Playfair Display",Georgia,serif;color:var(--hp-ink)}
+.hp-car-nav{display:flex;gap:10px;flex:none}
+.hp-car-btn{display:grid;place-items:center;width:44px;height:44px;padding:0;border-radius:50%;border:1.5px solid var(--hp-ink);background:transparent;color:var(--hp-ink);cursor:pointer;transition:background-color .3s ease,color .3s ease,opacity .3s ease}
+.hp-car-btn:hover{background:var(--hp-ink);color:#fff}
+.hp-car-btn:disabled{opacity:.3;cursor:default;background:transparent;color:var(--hp-ink)}
+.hp-gift-track{list-style:none;margin:22px 0 0;padding:4px 30px 8px;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:30px;scrollbar-width:none}
+.hp-gift-track::-webkit-scrollbar{display:none}
+.hp-gift-slide{flex:0 0 220px;scroll-snap-align:start}
+.hp-gift-slide a{display:flex;flex-direction:column;height:100%;overflow:hidden;border-radius:18px;background:#f7f2ea;border:1px solid #ece3d3;text-decoration:none;color:var(--hp-ink)}
+.hp-gift-media{display:grid;place-items:center;height:200px;background:color-mix(in srgb,var(--deck) 18%,#faf6ef)}
+.hp-gift-media img{width:96px;height:auto;border-radius:3px;transform:rotate(-3deg);box-shadow:0 16px 28px -10px rgba(60,45,25,.45);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.hp-gift-slide a:hover .hp-gift-media img{transform:rotate(0) translateY(-6px)}
+.hp-gift-who{padding:16px 18px 0;font-size:14.5px;line-height:1.45;color:var(--hp-body)}
+.hp-gift-deck{padding:6px 18px 0;font:700 19px/1.2 "Playfair Display",Georgia,serif}
+.hp-gift-more{display:flex;align-items:center;gap:8px;margin-top:auto;padding:14px 18px 18px;font-size:14px;font-weight:600}
+@media(max-width:600px){.hp-gift-guide{padding:24px 0 20px}
+.hp-gift-head{padding:0 20px}
+.hp-gift-head h3{font-size:21px}
+.hp-car-btn{width:40px;height:40px}
+.hp-gift-track{padding:4px 20px 8px;scroll-padding-inline:20px;gap:14px}
+.hp-gift-slide{flex-basis:200px}}
