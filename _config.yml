@@ -12,4 +12,4 @@ exclude:
 # Where shared memories are sent. Paste a form endpoint (e.g. Formspree) here;
 # leave empty to send them by email to memories_email instead.
 memories_form: ""
-memories_email: "hello@nighttimeeconomy.com"
+memories_email: "hello@deathbedquestions.com"
