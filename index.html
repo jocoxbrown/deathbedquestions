@@ -37,14 +37,13 @@ permalink: /
 <section class="hp-decks hp-reveal"><div class="hp-wrap">
 <div class="hp-decks-head"><div><p class="hp-eyebrow">Explore the decks</p><h2>Six themes, one for every part of a life.</h2></div><a class="hp-text-link" href="{{ site.baseurl }}/the-decks/">See all the decks {% include arrow.html %}</a></div>
 <div class="hp-deck-grid">
-<a class="hp-deck" href="{{ site.baseurl }}/product/roots-heritage/"><img src="{{ img }}/cards/card-roots-heritage.webp" alt="Roots &amp; Heritage deck artwork" loading="lazy"><span class="hp-deck-name">Roots &amp; Heritage</span><span class="hp-deck-desc">Discover the family stories, traditions, and people and places that shaped them.</span></a>
-<a class="hp-deck" href="{{ site.baseurl }}/product/childhood-becoming/"><img src="{{ img }}/cards/card-childhood-becoming.webp" alt="Childhood &amp; Becoming deck artwork" loading="lazy"><span class="hp-deck-name">Childhood &amp; Becoming</span><span class="hp-deck-desc">Explore their early friendships, childhood adventures, and the experiences that helped shape who they became.</span></a>
-<a class="hp-deck" href="{{ site.baseurl }}/product/love-connection/"><img src="{{ img }}/cards/card-love-connection.webp" alt="Love &amp; Connection deck artwork" loading="lazy"><span class="hp-deck-name">Love &amp; Connection</span><span class="hp-deck-desc">Make room for their stories of affection, friendship, intimacy, and the things they want others to know.</span></a>
-<a class="hp-deck" href="{{ site.baseurl }}/product/loss-regret-forgiveness/"><img src="{{ img }}/cards/card-loss-regret-forgiveness.webp" alt="Loss, Regret &amp; Forgiveness deck artwork" loading="lazy"><span class="hp-deck-name">Loss, Regret &amp; Forgiveness</span><span class="hp-deck-desc">Reflect on their experiences of loss, difficult feelings, and things they may wish to put into words.</span></a>
-<a class="hp-deck" href="{{ site.baseurl }}/product/meaning-purpose/"><img src="{{ img }}/cards/card-meaning-purpose.webp" alt="Meaning &amp; Purpose deck artwork" loading="lazy"><span class="hp-deck-name">Meaning &amp; Purpose</span><span class="hp-deck-desc">Explore their values, hopes, beliefs, and what has given their life meaning.</span></a>
-<a class="hp-deck" href="{{ site.baseurl }}/product/legacy-letting-go/"><img src="{{ img }}/cards/card-legacy-letting-go.webp" alt="Legacy &amp; Letting Go deck artwork" loading="lazy"><span class="hp-deck-name">Legacy &amp; Letting Go</span><span class="hp-deck-desc">Discover what they want to pass on, what they hope others will understand, and what they are ready to let go of.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/roots-heritage/"><img src="{{ img }}/cards/card-roots-heritage.webp" alt="Roots &amp; Heritage deck artwork" loading="lazy"><span class="hp-deck-name">Roots &amp; Heritage</span><span class="hp-deck-desc">Discover the family stories, traditions, people and places that shaped them.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/childhood-becoming/"><img src="{{ img }}/cards/card-childhood-becoming.webp" alt="Childhood &amp; Becoming deck artwork" loading="lazy"><span class="hp-deck-name">Childhood &amp; Becoming</span><span class="hp-deck-desc">Explore their early years, friendships and the moments that shaped them.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/love-connection/"><img src="{{ img }}/cards/card-love-connection.webp" alt="Love &amp; Connection deck artwork" loading="lazy"><span class="hp-deck-name">Love &amp; Connection</span><span class="hp-deck-desc">Make room for stories of love, friendship and what they want others to know.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/loss-regret-forgiveness/"><img src="{{ img }}/cards/card-loss-regret-forgiveness.webp" alt="Loss, Regret &amp; Forgiveness deck artwork" loading="lazy"><span class="hp-deck-name">Loss, Regret &amp; Forgiveness</span><span class="hp-deck-desc">Reflect on loss, difficult feelings and things they may wish to put into words.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/meaning-purpose/"><img src="{{ img }}/cards/card-meaning-purpose.webp" alt="Meaning &amp; Purpose deck artwork" loading="lazy"><span class="hp-deck-name">Meaning &amp; Purpose</span><span class="hp-deck-desc">Explore their values, hopes, beliefs and what has given their life meaning.</span></a>
+<a class="hp-deck" href="{{ site.baseurl }}/product/legacy-letting-go/"><img src="{{ img }}/cards/card-legacy-letting-go.webp" alt="Legacy &amp; Letting Go deck artwork" loading="lazy"><span class="hp-deck-name">Legacy &amp; Letting Go</span><span class="hp-deck-desc">Discover what they want to pass on and what they are ready to let go of.</span></a>
 </div>
-<a class="hp-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><span class="hp-essential-copy"><span class="hp-eyebrow hp-essential-label">Can’t choose just one?</span><span class="hp-essential-title">The Essential Collection</span><span class="hp-essential-text">A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</span></span><span class="hp-essential-arrow">{% include arrow.html size="24" %}</span></a>
 </div></section>
 
 <section class="hp-gift hp-wrap hp-reveal">
@@ -57,10 +56,11 @@ permalink: /
 </div>
 <div class="hp-gift-guide">
 <h3>Who are you choosing for?</h3>
-<ul>{% assign guide = "roots-heritage|Someone with family stories to tell;love-connection|Someone you want to feel closer to;meaning-purpose|Someone who enjoys reflection;the-mixed-deck-essentials-collection|Unsure where to begin" | split: ";" %}{% for g in guide %}{% assign parts = g | split: "|" %}{% assign gd = site.data.decks | where: "slug", parts[0] | first %}
+<ul>{% assign guide = "roots-heritage|Someone with family stories to tell;childhood-becoming|Someone whose early years you’d love to hear about;love-connection|Someone you want to feel closer to;loss-regret-forgiveness|Someone ready to talk about what has been hard;meaning-purpose|Someone who enjoys reflection;legacy-letting-go|Someone thinking about what they will pass on" | split: ";" %}{% for g in guide %}{% assign parts = g | split: "|" %}{% assign gd = site.data.decks | where: "slug", parts[0] | first %}
 <li><a href="{{ site.baseurl }}/product/{{ gd.slug }}/"><img src="{{ site.baseurl }}{{ gd.box }}" alt="" width="600" height="986" loading="lazy"><span class="hp-gift-text"><span class="hp-gift-who">{{ parts[1] }}</span><span class="hp-gift-deck">{{ gd.name }}</span></span>{% include arrow.html %}</a></li>{% endfor %}
 </ul>
 </div>
+<a class="hp-essential" href="{{ site.baseurl }}/product/the-mixed-deck-essentials-collection/"><img class="hp-essential-box" src="{{ img }}/boxes/box-the-mixed-deck-essentials-collection.webp" alt="The Essential Collection tuckbox" width="600" height="986" loading="lazy"><span class="hp-essential-copy"><span class="hp-eyebrow hp-essential-label">Can’t choose just one?</span><span class="hp-essential-title">The Essential Collection</span><span class="hp-essential-text">A curated starting point: <strong>52 cards specially selected from across all six decks</strong>.</span></span><span class="hp-essential-arrow">{% include arrow.html size="24" %}</span></a>
 </section>
 
 <section class="hp-statement">
@@ -89,14 +89,14 @@ permalink: /
 <img class="hp-flora hp-care-flower" src="{{ img }}/home/dried-hydrangea-branch.webp" alt="" aria-hidden="true" loading="lazy">
 <div class="hp-care-head">
 <p class="hp-eyebrow">During illness and at the end of life</p>
-<h2>When someone you love is ill, finding the words can feel hard.</h2>
+<h2>When someone you love is ill, the right words can be hard to find.</h2>
 </div>
 <div class="hp-care-copy">
-<p>You may want to hear their stories, understand their wishes or simply spend time together without every conversation becoming a medical update.</p>
-<p>Death Bed Questions offers starting points for people who welcome conversation during serious illness, hospice or palliative care, and at the end of life. There is room for ordinary memories, laughter, uncertainty and the things they want you to know.</p>
-<p>Choose a question together, follow what interests them and leave anything they would rather not answer.</p>
-<a class="hp-btn hp-btn-primary hp-btn-wrap" href="{{ site.baseurl }}/how-to-use/">How to use the decks for someone at the end of life {% include arrow.html %}</a>
-<div class="hp-care-pro"><p><strong>For professionals:</strong> Explore ways to introduce the cards in counselling, life review and supportive care.</p><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/professional-edition/">Professional use</a></div>
+<p>You might want to hear their stories, understand their wishes, or simply spend time together without every conversation turning to treatment and test results.</p>
+<p>Death Bed Questions offers gentle starting points, whether someone is living with a serious illness, receiving hospice or palliative care, or nearing the end of life. There is room for everyday memories, laughter, uncertainty and the things they most want you to know.</p>
+<p>Choose a question together, follow wherever their interest leads, and set aside anything they would rather not answer.</p>
+<a class="hp-btn hp-btn-primary hp-btn-wrap" href="{{ site.baseurl }}/how-to-use/">How to use the cards at the end of life {% include arrow.html %}</a>
+<div class="hp-care-pro"><p><strong>For professionals:</strong> discover ways to introduce the cards in counselling, life review and supportive care.</p><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/professional-edition/">Professional use</a></div>
 </div>
 </div></section>
 
