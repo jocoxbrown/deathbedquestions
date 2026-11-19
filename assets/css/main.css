@@ -1282,3 +1282,7 @@ html{scroll-behavior:smooth}
 .is-home .hp-order{padding-bottom:110px;border-image:linear-gradient(to bottom,transparent,transparent calc(100% - 100px),var(--hp-olive)) fill 0/0/0 100vw}}
 .hp-about-band .hp-statement-glow-a{top:-40px}
 .hp-about-band .hp-statement-glow-b{bottom:-40px}
+/* Hero: three short lines, each marked with a small leaf */
+.hp-hero-beats{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.hp-hero-beats li{position:relative;padding-left:28px;color:var(--hp-body)}
+.hp-hero-beats li::before{content:"";position:absolute;left:0;top:.36em;width:15px;height:15px;background:var(--hp-brown);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 3C11 3 4 8 4 17c0 1.5.3 3 .8 4C6 13 11 9 17 7c-5 3-8.5 7.5-10 13 1 .3 2 .5 3 .5 8 0 12-7 10-17.5z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 3C11 3 4 8 4 17c0 1.5.3 3 .8 4C6 13 11 9 17 7c-5 3-8.5 7.5-10 13 1 .3 2 .5 3 .5 8 0 12-7 10-17.5z'/%3E%3C/svg%3E") center/contain no-repeat}
