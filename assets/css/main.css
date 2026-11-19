@@ -1349,3 +1349,10 @@ html{scroll-behavior:smooth}
 .hp-cr-title{margin-bottom:28px}
 .hp-cr-pro{margin-top:44px}}
 .hp-cr-flower{bottom:6px;width:170px}
+/* Order now: hero > Explore the decks > When to use them > Gifting */
+.hp-decks{background:linear-gradient(to bottom,#f7f2ea,#e9e8dc 170px,#e9e8dc calc(100% - 170px),#fff)}
+.hp-uses{border-image:linear-gradient(to bottom,#fff,#fff calc(100% - 170px),#f7f2ea) fill 0/0/0 100vw}
+@media(max-width:900px){.hp-decks{background:linear-gradient(to bottom,#f7f2ea,#e9e8dc 100px,#e9e8dc calc(100% - 100px),#fff)}
+.hp-uses{border-image:linear-gradient(to bottom,#fff,#fff calc(100% - 100px),#f7f2ea) fill 0/0/0 100vw}}
+@media(min-width:901px){.hp-cr-copy>p:not(.hp-eyebrow){max-width:528px}
+.hp-cr-copy>p.hp-cr-lead{max-width:512px;text-align:justify}}
