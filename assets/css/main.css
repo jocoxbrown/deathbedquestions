@@ -1232,7 +1232,7 @@ html{scroll-behavior:smooth}
 .hp-uses-eyebrow::before,.hp-uses-eyebrow::after{width:28px}}
 /* Gifting: centred heading, descriptions on the cards, deck-coloured titles */
 .hp-gift-top{display:block;text-align:center}
-.hp-gift-top h2{margin:18px 0 0;max-width:none;font:700 clamp(36px,3.9vw,56px)/1.08 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
+.hp-gift-top h2{margin:0;max-width:none;font:700 clamp(36px,3.9vw,56px)/1.08 "Playfair Display",Georgia,serif;color:var(--hp-olive-text)}
 .hp-gift-top h2 em{font-weight:500;color:var(--hp-brown)}
 .hp-gift .hp-gift-guide{margin-top:48px}
 .hp-gift-head{flex-wrap:wrap}
