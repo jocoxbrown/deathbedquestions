@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The Decks"
-description: "Explore all seven Death Bed Questions conversation decks."
+description: "Six conversation card decks and The Essential Collection: questions for parents, partners and friends, thoughtful gifts and end-of-life conversations."
 permalink: /the-decks/
 ---
 {% assign themed = site.data.decks | where_exp: "d", "d.essential != true" %}
@@ -11,6 +11,7 @@ permalink: /the-decks/
 <p class="hp-eyebrow hp-eyebrow-line">The decks</p>
 <h1>Which conversation is waiting for you?</h1>
 <h2 class="dk-sub">Six themed decks, plus The Essential Collection.</h2>
+<div class="dk-intro"><p>Get to know someone beyond the stories you already share. Explore family history, relationships, childhood, life’s big questions or feelings that are harder to put into words.</p><p>Choose a deck for yourself, a meaningful gift for someone you love, or a starting point for conversations during serious illness and at the end of life.</p></div>
 <dl class="dk-stats"><div><dt>6</dt><dd>themed decks</dd></div><div><dt>312</dt><dd>questions to explore</dd></div><div><dt>52</dt><dd>cards in every deck</dd></div></dl>
 </div>
 <div class="dk-hero-media hp-intro-late">
@@ -43,8 +44,9 @@ permalink: /the-decks/
 <div class="dk-row-copy">
 <p class="dk-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</p>
 <h3>{{ d.name }}</h3>
-<p class="dk-desc">{{ d.description }}</p>
-<p class="dk-explores"><strong>The questions explore</strong> {{ d.explores }}.</p>
+<p class="dk-desc">{{ d.headline }}</p>
+<p class="dk-about">{{ d.about }}</p>
+<p class="dk-use">{{ d.use }}</p>
 <p class="dk-meta"><span aria-hidden="true"></span>52 question cards, plus one user guide card</p>
 <div class="dk-actions"><a class="hp-btn hp-btn-primary" href="{{ d.amazon }}" target="_blank" rel="noopener">Order on Amazon {% include external.html %}</a><a class="hp-btn hp-btn-outline" href="{{ site.baseurl }}/product/{{ d.slug }}/">View the deck {% include arrow.html %}</a></div>
 </div>
@@ -67,14 +69,15 @@ permalink: /the-decks/
 <img class="hp-flora dk-who-flower" src="{{ site.baseurl }}/assets/images/home/dried-delphinium-stem.webp" alt="" aria-hidden="true" loading="lazy">
 <div>
 <p class="hp-eyebrow">Who the decks are for</p>
-<h2>Wherever you are, there’s a place to begin.</h2>
-<a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/how-to-use/">Read how to use the cards {% include arrow.html %}</a>
+<h2>Find a place for the cards in your life.</h2>
+<a class="hp-btn hp-btn-primary" href="{{ site.baseurl }}/how-to-use/">See how to use the cards {% include arrow.html %}</a>
 </div>
 <ol class="dk-who-list">
-<li>Those who want deeper relationships</li>
-<li>Anyone preparing for a goodbye</li>
-<li>Those healing from loss</li>
-<li>Anyone who feels called to connect on a deeper level</li>
-<li>Those who believe conversations can change lives</li>
+<li>With parents and grandparents</li>
+<li>With a partner or friend</li>
+<li>At family reunions and gatherings</li>
+<li>As a meaningful gift</li>
+<li>During illness or when preparing for goodbye</li>
+<li>For personal reflection</li>
 </ol>
 </div></section>
