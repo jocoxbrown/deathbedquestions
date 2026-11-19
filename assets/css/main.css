@@ -1333,3 +1333,19 @@ html{scroll-behavior:smooth}
 .hp-cr-copy>p.hp-cr-lead{margin-top:0}
 @media(max-width:900px){.hp-cr-title{margin-bottom:40px;width:min(calc(100% - 40px),1000px)}}
 @media(max-width:600px){.hp-cr-title{font-size:32px}}
+/* Illness section: tighter spacing */
+.hp-care{padding:96px 0 110px}
+.hp-cr-title{margin-bottom:44px}
+.hp-cr{gap:64px}
+.hp-cr-photo{height:540px}
+.hp-cr-copy>p:not(.hp-eyebrow){margin-top:14px}
+.hp-cr-copy>p.hp-cr-lead{margin-top:0}
+.hp-cr-steps{margin-top:20px;padding:18px 22px;gap:8px}
+.hp-cr-copy .hp-btn{margin-top:24px}
+.hp-cr-pro{margin-top:52px}
+@media(max-width:900px){.hp-care{padding:64px 0 88px}
+.hp-cr{gap:32px}
+.hp-cr-photo{height:380px}
+.hp-cr-title{margin-bottom:28px}
+.hp-cr-pro{margin-top:44px}}
+.hp-cr-flower{bottom:6px;width:170px}
